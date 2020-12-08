@@ -1,0 +1,65 @@
+INFO  | 2020-12-07 23:49:17 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-07 23:49:17 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-07 23:57:23 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-07 23:57:23 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 00:22:56 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 00:22:56 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 00:30:53 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 00:30:53 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 00:32:12 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 00:32:12 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 01:04:36 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 01:04:36 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 01:17:00 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 01:17:00 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 01:33:13 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 01:33:13 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:10:31 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 02:10:31 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:28:22 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 02:28:22 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:30:50 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 02:30:50 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:31:37 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 02:31:37 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:32:56 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 02:32:56 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 02:32:56 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 08:26:01 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 08:26:01 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 08:26:01 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 08:28:18 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 08:28:18 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 08:28:18 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+ERROR | 2020-12-08 08:28:18 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:142) - ERROR: column candidatee0_.contact_details does not exist
+  Position: 170
+INFO  | 2020-12-08 08:30:42 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 08:30:42 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 08:30:42 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 08:30:43 | [main] dao.CandidateDAOImpl (CandidateDAOImpl.java:37) - Candidate with Id111is added
+INFO  | 2020-12-08 08:30:43 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:24) - CandidateEntity: CandidateEntity [candidate_id=111, candidate_name=Ravi, address=Kolkata, age=34, contact_details=91888899, party=null, count=0]
+INFO  | 2020-12-08 08:30:43 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:37) - [END] addCandidateSuccess()
+INFO  | 2020-12-08 08:45:32 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 08:45:32 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 08:45:32 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 08:45:32 | [main] dao.CandidateDAOImpl (CandidateDAOImpl.java:37) - Candidate with Id111is added
+INFO  | 2020-12-08 08:45:32 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:24) - CandidateEntity: CandidateEntity [candidate_id=111, candidate_name=Ravi, address=Kolkata, age=34, contact_details=91888899, party=null, count=0]
+INFO  | 2020-12-08 08:45:32 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:37) - [END] addCandidateSuccess()
+INFO  | 2020-12-08 09:04:07 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 09:04:07 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 09:04:07 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 09:04:07 | [main] dao.CandidateDAOImpl (CandidateDAOImpl.java:37) - Candidate with Id0is added
+INFO  | 2020-12-08 09:04:07 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:24) - CandidateEntity: CandidateEntity [candidate_id=0, candidate_name=Ravi, address=Kolkata, age=34, contact_details=91888899, party=null, count=0]
+INFO  | 2020-12-08 09:04:07 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:37) - [END] addCandidateSuccess()
+INFO  | 2020-12-08 09:26:56 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 09:26:56 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 09:26:56 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 09:26:56 | [main] dao.CandidateDAOImpl (CandidateDAOImpl.java:37) - Candidate with Id0is added
+INFO  | 2020-12-08 09:26:56 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:24) - CandidateEntity: CandidateEntity [candidate_id=0, candidate_name=Ravi, address=Kolkata, age=34, contact_details=91888899, party=null, count=0]
+INFO  | 2020-12-08 09:26:56 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:37) - [END] addCandidateSuccess()
+INFO  | 2020-12-08 11:14:09 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:30) - [START] addCandidateSuccess()
+INFO  | 2020-12-08 11:14:09 | [main] presentation.VotingAppAdministratorService (VotingAppAdministratorService.java:18) - Adding Candidate
+INFO  | 2020-12-08 11:14:09 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:22) - abc
+INFO  | 2020-12-08 11:14:09 | [main] dao.CandidateDAOImpl (CandidateDAOImpl.java:37) - Candidate with Id0is added
+INFO  | 2020-12-08 11:14:09 | [main] service.CandidateServiceImpl (CandidateServiceImpl.java:24) - CandidateEntity: CandidateEntity [candidate_id=0, candidate_name=Ravi, address=Kolkata, age=34, contact_details=91888899, party=null, count=0]
+INFO  | 2020-12-08 11:14:09 | [main] presentation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:35) - [END] addCandidateSuccess()
