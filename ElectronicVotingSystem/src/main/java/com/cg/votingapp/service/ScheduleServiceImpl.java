@@ -9,10 +9,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.dao.ScheduleDAO;
 import com.cg.votingapp.dao.ScheduleDAOImpl;
-<<<<<<< HEAD
 import com.cg.votingapp.entity.ElectionEntity;
-=======
->>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ScheduleEntity;
 
 public class ScheduleServiceImpl implements ScheduleService {
@@ -26,7 +23,6 @@ public class ScheduleServiceImpl implements ScheduleService {
 		scheduleDAO.addSchedule(entity);
 		
 	}
-	@Override
 	public void viewSchedule() {
 		logger = LogManager.getLogger(ScheduleServiceImpl.class.getName());
 		logger.info("viewing data from Schedule");

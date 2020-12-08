@@ -10,11 +10,7 @@ import javax.persistence.Query;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-<<<<<<< HEAD
 import com.cg.votingapp.entity.ElectionEntity;
-=======
->>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ScheduleEntity;
 
 public class ScheduleDAOImpl implements ScheduleDAO{
@@ -59,7 +55,6 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	}
 
 
-	@Override
 	public List<ScheduleEntity> viewSchedule() {
 		Query query=entityManager.createQuery("SELECT s FROM ScheduleEntity s ORDER BY s.date,s.schedule_id");
 		List<ScheduleEntity> se=query.getResultList();

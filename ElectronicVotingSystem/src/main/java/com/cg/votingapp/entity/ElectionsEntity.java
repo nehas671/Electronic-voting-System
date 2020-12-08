@@ -15,8 +15,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="election")
-public class ElectionsEntity {
-	
+public class ElectionsEntity
+{	
 	@Id
 	@Column(name="election_id")
 	private int electionId;
@@ -38,12 +38,14 @@ public class ElectionsEntity {
 				inverseJoinColumns = { @JoinColumn(name = "party_name") })
 	private Set<PartysEntity> party=new HashSet<PartysEntity>();
 
-	public ElectionsEntity() {
+	public ElectionsEntity()
+	{
 		super();
 	}
 
 	public ElectionsEntity(int electionId, String electionName, String state, String constituency, Date date,
-			Set<PartysEntity> party) {
+			Set<PartysEntity> party)
+	{
 		super();
 		this.electionId = electionId;
 		this.electionName = electionName;
@@ -53,7 +55,8 @@ public class ElectionsEntity {
 		this.party = party;
 	}
 
-	public ElectionsEntity(String electionName, String state, String constituency, Date date, Set<PartysEntity> party) {
+	public ElectionsEntity(String electionName, String state, String constituency, Date date, Set<PartysEntity> party)
+	{
 		super();
 		this.electionName = electionName;
 		this.state = state;
@@ -62,7 +65,8 @@ public class ElectionsEntity {
 		this.party = party;
 	}
 
-	public ElectionsEntity(int electionId, String electionName, String state, String constituency, Date date) {
+	public ElectionsEntity(int electionId, String electionName, String state, String constituency, Date date)
+	{
 		super();
 		this.electionId = electionId;
 		this.electionName = electionName;
@@ -71,58 +75,70 @@ public class ElectionsEntity {
 		this.date = date;
 	}
 
-	public int getElectionId() {
+	public int getElectionId()
+	{
 		return electionId;
 	}
 
-	public void setElectionId(int electionId) {
+	public void setElectionId(int electionId)
+	{
 		this.electionId = electionId;
 	}
 
-	public String getElectionName() {
+	public String getElectionName()
+	{
 		return electionName;
 	}
 
-	public void setElectionName(String electionName) {
+	public void setElectionName(String electionName)
+	{
 		this.electionName = electionName;
 	}
 
-	public String getState() {
+	public String getState()
+	{
 		return state;
 	}
 
-	public void setState(String state) {
+	public void setState(String state)
+	{
 		this.state = state;
 	}
 
-	public String getConstituency() {
+	public String getConstituency()
+	{
 		return constituency;
 	}
 
-	public void setConstituency(String constituency) {
+	public void setConstituency(String constituency)
+	{
 		this.constituency = constituency;
 	}
 
-	public Date getDate() {
+	public Date getDate()
+	{
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(Date date)
+	{
 		this.date = date;
 	}
 
-	public Set<PartysEntity> getParty() {
+	public Set<PartysEntity> getParty()
+	{
 		return party;
 	}
 
-	public void setParty(Set<PartysEntity> party) {
+	public void setParty(Set<PartysEntity> party)
+	{
 		this.party = party;
 	}
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "ElectionEntity [electionId=" + electionId + ", electionName=" + electionName + ", state=" + state
 				+ ", constituency=" + constituency + ", date=" + date + ", party=" + party + "]";
 	}
-
 }
