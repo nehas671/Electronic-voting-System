@@ -1,4 +1,9 @@
-package com.cg.votingapp.entity;
+package com.cg.VotingApp.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name="register_user")
