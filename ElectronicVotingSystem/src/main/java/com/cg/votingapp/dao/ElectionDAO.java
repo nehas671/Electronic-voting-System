@@ -1,13 +1,13 @@
 package com.cg.votingapp.dao;
 
-import com.cg.VotingApp.entity.ElectionEntity;
+import com.cg.votingapp.entity.ElectionEntity;
 
-import com.cg.VotingApp.exception.ItemNotFoundException;
+import com.cg.votingapp.exceptions.RecordNotFoundException;
 
 public interface ElectionDAO {
 
 	
 	public void addElection(ElectionEntity entity);
 	
-	ElectionEntity findById(int ElectionId) throws ItemNotFoundException;
+	ElectionEntity findById(int ElectionId) throws RecordNotFoundException;
 }

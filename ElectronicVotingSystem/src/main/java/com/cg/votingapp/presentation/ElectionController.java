@@ -3,13 +3,12 @@ package com.cg.votingapp.presentation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.entity.ElectionEntity;
-import com.cg.VotingApp.exception.ElectionNotFoundException;
-import com.cg.VotingApp.service.ElectionService;
-import com.cg.VotingApp.service.ElectionServiceImpl;
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.exception.ItemNotFoundException;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.entity.ElectionEntity;
+import com.cg.votingapp.exceptions.RecordNotFoundException;
+import com.cg.votingapp.service.ElectionService;
+import com.cg.votingapp.service.ElectionServiceImpl;
+
 
 public class ElectionController {
 
@@ -17,7 +16,7 @@ public class ElectionController {
 	private static Logger logger = LogManager.getLogger(ElectionController.class.getName());
 	ElectionService electionService = new ElectionServiceImpl();
 	
-	public void addElection(ElectionEntity entity ) throws ElectionNotFoundException {
+	public void addElection(ElectionEntity entity ) throws RecordNotFoundException {
 		logger.info("Inserting election for id: " + entity.getElection_id());
 		 
 		try {
@@ -25,13 +24,13 @@ public class ElectionController {
 		}
 		catch(Exception e) {
 			logger.error("ElectionNotFoundException: " + e);
-			throw new ElectionNotFoundException(e.getMessage());
+			throw new RecordNotFoundException(e.getMessage());
 		}
 		
 	}
 	
 	
-	public Election findItemById(int itemId) throws ItemNotFoundException {
+	public Election findItemById(int itemId) throws RecordNotFoundException {
 		logger.info("Finding item for id: " + itemId);
 		Election election = null;
 		try {
@@ -39,7 +38,7 @@ public class ElectionController {
 		}
 		catch(Exception e) {
 			logger.error("ItemNotFoundException: " + e);
-			throw new ItemNotFoundException(e.getMessage());
+			throw new RecordNotFoundException(e.getMessage());
 		}
 		return election;
 	}
