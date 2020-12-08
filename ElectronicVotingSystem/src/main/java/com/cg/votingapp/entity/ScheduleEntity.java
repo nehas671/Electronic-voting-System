@@ -1,6 +1,7 @@
 package com.cg.votingapp.entity;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,7 +10,7 @@ import javax.persistence.Table;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.service.ScheduleServiceImpl;
+import com.cg.votingapp.service.ScheduleServiceImpl;
 
 @Entity
 @Table(name="schedule")
