@@ -14,7 +14,7 @@ public class ResultServiceImpl implements ResultService {
 
 	private static Logger logger = LogManager.getLogger(ResultServiceImpl.class.getName());
 	ResultDAO resultDao = new ResultDAOImpl();
-	
+
 	
 	@Override
 	public void declareResult() throws ResultNotFoundException {	
