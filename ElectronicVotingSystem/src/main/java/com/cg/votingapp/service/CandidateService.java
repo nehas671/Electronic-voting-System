@@ -8,6 +8,7 @@ import com.cg.votingapp.exceptions.NullValueFoundException;
 public interface CandidateService {
 	Candidate addCandidate(Candidate candidate);
 	Candidate checkId(int candidateId) throws NullValueFoundException;
+	Candidate checkName(String candidateName) throws NullValueFoundException;
 	//List<CandidateEntity> viewCandidate();  
 }
 

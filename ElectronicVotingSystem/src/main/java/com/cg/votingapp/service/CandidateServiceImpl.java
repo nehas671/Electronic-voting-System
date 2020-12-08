@@ -20,7 +20,6 @@ public class CandidateServiceImpl implements CandidateService {
 
 	public Candidate addCandidate(Candidate candidate)
 	{
-		logger.info("abc");
 		CandidateEntity candidateEntity = candidateDAO.addCandidate(VotingAppUtils.convertCandidateIntoCandidateEntity(candidate));
 		logger.info("CandidateEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);
@@ -28,6 +27,12 @@ public class CandidateServiceImpl implements CandidateService {
 	
 	public Candidate checkId(int candidateId) throws NullValueFoundException {
 		CandidateEntity candidateEntity = candidateDAO.checkId(candidateId);
+		logger.info("ItemEntity: " + candidateEntity);
+		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);
+	}
+	
+	public Candidate checkName(String candidateName) throws NullValueFoundException {
+		CandidateEntity candidateEntity = candidateDAO.checkName(candidateName);
 		logger.info("ItemEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);
 	}

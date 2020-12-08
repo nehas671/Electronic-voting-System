@@ -33,5 +33,18 @@ public class VotingAppAdministratorService {
 		}
 		return candidate;
 	}
+	
+	public Candidate checkName(String candidateName) throws NullValueFoundException {
+		logger.info("Checking candidate for name: " + candidateName);
+		Candidate candidate = null;
+		try {
+			candidate = candidateService.checkName(candidateName);
+		}
+		catch(NullValueFoundException e) {
+			logger.error("NullValueFoundException: " + e);
+			throw new NullValueFoundException(e.getMessage());
+		}
+		return candidate;
+	}
 
 }

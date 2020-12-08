@@ -17,7 +17,6 @@ import javax.persistence.Table;
 public class CandidateEntity {
 	
 	@Id
-	@GeneratedValue
 	@Column(name="candidate_id")
 	private int candidate_id;
 
@@ -50,8 +49,9 @@ public class CandidateEntity {
 	
 	public CandidateEntity() {}
 	
-	public CandidateEntity(String candidate_name, String address, int age, int contact_details, int count) {
+	public CandidateEntity(int candidate_id, String candidate_name, String address, int age, int contact_details, int count) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
@@ -59,8 +59,9 @@ public class CandidateEntity {
 		this.count=count;
 	}
 	
-	public CandidateEntity(String candidate_name, String address, int age, int contact_details, int count, PartyEntity party) {
+	public CandidateEntity(int candidate_id, String candidate_name, String address, int age, int contact_details, int count, PartyEntity party) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
