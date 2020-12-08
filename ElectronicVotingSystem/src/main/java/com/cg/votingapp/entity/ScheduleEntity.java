@@ -16,7 +16,7 @@ import com.cg.votingapp.service.ScheduleServiceImpl;
 @Table(name="schedule")
 public class ScheduleEntity {
 	@Id
-	@GeneratedValue
+	
 @Column(name="schedule_id")
 private int schedule_id;
 

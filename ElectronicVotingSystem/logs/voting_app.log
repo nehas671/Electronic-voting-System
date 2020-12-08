@@ -209,3 +209,63 @@ INFO  | 2020-12-08 19:58:34 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:3
 INFO  | 2020-12-08 19:58:34 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
 INFO  | 2020-12-08 19:58:34 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
 INFO  | 2020-12-08 19:58:34 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 20:26:41 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 20:26:41 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 20:26:41 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 20:26:41 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 20:26:41 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 20:26:41 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 20:26:41 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 20:26:41 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 20:26:41 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 20:26:41 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 20:28:18 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 20:28:18 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 20:28:18 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 20:28:18 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 20:28:18 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 20:28:18 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 20:28:18 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 20:28:18 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 20:28:18 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 20:28:18 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 20:48:24 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 20:48:24 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 20:48:24 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] viewScheduleSuccess()
+INFO  | 2020-12-08 20:48:24 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 20:48:24 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 20:48:24 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 20:48:24 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 20:48:24 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 20:48:24 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 20:48:24 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 21:20:22 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 21:20:22 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 21:20:22 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] viewScheduleSuccess()
+INFO  | 2020-12-08 21:20:22 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 21:20:22 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 21:20:22 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 21:20:22 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 21:20:22 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 21:20:22 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 21:20:22 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 21:22:03 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 21:22:03 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 21:22:04 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] viewScheduleSuccess()
+INFO  | 2020-12-08 21:22:04 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 21:22:04 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 21:22:04 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 21:22:04 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 21:22:04 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 21:22:04 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 21:22:04 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()
+INFO  | 2020-12-08 21:26:53 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:44) - [START] viewScheduleSuccess()
+INFO  | 2020-12-08 21:26:53 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:29) - viewing data from Schedule
+INFO  | 2020-12-08 21:26:53 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:54) - [END] viewScheduleSuccess()
+INFO  | 2020-12-08 21:26:53 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:26) - [START] addScheduleSuccess()
+INFO  | 2020-12-08 21:26:53 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 21:26:53 | [main] presentation.ScheduleController (ScheduleController.java:18) - Inserting schedule for id: 0
+INFO  | 2020-12-08 21:26:53 | [main] service.ScheduleServiceImpl (ScheduleServiceImpl.java:21) - adding data into Schedule
+INFO  | 2020-12-08 21:26:53 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:30) - Schedule data start
+INFO  | 2020-12-08 21:26:53 | [main] dao.ScheduleDAOImpl (ScheduleDAOImpl.java:54) - Schedule data inserted successfully
+INFO  | 2020-12-08 21:26:53 | [main] presentation.ScheduleControllerTest (ScheduleControllerTest.java:39) - [END] addScheduleSuccess()

@@ -28,7 +28,7 @@ public class ScheduleControllerTest {
 			ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 				try {
-					scheduleController.addElection(entity);
+					scheduleController.addSchedule(entity);
 				} catch (ScheduleNotFound e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -51,7 +51,7 @@ public class ScheduleControllerTest {
 				
 
 			assertEquals(1,1);
-			logger.info("[END] addScheduleSuccess()");
+			logger.info("[END] viewScheduleSuccess()");
 		}
 
 

@@ -14,7 +14,7 @@ public class ScheduleController {
 	private static Logger logger = LogManager.getLogger(ScheduleController.class.getName());
 	ScheduleService electionService = new ScheduleServiceImpl();
 	
-	public void addElection(ElectionEntity entity ) throws ScheduleNotFound {
+	public void addSchedule(ElectionEntity entity ) throws ScheduleNotFound {
 		logger.info("Inserting schedule for id: " + entity.getElection_id());
 
 		try {
