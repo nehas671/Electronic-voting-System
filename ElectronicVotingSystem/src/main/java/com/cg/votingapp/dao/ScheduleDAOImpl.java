@@ -47,12 +47,20 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 			String sdate=(String) obj[4];
 			s=new ScheduleEntity(sdate,sid,sname,sstate,sconstituency);
 			entityManager.getTransaction().begin();
-			entityManager.persist(s);
+			entityManager.merge(s);
 			entityManager.getTransaction().commit();
 			
 		}
 		logger.info("Schedule data inserted successfully");
 		
+	}
+
+
+	@Override
+	public List<ScheduleEntity> viewSchedule() {
+		Query query=entityManager.createQuery("SELECT s FROM ScheduleEntity s ORDER BY s.date,s.schedule_id");
+		List<ScheduleEntity> se=query.getResultList();
+		return se;
 	}
 
 

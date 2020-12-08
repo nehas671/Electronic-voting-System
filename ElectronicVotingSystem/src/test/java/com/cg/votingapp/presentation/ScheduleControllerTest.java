@@ -36,7 +36,7 @@ public class ScheduleControllerTest {
 				
 
 			assertEquals(1,1);
-			logger.info("[END] testItemSearchSuccess()");
+			logger.info("[END] addScheduleSuccess()");
 		}
 
 
