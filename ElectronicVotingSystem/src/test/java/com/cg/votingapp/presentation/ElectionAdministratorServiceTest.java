@@ -30,7 +30,7 @@ public class ElectionAdministratorServiceTest {
 	
 	
 	@Test
-	public void addCandidateSuccess() throws RecordNotFoundException{
+	public void addElectionSuccess() throws RecordNotFoundException{
 		logger.info("[START] addElectionSuccess()");
 		
 		ElectionEntity entity=new ElectionEntity(4,"state election","maharashtra","mumbai","12-02-2021");
@@ -43,6 +43,9 @@ public class ElectionAdministratorServiceTest {
 		assertEquals(electionController.findItemById(id).getElection_id(),id);
 		logger.info("[END] testItemSearchSuccess()");
 	}
+	
+	
+	
 	
 	
 	@Test
