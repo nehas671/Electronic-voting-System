@@ -1,12 +1,9 @@
 package com.cg.votingapp.dao;
 
 
-import java.util.*;
-
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.Query;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,19 +21,9 @@ public class ElectionCastVoteDAOImpl implements ElectionCastVoteDAO{
 		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("VotingAppPU");
 		entityManager=entityManagerFactory.createEntityManager();
 	}
-
-	public void castVote() throws CandidateNotFoundException
-	{
-		//JQPL Query to get candidate list with specific attributes
-		Scanner sc=new Scanner(System.in);
-		Query query=entityManager.createQuery("Select c.candidate_id, c.candidate_name c.party_name, c.vote_count FROM Candidate c JOIN Party p on c.party_name=p.party_name JOIN Election_Party ps on p.party_name=ps.party_name JOIN Election e on ps.election_id=e.election_id order by c.candidate_id");
-		
-		List<Object[]>list=query.getResultList();
-		list.forEach(l->System.out.println("Candidate:"+Arrays.toString(l))); //Print list of candidates
-		
-		System.out.println("Enter CandidateID to vote for Candidate: ");
-		int candidateId=sc.nextInt();
-		
+	
+	public void castVote(int candidateId) throws CandidateNotFoundException
+	{	
 		entityManager.getTransaction().begin();
 		CandidatesEntity candidateObj=entityManager.find(CandidatesEntity.class, candidateId);
 		
@@ -49,10 +36,10 @@ public class ElectionCastVoteDAOImpl implements ElectionCastVoteDAO{
 		{
 			int voteCount=candidateObj.getVote_count();
 			candidateObj.setVote_count(voteCount+1);
+			System.out.println("Voted Successfully!");
 		}
 		entityManager.getTransaction().commit();
 		
-		sc.close();
 	}
 
 }
