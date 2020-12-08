@@ -45,6 +45,19 @@ public class ElectionAdministratorServiceTest {
 	}
 	
 	
+	@Test
+	public void viewElectionSuccess() throws RecordNotFoundException{
+		logger.info("[START] addElectionSuccess()");
+		
+		
+		
+		//assertEquals(electionController.findItemById(id).getElection_id(),id);
+		logger.info("[END] testItemSearchSuccess()");
+	}
+	
+	
+	
+	
 	
 	
 	
