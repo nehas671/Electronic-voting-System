@@ -58,11 +58,12 @@ public class ElectionDAOImpl implements ElectionDAO {
 
 	public boolean viewElection() {
 	
-		Query query = entityManager.createQuery("SELECT ct from Election ct");
+		Query query = entityManager.createQuery("SELECT ct from ElectionEntity ct");
 		
 		List<ElectionEntity> ElectionList = query.getResultList();
 		for(ElectionEntity employee: ElectionList) {
-			System.out.println(employee);
+			
+			logger.info("each election"+employee);
 		}
 		return true;
 	}

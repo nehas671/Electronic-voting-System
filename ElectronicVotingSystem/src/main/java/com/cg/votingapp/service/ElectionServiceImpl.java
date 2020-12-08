@@ -47,4 +47,22 @@ public Election findById(int ElectionId) throws RecordNotFoundException {
 }
 
 
+
+public Boolean viewElection() {
+	// TODO Auto-generated method stub
+	
+	boolean electionEntity;
+
+	electionEntity = electionDAO.viewElection();
+		logger.info("ElectionEntity: " + electionEntity);
+	
+	if(electionEntity==false)
+		return false;
+	else
+		return true;
+	
+	
+}
+
+
 }

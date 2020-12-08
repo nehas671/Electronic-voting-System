@@ -42,4 +42,21 @@ public class ElectionController {
 		}
 		return election;
 	}
+	
+	
+	public Boolean viewElection() throws RecordNotFoundException{
+		
+		Boolean viewelection = null;
+		try {
+			viewelection = electionService.viewElection();
+		}
+		catch(Exception e) {
+			logger.error("RecordNotFoundException: " + e);
+			throw new RecordNotFoundException(e.getMessage());
+		}
+		return viewelection;
+		
+		
+		
+	}
 }

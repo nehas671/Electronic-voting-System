@@ -17,4 +17,7 @@ public interface ElectionService {
 	
 	
 	Election findById(int itemId) throws RecordNotFoundException;
+
+
+	Boolean viewElection();
 }
