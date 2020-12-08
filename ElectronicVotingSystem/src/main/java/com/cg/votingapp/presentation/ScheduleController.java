@@ -4,7 +4,10 @@ import org.apache.logging.log4j.LogManager;
 
 import org.apache.logging.log4j.Logger;
 
+<<<<<<< HEAD
 import com.cg.votingapp.entity.ElectionEntity;
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 import com.cg.votingapp.service.ScheduleService;

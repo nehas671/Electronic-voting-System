@@ -10,4 +10,9 @@ public interface ElectionDAO {
 	public void addElection(ElectionEntity entity);
 	
 	ElectionEntity findById(int ElectionId) throws RecordNotFoundException;
+	
+	
+	//Boolean validateState(ElectionEntity entity);
+	
+	boolean viewElection();
 }
