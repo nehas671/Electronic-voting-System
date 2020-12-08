@@ -1,4 +1,4 @@
-package com.cg.VotingApp.entity;
+package com.cg.votingapp.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="register_user")
-public class register_user {
+public class RegisterUser {
 	
 	@Id
 	@Column(name="application_id")
@@ -31,11 +31,11 @@ public class register_user {
 	@Column(name="district")
 	private String district;
 
-	public register_user() {
+	public RegisterUser() {
 		super();
 	}
 
-	public register_user(int application_id, String name, int dob, String gender, int mobile_number, String address,
+	public RegisterUser(int application_id, String name, int dob, String gender, int mobile_number, String address,
 			String district) {
 		super();
 		this.application_id = application_id;

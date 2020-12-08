@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.entity.ScheduleEntity;
+import com.cg.votingapp.entity.ScheduleEntity;
 
 public class ScheduleDAOImpl implements ScheduleDAO{
 

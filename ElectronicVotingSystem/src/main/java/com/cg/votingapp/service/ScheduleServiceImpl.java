@@ -3,9 +3,9 @@ package com.cg.votingapp.service;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.dao.ScheduleDAO;
-import com.cg.VotingApp.dao.ScheduleDAOImpl;
-import com.cg.VotingApp.entity.ScheduleEntity;
+import com.cg.votingapp.dao.ScheduleDAO;
+import com.cg.votingapp.dao.ScheduleDAOImpl;
+import com.cg.votingapp.entity.ScheduleEntity;
 
 public class ScheduleServiceImpl implements ScheduleService {
 	private static Logger logger;

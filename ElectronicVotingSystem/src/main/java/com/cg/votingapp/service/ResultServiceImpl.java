@@ -17,7 +17,6 @@ public class ResultServiceImpl implements ResultService {
 	ResultDAO resultDao = new ResultDAOImpl();
 
 	
-	@Override
 	public void declareResult() throws ResultNotFoundException {	
 		{			
 			logger.info("Declaring Result");

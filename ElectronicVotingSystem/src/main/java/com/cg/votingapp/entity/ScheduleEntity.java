@@ -9,7 +9,7 @@ import javax.persistence.Table;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.service.ScheduleServiceImpl;
+import com.cg.votingapp.service.ScheduleServiceImpl;
 
 @Entity
 @Table(name="schedule")

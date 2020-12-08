@@ -1,4 +1,4 @@
-package com.cg.VotingApp.entity;
+package com.cg.votingapp.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

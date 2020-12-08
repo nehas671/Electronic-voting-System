@@ -7,8 +7,8 @@ import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.cg.VotingApp.entity.ScheduleEntity;
-import com.cg.VotingApp.exception.ScheduleNotFound;
+import com.cg.votingapp.entity.ScheduleEntity;
+import com.cg.votingapp.exceptions.ScheduleNotFound;
 
 public class ScheduleControllerTest {
 	private static ScheduleController scheduleController;
