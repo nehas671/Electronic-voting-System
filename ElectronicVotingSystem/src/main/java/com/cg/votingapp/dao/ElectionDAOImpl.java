@@ -1,5 +1,8 @@
 package com.cg.votingapp.dao;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -12,6 +15,8 @@ import com.cg.votingapp.dto.Election;
 import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.service.ElectionServiceImpl;
+
+
 
 
 public class ElectionDAOImpl implements ElectionDAO {
@@ -45,6 +50,36 @@ public class ElectionDAOImpl implements ElectionDAO {
 			throw new RecordNotFoundException("ItemId: " + ElectionId);
 		return electionEntity ;
 	}
+
+	
+	
+	
+	
+
+	public boolean viewElection() {
+	
+		Query query = entityManager.createQuery("SELECT ct from ElectionEntity ct");
+		
+		List<ElectionEntity> ElectionList = query.getResultList();
+		for(ElectionEntity employee: ElectionList) {
+			
+			logger.info("each election"+employee);
+		}
+		return true;
+	}
+	
+	
+
+
+	/*@Override
+	public Boolean validateState() {
+		// TODO Auto-generated method stub
+		ArrayList<String> statelist = new ArrayList<String>();
+		return true;
+	}*/
+
+
+	
 	
 	
 

@@ -4,5 +4,5 @@ import com.cg.votingapp.exceptions.CandidateNotFoundException;
 
 public interface ElectionCastVoteDAO {
 	
-	void castVote() throws CandidateNotFoundException;
+	void castVote(int candidateId) throws CandidateNotFoundException;
 }
