@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.dto.Election;
 import com.cg.votingapp.entity.ElectionEntity;
-import com.cg.votingapp.exceptions.ItemNotFoundException;
+import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.service.ElectionServiceImpl;
 
 
@@ -37,12 +37,12 @@ public class ElectionDAOImpl implements ElectionDAO {
 	}
 
 
-	public ElectionEntity findById(int ElectionId) throws ItemNotFoundException {
+	public ElectionEntity findById(int ElectionId) throws RecordNotFoundException {
 		// TODO Auto-generated method stub
 		ElectionEntity electionEntity = entityManager.find(ElectionEntity.class, ElectionId);
 		logger.info("Database returned ItemEntity: " + electionEntity);
 		if(electionEntity==null)
-			throw new ItemNotFoundException("ItemId: " + ElectionId);
+			throw new RecordNotFoundException("ItemId: " + ElectionId);
 		return electionEntity ;
 	}
 	

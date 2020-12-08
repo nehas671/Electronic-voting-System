@@ -1,25 +1,22 @@
 package com.cg.votingapp.presentation;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNotNull;
 
-import java.sql.Date;
 
-import javax.persistence.Entity;
+
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.cg.votingapp.dto.Election;
+
 
 import com.cg.votingapp.entity.ElectionEntity;
-import com.cg.votingapp.exceptions.ElectionNotFoundException;
 
-import com.cg.votingapp.presentation.ElectionController;
-import com.cg.votingapp.exceptions.ItemNotFoundException;
+
+
+import com.cg.votingapp.exceptions.RecordNotFoundException;
 
 
 public class ElectionAdministratorServiceTest {
@@ -36,7 +33,7 @@ public class ElectionAdministratorServiceTest {
 	
 	
 	@Test
-	public void addCandidateSuccess() throws ElectionNotFoundException, ItemNotFoundException{
+	public void addCandidateSuccess() throws RecordNotFoundException{
 		logger.info("[START] addElectionSuccess()");
 		
 		ElectionEntity entity=new ElectionEntity(3,"state election","maharashtra","mumbai","12-02-2021");
@@ -55,8 +52,8 @@ public class ElectionAdministratorServiceTest {
 	
 	
 	
-	@Test(expected = ItemNotFoundException.class)
-	public void testItemSearchFailed() throws ItemNotFoundException{
+	@Test(expected = RecordNotFoundException.class)
+	public void testItemSearchFailed() throws RecordNotFoundException{
 		logger.info("[START] testItemSearchFailed()");
 		electionController.findItemById(2);
 		logger.info("[END] testItemSearchFailed()");
