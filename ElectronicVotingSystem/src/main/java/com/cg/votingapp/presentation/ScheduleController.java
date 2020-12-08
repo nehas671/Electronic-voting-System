@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 
 import org.apache.logging.log4j.Logger;
 
+import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 import com.cg.votingapp.service.ScheduleService;
@@ -13,8 +14,8 @@ public class ScheduleController {
 	private static Logger logger = LogManager.getLogger(ScheduleController.class.getName());
 	ScheduleService electionService = new ScheduleServiceImpl();
 	
-	public void addElection(ScheduleEntity entity ) throws ScheduleNotFound {
-		logger.info("Inserting schedule for id: " + entity.getSchedule_id());
+	public void addElection(ElectionEntity entity ) throws ScheduleNotFound {
+		logger.info("Inserting schedule for id: " + entity.getElection_id());
 
 		try {
 			electionService.addSchedule(entity);

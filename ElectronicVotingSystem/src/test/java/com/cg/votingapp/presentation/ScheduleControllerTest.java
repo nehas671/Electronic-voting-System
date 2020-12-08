@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 
@@ -24,7 +25,7 @@ public class ScheduleControllerTest {
 		public void addIdSuccess() {
 			logger.info("[START] addScheduleSuccess()");
 
-			ScheduleEntity entity=new ScheduleEntity("22-12-2020",101,"loksabha election","maharashtra","dhule");
+			ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 				try {
 					scheduleController.addElection(entity);
