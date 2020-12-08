@@ -12,6 +12,8 @@
 		<class>com.cg.votingapp.entity.PartyEntity</class>
 		<class>com.cg.votingapp.dto.Party</class>
 		<class>com.cg.votingapp.dto.Candidate</class>
+		<class>com.cg.votingapp.dto.ResultEntity</class>
+		<class>com.cg.votingapp.dto.ElectionPartyEntity</class>
 		<properties>
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/contact" />
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />

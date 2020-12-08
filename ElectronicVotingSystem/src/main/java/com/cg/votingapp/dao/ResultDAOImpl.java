@@ -1,4 +1,5 @@
 package com.cg.votingapp.dao;
+import com.cg.votingapp.entity.*;
 
 import java.util.Date;
 import java.util.List;
@@ -12,14 +13,13 @@ import javax.persistence.Query;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.entity.*;
-import com.cg.VotingApp.exceptions.ResultNotFoundException;
 
 
 
+import com.cg.votingapp.entity.*;
 
 
-
+import com.cg.votingapp.exceptions.*;
 public class ResultDAOImpl  implements ResultDAO{
 	private static Logger logger = LogManager.getLogger(ResultDAOImpl.class.getName());	
 	
@@ -27,15 +27,13 @@ public class ResultDAOImpl  implements ResultDAO{
 	private static EntityManager entityManager;
 
 	 static
-	
 	{
 		EntityManagerFactory entityManagerFactory= Persistence.createEntityManagerFactory("VotingAppPU");
 		entityManager=entityManagerFactory.createEntityManager();
 		
-		
 		}
 	
-	public void declareResult()  {
+	public void declareResult() throws ResultNotFoundException {
 		
 		ResultEntity result=null;
 		Query query = entityManager.createQuery("SELECT  election.election_id, election.state, election.date, candidate.candidate_id,"
@@ -45,6 +43,12 @@ public class ResultDAOImpl  implements ResultDAO{
 				+ "Join ElectionEntity election on electionparty.election_id=election.election_id "
 				+ "order by candidate.count desc" ); 
 		
+		if(query==null)
+		{
+			throw new ResultNotFoundException("Not found");
+		}
+		else
+		{
 		List<Object[]> list = query.getResultList();
 	for (Object[] obj : list) {
 		    String election_id=(String) obj[0];
@@ -63,6 +67,7 @@ public class ResultDAOImpl  implements ResultDAO{
 			entityManager.getTransaction().commit();		    
 		}
 		
+		}
 		System.out.println("inserted succesfully");
 	}
 }
