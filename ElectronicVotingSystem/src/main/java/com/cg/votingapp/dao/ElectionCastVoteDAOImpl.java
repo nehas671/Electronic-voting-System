@@ -12,7 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.entity.CandidatesEntity;
-import com.cg.votingapp.exception.CandidateNotFoundException;
+import com.cg.votingapp.exceptions.CandidateNotFoundException;
 
 public class ElectionCastVoteDAOImpl implements ElectionCastVoteDAO{
 	

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import com.cg.votingapp.dao.ElectionCastVoteDAO;
 import com.cg.votingapp.dao.ElectionCastVoteDAOImpl;
 import com.cg.votingapp.dao.ElectionCastVoteDAO;
-import com.cg.votingapp.exception.CandidateNotFoundException;
+import com.cg.votingapp.exceptions.CandidateNotFoundException;
 
 public class ElectionServiceCastVoteImpl implements ElectionServiceCastVote{
 	
