@@ -6,7 +6,7 @@ import java.sql.Date;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.service.ElectionServiceImpl;
+import com.cg.votingapp.service.ElectionServiceImpl;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

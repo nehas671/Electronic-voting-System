@@ -1,7 +1,7 @@
 package com.cg.votingapp.utils;
 
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.entity.ElectionEntity;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.entity.ElectionEntity;
 
 public class ElectionUtils {
 

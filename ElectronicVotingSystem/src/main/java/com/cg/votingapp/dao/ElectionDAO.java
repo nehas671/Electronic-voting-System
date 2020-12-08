@@ -1,8 +1,8 @@
 package com.cg.votingapp.dao;
 
-import com.cg.VotingApp.entity.ElectionEntity;
+import com.cg.votingapp.entity.ElectionEntity;
 
-import com.cg.VotingApp.exception.ItemNotFoundException;
+import com.cg.votingapp.exceptions.ItemNotFoundException;
 
 public interface ElectionDAO {
 

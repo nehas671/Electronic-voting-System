@@ -3,13 +3,13 @@ package com.cg.votingapp.presentation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.entity.ElectionEntity;
-import com.cg.VotingApp.exception.ElectionNotFoundException;
-import com.cg.VotingApp.service.ElectionService;
-import com.cg.VotingApp.service.ElectionServiceImpl;
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.exception.ItemNotFoundException;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.entity.ElectionEntity;
+import com.cg.votingapp.exceptions.ElectionNotFoundException;
+import com.cg.votingapp.service.ElectionService;
+import com.cg.votingapp.service.ElectionServiceImpl;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.exceptions.ItemNotFoundException;
 
 public class ElectionController {
 

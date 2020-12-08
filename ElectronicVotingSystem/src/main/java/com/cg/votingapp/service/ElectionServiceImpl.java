@@ -6,14 +6,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
-import com.cg.VotingApp.dao.ElectionDAO;
-import com.cg.VotingApp.dao.ElectionDAOImpl;
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.entity.ElectionEntity;
-import com.cg.VotingApp.exception.ElectionNotFoundException;
-import com.cg.VotingApp.presentation.ElectionController;
-import com.cg.VotingApp.utils.ElectionUtils;
-import com.cg.VotingApp.exception.ItemNotFoundException;
+import com.cg.votingapp.dao.ElectionDAO;
+import com.cg.votingapp.dao.ElectionDAOImpl;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.entity.ElectionEntity;
+import com.cg.votingapp.exceptions.ElectionNotFoundException;
+import com.cg.votingapp.presentation.ElectionController;
+import com.cg.votingapp.utils.ElectionUtils;
+import com.cg.votingapp.exceptions.ItemNotFoundException;
 
 
 

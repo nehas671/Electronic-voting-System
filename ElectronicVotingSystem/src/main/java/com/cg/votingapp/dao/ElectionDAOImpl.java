@@ -8,10 +8,10 @@ import javax.persistence.Query;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.dto.Election;
-import com.cg.VotingApp.entity.ElectionEntity;
-import com.cg.VotingApp.exception.ItemNotFoundException;
-import com.cg.VotingApp.service.ElectionServiceImpl;
+import com.cg.votingapp.dto.Election;
+import com.cg.votingapp.entity.ElectionEntity;
+import com.cg.votingapp.exceptions.ItemNotFoundException;
+import com.cg.votingapp.service.ElectionServiceImpl;
 
 
 public class ElectionDAOImpl implements ElectionDAO {
