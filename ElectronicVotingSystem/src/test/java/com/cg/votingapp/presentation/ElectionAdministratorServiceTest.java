@@ -33,7 +33,7 @@ public class ElectionAdministratorServiceTest {
 	public void addElectionSuccess() throws RecordNotFoundException{
 		logger.info("[START] addElectionSuccess()");
 		
-		ElectionEntity entity=new ElectionEntity(4,"state election","maharashtra","mumbai","12-02-2021");
+		ElectionEntity entity=new ElectionEntity(5,"state election","maharashtra","nashik","12-02-2021");
 		
 			
 				electionController.addElection(entity);
