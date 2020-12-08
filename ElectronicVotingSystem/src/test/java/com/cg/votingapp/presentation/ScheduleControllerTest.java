@@ -38,6 +38,21 @@ public class ScheduleControllerTest {
 			assertEquals(1,1);
 			logger.info("[END] addScheduleSuccess()");
 		}
+		
+		@Test
+		public void viewSuccess() {
+			logger.info("[START] viewScheduleSuccess()");
+
+			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
+
+				
+					scheduleController.viewSchedule();
+				
+				
+
+			assertEquals(1,1);
+			logger.info("[END] addScheduleSuccess()");
+		}
 
 
 }

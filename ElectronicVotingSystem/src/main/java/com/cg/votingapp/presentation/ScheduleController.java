@@ -24,7 +24,10 @@ public class ScheduleController {
 			logger.error("ScheduleNotFoundException: " + e);
 			throw new ScheduleNotFound(e.getMessage());
 		}
-		electionService.viewSchedule();
+		
 
 	}
+	public void viewSchedule() {
+		electionService.viewSchedule();
+		}
 }
