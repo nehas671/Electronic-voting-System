@@ -7,5 +7,6 @@ public interface ResultService {
 	
 	void declareResult() throws ResultNotFoundException;
 	
+	
 }
 

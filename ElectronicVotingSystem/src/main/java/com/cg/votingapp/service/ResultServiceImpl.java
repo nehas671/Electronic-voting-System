@@ -10,6 +10,7 @@ import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.exceptions.ResultNotFoundException;
 
+
 public class ResultServiceImpl implements ResultService {
 
 	private static Logger logger = LogManager.getLogger(ResultServiceImpl.class.getName());

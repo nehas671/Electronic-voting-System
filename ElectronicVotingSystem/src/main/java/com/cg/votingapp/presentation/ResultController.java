@@ -19,6 +19,7 @@ ResultService resultService=new ResultServiceImpl();
 public void declareResult() throws ResultNotFoundException
 {
 	
+	
 	logger.info("Adding result");
 	try
 	{
