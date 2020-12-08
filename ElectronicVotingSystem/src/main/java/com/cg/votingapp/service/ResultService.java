@@ -1,9 +1,12 @@
 package com.cg.votingapp.service;
 
 
+import com.cg.votingapp.exceptions.ResultNotFoundException;
 
 public interface ResultService {
-
-	Item findById(int itemId) throws ItemNotFoundException;
+	
+	void declareResult() throws ResultNotFoundException;
+	
 	
 }
+
