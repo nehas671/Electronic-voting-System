@@ -16,12 +16,12 @@ public class ResultController {
 	private static Logger logger = LogManager.getLogger(ResultController.class.getName());
 ResultService resultService=new ResultServiceImpl();
 
-public void declareResult(ResultEntity entity) throws ResultNotFoundException
+public void declareResult() throws ResultNotFoundException
 {
 	logger.info("Adding result");
 	try
 	{
-		resultService.declareResult(entity);
+		resultService.declareResult();
 	}
 	catch(Exception e)
 	{
