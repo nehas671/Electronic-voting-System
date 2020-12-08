@@ -1,0 +1,333 @@
+INFO  | 2020-12-07 22:48:52 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:32) - [START] addElectionSuccess()
+INFO  | 2020-12-07 22:54:00 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-07 22:54:00 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-07 22:54:00 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-07 22:54:01 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-07 22:54:01 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-07 22:54:01 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-07 22:54:01 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-07 22:54:01 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-07 22:54:01 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-07 22:54:02 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-07 22:54:02 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:32) - [START] addElectionSuccess()
+INFO  | 2020-12-07 23:32:33 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-07 23:32:33 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-07 23:32:33 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-07 23:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-07 23:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-07 23:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-07 23:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-07 23:32:33 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-07 23:32:34 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-07 23:32:35 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-07 23:32:35 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-07 23:38:10 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-07 23:38:10 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-07 23:38:11 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-07 23:38:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-07 23:38:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-07 23:38:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-07 23:38:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-07 23:38:11 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-07 23:38:11 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-07 23:38:12 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-07 23:38:12 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-07 23:44:35 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-07 23:44:35 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-07 23:44:35 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-07 23:44:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-07 23:44:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-07 23:44:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-07 23:44:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-07 23:44:35 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-07 23:44:35 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-07 23:44:37 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-07 23:44:37 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-07 23:45:39 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-07 23:45:39 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-07 23:45:39 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-07 23:45:40 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-07 23:45:40 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-07 23:45:40 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-07 23:45:40 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-07 23:45:40 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-07 23:45:40 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-07 23:45:41 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-07 23:45:41 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:03:45 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:03:45 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:03:46 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:03:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:03:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:03:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:03:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:03:46 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:03:46 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:03:47 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:03:47 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:07:16 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:07:17 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:07:17 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:07:17 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:07:17 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:07:17 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:07:17 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:07:17 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:07:17 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:07:18 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:07:18 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:08:26 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:08:26 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:08:27 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:08:27 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:08:27 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:08:27 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:08:27 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:08:27 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:08:27 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:08:28 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:08:28 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:10:25 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:10:26 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:10:26 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:10:26 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:10:26 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:10:26 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:10:26 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:10:26 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:10:26 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:10:27 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:10:27 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:15:02 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:15:02 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:15:02 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:15:03 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:15:03 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:15:03 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:15:03 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:15:03 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:15:03 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:15:04 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:15:04 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:32:32 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:32:32 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:32:32 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:32:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:32:33 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:32:33 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:32:35 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:32:35 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:32:35 | [main] presentation.ElectionController (ElectionController.java:20) - Finding election for id: 1
+INFO  | 2020-12-08 00:32:35 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 00:32:35 | [main] presentation.ElectionController (ElectionController.java:26) - ItemNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 00:32:35 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:44) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 00:36:12 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:36:12 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:36:12 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:36:12 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:36:12 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:36:12 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:36:12 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:36:12 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:36:13 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:36:14 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:36:14 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:36:14 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 00:36:14 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 00:36:14 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 00:36:14 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:44) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 00:43:22 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 00:43:22 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 00:43:22 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 00:43:22 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 00:43:22 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 00:43:22 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 00:43:22 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 00:43:22 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 00:43:22 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 00:43:23 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 00:43:24 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 00:43:24 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 00:43:24 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 00:43:24 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 00:43:24 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:44) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:29:46 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:29:46 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:29:46 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:29:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:29:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:29:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:29:46 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:29:46 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:29:47 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:29:48 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:29:48 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:29:48 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:41) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:31:15 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:31:15 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:31:15 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:31:15 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:31:15 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:31:15 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:31:15 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:31:15 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:31:16 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:31:17 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:31:17 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:31:17 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:31:17 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 01:31:17 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 01:31:17 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:35:35 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:35:35 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:35:35 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:35:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:35:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:35:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:35:35 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:35:35 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:35:36 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:35:37 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:35:37 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:35:37 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:35:37 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 01:35:37 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 01:35:37 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:40:48 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:40:49 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:40:49 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:40:49 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:40:49 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:40:49 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:40:49 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:40:49 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:40:49 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:40:51 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:40:51 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:40:51 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:40:51 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+ERROR | 2020-12-08 01:40:51 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 01:40:51 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:42:11 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:42:11 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:42:11 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:42:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:42:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:42:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:42:11 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:42:11 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:42:12 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:42:13 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:42:13 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:42:13 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:42:13 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 01:42:13 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+ERROR | 2020-12-08 01:42:13 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 01:42:13 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:43:13 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:43:13 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:43:14 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:43:14 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:43:14 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:43:14 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:43:14 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:43:14 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:43:14 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:43:15 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:43:15 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:43:15 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:43:15 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 01:43:15 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+ERROR | 2020-12-08 01:43:15 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: java.lang.IllegalArgumentException: Unknown entity: java.lang.String
+INFO  | 2020-12-08 01:43:15 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 01:44:43 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 01:44:44 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 01:44:44 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 01:44:44 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 01:44:44 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 01:44:44 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 01:44:44 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 01:44:44 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 01:44:45 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 01:44:46 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 01:44:46 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 01:44:46 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 01:44:46 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 01:44:46 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+INFO  | 2020-12-08 01:44:46 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:30) - Election  begin persist
+ERROR | 2020-12-08 01:44:46 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 01:44:46 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 08:37:01 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 08:37:01 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 08:37:01 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 08:37:02 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 08:37:02 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 08:37:02 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 08:37:02 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 08:37:02 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 08:37:02 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 08:37:03 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 08:37:03 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 08:37:03 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 08:37:03 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 08:37:03 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+INFO  | 2020-12-08 08:37:03 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:30) - Election  begin persist
+ERROR | 2020-12-08 08:37:03 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.PersistentObjectException: detached entity passed to persist: com.cg.VotingApp.entity.ElectionEntity
+INFO  | 2020-12-08 08:37:03 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 08:45:33 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 08:45:33 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 08:45:33 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 08:45:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 08:45:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 08:45:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 08:45:33 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 08:45:33 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 08:45:34 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 08:45:35 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 08:45:35 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 08:45:35 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 1
+INFO  | 2020-12-08 08:45:35 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 08:45:35 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+INFO  | 2020-12-08 08:45:35 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:30) - Election  begin persist
+ERROR | 2020-12-08 08:45:35 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.id.IdentifierGenerationException: Unknown integral data type for ids : java.lang.String
+INFO  | 2020-12-08 08:45:35 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 08:48:43 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 08:48:43 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 08:48:43 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 08:48:43 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 08:48:43 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 08:48:43 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 08:48:43 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 08:48:43 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 08:48:44 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 08:48:45 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 08:48:45 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 08:48:45 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 08:48:45 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: null
+INFO  | 2020-12-08 08:48:45 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 08:48:45 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+INFO  | 2020-12-08 08:48:45 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:30) - Election  begin persist
+ERROR | 2020-12-08 08:48:45 | [main] presentation.ElectionController (ElectionController.java:26) - ElectionNotFoundException: javax.persistence.PersistenceException: org.hibernate.id.IdentifierGenerationException: Unknown integral data type for ids : java.lang.String
+INFO  | 2020-12-08 08:48:45 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 08:56:05 | [main] util.LogHelper (LogHelper.java:31) - HHH000204: Processing PersistenceUnitInfo [name: VotingAppPU]
+INFO  | 2020-12-08 08:56:05 | [main] hibernate.Version (Version.java:44) - HHH000412: Hibernate ORM core version 5.4.24.Final
+INFO  | 2020-12-08 08:56:05 | [main] java.JavaReflectionManager (JavaReflectionManager.java:56) - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+WARN  | 2020-12-08 08:56:05 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:72) - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+INFO  | 2020-12-08 08:56:05 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:115) - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost/postgres]
+INFO  | 2020-12-08 08:56:05 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:124) - HHH10001001: Connection properties: {password=****, user=postgres}
+INFO  | 2020-12-08 08:56:05 | [main] internal.DriverManagerConnectionProviderImpl (DriverManagerConnectionProviderImpl.java:129) - HHH10001003: Autocommit mode: false
+INFO  | 2020-12-08 08:56:05 | [main] internal.DriverManagerConnectionProviderImpl$PooledConnections (DriverManagerConnectionProviderImpl.java:259) - HHH000115: Hibernate connection pool size: 20 (min=1)
+INFO  | 2020-12-08 08:56:05 | [main] dialect.Dialect (Dialect.java:175) - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+INFO  | 2020-12-08 08:56:06 | [main] internal.JtaPlatformInitiator (JtaPlatformInitiator.java:52) - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+INFO  | 2020-12-08 08:56:06 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:33) - [START] addElectionSuccess()
+INFO  | 2020-12-08 08:56:06 | [main] entity.ElectionEntity (ElectionEntity.java:81) - addddiggg
+INFO  | 2020-12-08 08:56:06 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 0
+INFO  | 2020-12-08 08:56:06 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:32) - addddiggg
+INFO  | 2020-12-08 08:56:06 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:28) - Election data begin
+INFO  | 2020-12-08 08:56:06 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:30) - Election  begin persist
+INFO  | 2020-12-08 08:56:07 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:32) - Election after persist
+INFO  | 2020-12-08 08:56:07 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:34) - Election data inserted successfully
+INFO  | 2020-12-08 08:56:07 | [main] Presensation.VotingAppAdministratorServiceTest (VotingAppAdministratorServiceTest.java:46) - [END] testItemSearchSuccess()
