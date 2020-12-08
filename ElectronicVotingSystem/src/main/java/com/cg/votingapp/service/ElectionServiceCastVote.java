@@ -1,6 +1,6 @@
 package com.cg.votingapp.service;
 
-import com.cg.votingapp.exception.CandidateNotFoundException;
+import com.cg.votingapp.exceptions.CandidateNotFoundException;
 
 public interface ElectionServiceCastVote {
 	
