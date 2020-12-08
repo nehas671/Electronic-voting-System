@@ -133,3 +133,51 @@ INFO  | 2020-12-08 16:27:18 | [main] presentation.ElectionController (ElectionCo
 INFO  | 2020-12-08 16:27:18 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
 INFO  | 2020-12-08 16:27:18 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
 INFO  | 2020-12-08 16:27:18 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:62) - [END] testItemSearchFailed()
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:37) - [START] addElectionSuccess()
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 3
+INFO  | 2020-12-08 16:58:11 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:31) - addddiggg
+INFO  | 2020-12-08 16:58:11 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:35) - Election data inserted successfully
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 3
+INFO  | 2020-12-08 16:58:11 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 16:58:11 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:47) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:57) - [START] testItemSearchFailed()
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 2
+INFO  | 2020-12-08 16:58:11 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 16:58:11 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 16:58:11 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:59) - [END] testItemSearchFailed()
+INFO  | 2020-12-08 17:01:55 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:34) - [START] addElectionSuccess()
+INFO  | 2020-12-08 17:01:55 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 3
+INFO  | 2020-12-08 17:01:55 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:31) - addddiggg
+INFO  | 2020-12-08 17:01:56 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:35) - Election data inserted successfully
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 3
+INFO  | 2020-12-08 17:01:56 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:44) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:59) - [START] testItemSearchFailed()
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 2
+INFO  | 2020-12-08 17:01:56 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=2, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:61) - [END] testItemSearchFailed()
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:50) - [START] testItemSearchSuccess()
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 1
+INFO  | 2020-12-08 17:01:56 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=1, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=1, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:01:56 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:52) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:34) - [START] addElectionSuccess()
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionController (ElectionController.java:20) - Inserting election for id: 3
+INFO  | 2020-12-08 17:02:38 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:31) - addddiggg
+INFO  | 2020-12-08 17:02:38 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:35) - Election data inserted successfully
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 3
+INFO  | 2020-12-08 17:02:38 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:02:38 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=3, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:44) - [END] testItemSearchSuccess()
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:59) - [START] testItemSearchFailed()
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: -2
+INFO  | 2020-12-08 17:02:38 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: null
+ERROR | 2020-12-08 17:02:38 | [main] presentation.ElectionController (ElectionController.java:40) - ItemNotFoundException: com.cg.votingapp.exceptions.RecordNotFoundException: ItemId: -2
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:50) - [START] testItemSearchSuccess()
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionController (ElectionController.java:34) - Finding item for id: 1
+INFO  | 2020-12-08 17:02:38 | [main] dao.ElectionDAOImpl (ElectionDAOImpl.java:43) - Database returned ItemEntity: ElectionEntity [election_id=1, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:02:38 | [main] service.ElectionServiceImpl (ElectionServiceImpl.java:43) - ElectionEntity: ElectionEntity [election_id=1, election_name=state election, state=maharashtra, constituency=mumbai, date=12-02-2021]
+INFO  | 2020-12-08 17:02:38 | [main] presentation.ElectionAdministratorServiceTest (ElectionAdministratorServiceTest.java:52) - [END] testItemSearchSuccess()

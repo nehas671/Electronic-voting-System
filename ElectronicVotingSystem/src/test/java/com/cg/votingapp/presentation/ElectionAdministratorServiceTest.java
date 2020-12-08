@@ -1,17 +1,14 @@
 package com.cg.votingapp.presentation;
 
 import static org.junit.Assert.assertEquals;
-
-
-
+import static org.junit.Assert.assertNotNull;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-
-
+import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.entity.ElectionEntity;
 
 
@@ -36,7 +33,7 @@ public class ElectionAdministratorServiceTest {
 	public void addCandidateSuccess() throws RecordNotFoundException{
 		logger.info("[START] addElectionSuccess()");
 		
-		ElectionEntity entity=new ElectionEntity(3,"state election","maharashtra","mumbai","12-02-2021");
+		ElectionEntity entity=new ElectionEntity(4,"state election","maharashtra","mumbai","12-02-2021");
 		
 			
 				electionController.addElection(entity);
@@ -48,14 +45,19 @@ public class ElectionAdministratorServiceTest {
 	}
 	
 	
-	
+	@Test
+	public void testItemSearchSuccess() throws RecordNotFoundException {
+		logger.info("[START] testItemSearchSuccess()");
+		assertNotNull("Item Found", electionController.findItemById(1));
+		logger.info("[END] testItemSearchSuccess()");
+	}
 	
 	
 	
 	@Test(expected = RecordNotFoundException.class)
 	public void testItemSearchFailed() throws RecordNotFoundException{
 		logger.info("[START] testItemSearchFailed()");
-		electionController.findItemById(2);
+		electionController.findItemById(-2);
 		logger.info("[END] testItemSearchFailed()");
 	}
 	
