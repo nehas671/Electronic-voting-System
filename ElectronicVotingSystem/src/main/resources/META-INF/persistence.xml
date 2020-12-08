@@ -8,8 +8,10 @@
 
 	<persistence-unit name="VotingAppPU">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.cg.shoppingapp.entity.CandidateEntity</class>
-		<class>com.cg.shoppingapp.entity.PartyEntity</class>
+		<class>com.cg.votingapp.entity.CandidateEntity</class>
+		<class>com.cg.votingapp.entity.PartyEntity</class>
+		<class>com.cg.votingapp.dto.Party</class>
+		<class>com.cg.votingapp.dto.Candidate</class>
 		<properties>
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/contact" />
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />

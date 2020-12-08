@@ -16,7 +16,6 @@ import javax.persistence.Table;
 @Table(name="party")
 public class PartyEntity {
 	@Id
-	@GeneratedValue
 	@Column(name="party_name")
 	private String party_name;
 	
