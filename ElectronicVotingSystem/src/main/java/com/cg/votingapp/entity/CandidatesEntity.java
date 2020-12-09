@@ -33,9 +33,10 @@ public class CandidatesEntity
 	@Column(name="vote_count")
 	private int vote_count;
 	
+
 	//Many-to-one relation between Candidate and Party
 	@ManyToOne(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
-	@JoinColumn(name="party_name")
+	@JoinColumn(name="party_name", insertable=false , updatable=false)
 	private PartysEntity party;
 
 	//Default Constructor

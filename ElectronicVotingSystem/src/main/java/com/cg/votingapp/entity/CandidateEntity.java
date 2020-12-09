@@ -35,12 +35,16 @@ public class CandidateEntity {
 	@Column(name="count")
 	private int count;
 	
+	@Column(name="party_name")
+	private String party_name;
+	
+	
 	/*
 	 * Creating many to one relation with party
 	 */
 	
 	@ManyToOne(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
-	@JoinColumn(name="party_name")
+	@JoinColumn(name="party_name" ,insertable=false, updatable=false)
 	private PartyEntity party;
 	
 	/*
