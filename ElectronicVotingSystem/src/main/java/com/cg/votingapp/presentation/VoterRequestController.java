@@ -14,10 +14,10 @@ public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
 	VoterRequestService voterRequestService = new VoterRequestServiceImpl();
 	
-	public VoterRequest addVoterRequest(VoterRequest voterrequest)
+	/*public VoterRequest addVoterRequest(VoterRequest voterrequest)
 	{
 		logger.info("Adding user");
-		Voterrequest v =voterrequestService.addVoterRequest(VoterRequest);
+	//	VoterRequest v =voterRequestService.addVoterRequest(v);
 	    return v;
 	}
 	
@@ -38,7 +38,7 @@ public class VoterRequestController {
 		logger.info("Checking user for name: " + userName);
 		VoterRequest voterRequest = null;
 		try {
-			voterRequest = voterRequestService.checkName(userName);
+			voterRequest = voterRequestService.checkByName(userName);
 		}
 		catch(NullValueFoundException e) {
 			logger.error("NullValueFoundException: " + e);
@@ -58,6 +58,6 @@ public class VoterRequestController {
 			throw new RecordNotFoundException(e.getMessage());
 		}
 		return VoterRequest;
-    }
+    }*/
 
 }

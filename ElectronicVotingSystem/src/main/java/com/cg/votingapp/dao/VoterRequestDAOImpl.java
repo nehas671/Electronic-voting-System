@@ -2,9 +2,16 @@ package com.cg.votingapp.dao;
 
 import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.entity.VoterRequestEntity;
+import com.cg.votingapp.exceptions.NullValueFoundException;
+import com.cg.votingapp.exceptions.RecordNotFoundException;
+
+import java.util.List;
+
+import javax.management.Query;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -24,43 +31,25 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		entityManager.getTransaction().begin();
 		entityManager.merge(entity);
 		entityManager.getTransaction().commit();
-		logger.info("User with Id" + entity.getUser_id()+ "is added");
+		logger.info("User with Id" + entity.getUserId()+ "is added");
 		return entity;
 	}
-	
-	public VoterRequestEntity checkById(int userId) throws NullValueFoundException {
-		VoterRequestEntity voterRequestEntity = entityManager.find(VoterRequestEntity.class, userId);
-		logger.info("Checking user with id: " + voterRequestEntity);
-		if(voterRequestEntity==null)
-			throw new NullValueFoundException("Voter Request Id: " + userId);
-		return voterRequestEntity;
-	}
-	
-	public VoterRequestEntity checkByName(String userName) throws NullValueFoundException {
-		String jpql = "SELECT voterRequest FROM VoterRequestEntity voterRequest where voterRequest.voterRequest_name=:pname";
-		TypedQuery<VoterRequestEntity> query = entityManager.createQuery(jpql, VoterRequestEntity.class);
-		query.setParameter("pname", userName);
-		query.setMaxResults(1);
-		VoterRequestEntity entity = query.getSingleResult();
-		if (entity == null) {
-			throw new NullValueFoundException("Not found");
-		}
-		return entity;
-	}
-	
-	public VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException {
-		VoterRequestEntity entity = entityManager.find(VoterRequestEntity.class, user_id);
-		Query query = entityManager.createQuery("SELECT v from VoterRequestEntity v");
+
+	public VoterRequestEntity viewVoterRequest(String application_status) throws RecordNotFoundException {
+		VoterRequestEntity entity = entityManager.find(VoterRequestEntity.class, application_status);
+		Query query = (Query) entityManager.createQuery("SELECT vr from VoterRequestEntity vr");
 		@SuppressWarnings("unchecked")
-		List<VoterRequestEntity> list = (List<VoterRequestEntity>)query.getResultList();
-	    logger.info("Voter Request List");
-		for(VoterRequestEntity v: list) {
-			System.out.println(v);
+		List<VoterRequestEntity> list = (List<VoterRequestEntity>)((javax.persistence.Query) query).getResultList();
+	    logger.info("Candidate List");
+		for(VoterRequestEntity vr: list) {
+			System.out.println(vr);
 		}
 		if(entity==null)
 		{
-			throw new RecordNotFoundException("User Id"+user_id);
+			throw new RecordNotFoundException("Records not found");
 		}
 		return entity;
 	}
+	
+
 }
