@@ -47,7 +47,7 @@ public class UpdateCandidateDAOImpl implements UpdateCandidateDao {
 		return candidateObj;
 	}
 	
-	public CandidateEntity updateContactDetails(int candidate_id, int contact_details) {
+	public CandidateEntity updateContactDetails(int candidate_id, long contact_details) {
 		entityManager.getTransaction().begin();
 		CandidateEntity candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setContact_details(contact_details);
