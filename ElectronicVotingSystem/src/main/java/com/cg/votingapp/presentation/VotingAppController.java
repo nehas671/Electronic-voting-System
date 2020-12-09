@@ -7,21 +7,24 @@ import com.cg.votingapp.exceptions.CandidateNotFoundException;
 import com.cg.votingapp.service.ElectionServiceCastVote;
 import com.cg.votingapp.service.ElectionServiceCastVoteImpl;
 
-
-
-public class VotingAppController {
-	
+public class VotingAppController
+{	
 	private static Logger logger = LogManager.getLogger(VotingAppController.class.getName());
-	ElectionServiceCastVote electionServices=new ElectionServiceCastVoteImpl();
+	ElectionServiceCastVote electionService=new ElectionServiceCastVoteImpl();
 	
-	public void castVote(int candidateId) throws CandidateNotFoundException {
+	public Boolean castVote(int candidateId) throws CandidateNotFoundException
+	{
+		Boolean voted=false;
 		logger.info("Casting vote");
-		try {
-			electionServices.castVote(candidateId);
+		try
+		{
+			voted=electionService.castVote(candidateId);;
 		}
-		catch(Exception e) {
+		catch(Exception e)
+		{
 			logger.error("CandidateNotFoundException: " + e);
 			throw new CandidateNotFoundException(e.getMessage());
 		}
+		return voted;
 	}
 }

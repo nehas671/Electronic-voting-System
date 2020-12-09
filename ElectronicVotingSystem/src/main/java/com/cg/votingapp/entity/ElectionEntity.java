@@ -2,17 +2,22 @@ package com.cg.votingapp.entity;
 
 
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.service.ElectionServiceImpl;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 
@@ -40,17 +45,12 @@ public class ElectionEntity {
 	@Column(name="date")
 	private String date;
 	
-	
-	
-	
-	
-	
+	/*election to party many to many*/
+	/*@ManyToMany(cascade=CascadeType.ALL)
+	@JoinTable(name="election_party", joinColumns = { @JoinColumn(name = "election_id") }, 
+				inverseJoinColumns = { @JoinColumn(name = "party_name") })
+	private Set<PartyEntity> party=new HashSet<PartyEntity>();*/
 
-	/*@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "election_party", 
-				joinColumns = { @JoinColumn(name = "election_id") }, 
-				inverseJoinColumns = { @JoinColumn(name = "party_Name") })
-	private Set<Party> parties = new HashSet<Party>();*/
 
 	
 	private static Logger logger;
@@ -77,8 +77,6 @@ public class ElectionEntity {
 	public ElectionEntity(String election_name, String state, String constituency, String date) {
 		super();
 		
-		logger = LogManager.getLogger(ElectionServiceImpl.class.getName());
-		logger.info("addddiggg");
 		this.election_name = election_name;
 		this.state = state;
 		this.constituency = constituency;

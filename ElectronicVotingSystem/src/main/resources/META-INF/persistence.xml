@@ -5,17 +5,35 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
              http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
-
+	
 	<persistence-unit name="VotingAppPU">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		<class>com.cg.votingapp.entity.ElectionEntity</class>
-		<class>com.cg.votingapp.dto.Election</class>
 		<class>com.cg.votingapp.entity.CandidateEntity</class>
+		<class>com.cg.votingapp.entity.CandidatesEntity</class>
+		<class>com.cg.votingapp.entity.Election_PartyEntity</class>
+		<class>com.cg.votingapp.entity.ElectionEntity</class>
+		<class>com.cg.votingapp.entity.ElectionPartyEntity</class>
+		<class>com.cg.votingapp.entity.ElectionsEntity</class>
 		<class>com.cg.votingapp.entity.PartyEntity</class>
+<<<<<<< HEAD
+
 		<class>com.cg.votingapp.dto.Party</class>
 		<class>com.cg.votingapp.dto.Candidate</class>
-		<class>com.cg.votingapp.dto.ResultEntity</class>
-		<class>com.cg.votingapp.dto.ElectionPartyEntity</class>
+		<class>com.cg.votingapp.entity.ScheduleEntity</class>
+
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
+		<class>com.cg.votingapp.entity.PartysEntity</class>
+		<class>com.cg.votingapp.entity.RegisterUser</class>
+		<class>com.cg.votingapp.entity.ResultEntity</class>
+		<class>com.cg.votingapp.entity.ScheduleEntity</class>
+		<class>com.cg.votingapp.entity.VoterIdEntity</class>
+		<class>com.cg.votingapp.entity.VoterRequestEntity</class>
+<<<<<<< HEAD
+		
+
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 		<properties>
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/postgres" />
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />

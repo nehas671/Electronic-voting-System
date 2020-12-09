@@ -12,10 +12,8 @@ public class ElectionUtils {
 		public static Election convertElectionEntityIntoElection(ElectionEntity electionEntity) {
 			return new Election(electionEntity.getElection_id(), electionEntity.getElection_name(), electionEntity.getState(), electionEntity.getConstituency(), electionEntity.getDate());
 		}
-		public static Boolean convertElectionEntityIntoElection(boolean electionEntity) {
-			// TODO Auto-generated method stub
-			return true;
-		}
+		
+		
 		
 	
 }

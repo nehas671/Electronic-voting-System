@@ -16,6 +16,7 @@ import javax.persistence.Table;
 @Table(name="party")
 public class PartyEntity {
 	@Id
+	@GeneratedValue
 	@Column(name="party_name")
 	private String party_name;
 	
@@ -95,3 +96,4 @@ public class PartyEntity {
 		return "PartyEntity [party_name=" + party_name + ", leader=" + leader + ", symbol=" + symbol + "]";
 	}
 }
+

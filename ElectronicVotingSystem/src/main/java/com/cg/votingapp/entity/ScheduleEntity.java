@@ -1,6 +1,7 @@
 package com.cg.votingapp.entity;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -9,15 +10,15 @@ import javax.persistence.Table;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.service.ScheduleServiceImpl;
+import com.cg.votingapp.service.ScheduleServiceImpl;
 
 @Entity
-@Table(name="schedule")
+@Table(name="schedule1")
 public class ScheduleEntity {
 	@Id
-	@GeneratedValue
+/*	@GeneratedValue
 @Column(name="schedule_id")
-private int schedule_id;
+private int schedule_id;*/
 
 @Column(name="date")
 private String date;
@@ -39,7 +40,7 @@ public ScheduleEntity() {
 	super();
 }
 
-public ScheduleEntity(int schedule_id, String date, int election_id, String election_name, String state,
+/*public ScheduleEntity(int schedule_id, String date, int election_id, String election_name, String state,
 		String constituency) {
 	super();
 	
@@ -49,7 +50,7 @@ public ScheduleEntity(int schedule_id, String date, int election_id, String elec
 	this.election_name = election_name;
 	this.state = state;
 	this.constituency = constituency;
-}
+}*/
 
 public ScheduleEntity(String date, int election_id, String election_name, String state, String constituency) {
 	super();
@@ -62,13 +63,13 @@ public ScheduleEntity(String date, int election_id, String election_name, String
 	this.constituency = constituency;
 }
 
-public int getSchedule_id() {
+/*public int getSchedule_id() {
 	return schedule_id;
 }
 
 public void setSchedule_id(int schedule_id) {
 	this.schedule_id = schedule_id;
-}
+}*/
 
 public String getDate() {
 	return date;
@@ -112,8 +113,7 @@ public void setConstituency(String constituency) {
 
 @Override
 public String toString() {
-	return "ScheduleEntity [schedule_id=" + schedule_id + ", date=" + date + ", election_id=" + election_id
-			+ ", election_name=" + election_name + ", state=" + state + ", constituency=" + constituency + "]";
+	return "ScheduleEntity [ date=" + date + ", election_id=" + election_id+ ", election_name=" + election_name + ", state=" + state + ", constituency=" + constituency + "]";
 }
 
 

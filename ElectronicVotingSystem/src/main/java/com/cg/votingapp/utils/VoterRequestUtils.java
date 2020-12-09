@@ -1,4 +1,4 @@
-package com.cg.VotingApp.utils;
+package com.cg.votingapp.utils;
 
 public class VoterRequestUtils {
 
