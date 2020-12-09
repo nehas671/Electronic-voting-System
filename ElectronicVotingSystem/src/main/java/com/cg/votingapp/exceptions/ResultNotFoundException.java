@@ -1,22 +1,22 @@
 package com.cg.votingapp.exceptions;
 
-public class ResultNotFoundException extends Exception {
-
-	
+public class ResultNotFoundException extends Exception     //Custom Exception ResultNotFoundException class
+{	
 	private String message;
-	
-	public ResultNotFoundException() {
+	public ResultNotFoundException() 
+	{
 		this.message = "";
 	}
-	public ResultNotFoundException(String message) {
+	public ResultNotFoundException(String message)
+	{
 		this.message = message;
 	}
 	@Override
-	public String toString() {
+	public String toString() 
+	{
 		return "Result not found " + this.message;
 	}
-	
-	}
+}
 
 	
 	
