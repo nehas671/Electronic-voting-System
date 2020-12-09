@@ -3,7 +3,6 @@ package com.cg.votingapp.entity;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,11 +32,17 @@ public class ElectionsEntity
 	@Column(name="date")
 	private Date date;
 	
+	/*
+	 * Election to Party Many to Many
+	 * */
 	@ManyToMany(cascade=CascadeType.ALL)
 	@JoinTable(name="election_party", joinColumns = { @JoinColumn(name = "election_id") }, 
 				inverseJoinColumns = { @JoinColumn(name = "party_name") })
 	private Set<PartysEntity> party=new HashSet<PartysEntity>();
 
+	
+	//Constructors
+	
 	public ElectionsEntity()
 	{
 		super();
@@ -74,6 +79,11 @@ public class ElectionsEntity
 		this.constituency = constituency;
 		this.date = date;
 	}
+	
+	
+	/*
+	 *Getter and Setters 
+	 * */
 
 	public int getElectionId()
 	{

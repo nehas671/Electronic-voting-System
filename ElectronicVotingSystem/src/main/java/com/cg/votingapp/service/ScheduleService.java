@@ -15,9 +15,9 @@ import com.cg.votingapp.exceptions.ScheduleNotFound;
 
 public interface ScheduleService {
 
-	void addSchedule();
+	boolean addSchedule();
 
-	 void viewSchedule();
+	 boolean viewSchedule();
 	// Schedule viewScheduleById(int election_id) throws ScheduleNotFound;
 	
 }

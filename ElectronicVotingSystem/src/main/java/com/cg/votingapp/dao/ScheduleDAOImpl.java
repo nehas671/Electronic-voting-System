@@ -31,7 +31,7 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	}
 	
 	
-	public void addSchedule() {
+	public boolean addSchedule() {
 		// TODO Auto-generated method stub
 		logger.info("Schedule data start");
 	/*	entityManager.getTransaction().begin();
@@ -58,12 +58,14 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 			
 		}
 		logger.info("Schedule data inserted successfully");
+		return true;
+		
 		
 	}
 
 
 
-	public void viewSchedule() {
+	public boolean viewSchedule() {
 		//Query query=entityManager.createQuery("SELECT DISTINCT s.schedule_id,s.date,s.election_id,s.election_name,s.state,s.constituency FROM ScheduleEntity s order by s.date,s.election_id");
 		Query query=entityManager.createQuery("SELECT DISTINCT s FROM ScheduleEntity s ORDER BY s.date");
 
@@ -73,6 +75,7 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 			
 			logger.info("Election Schedule:    "+schedule);
 		}
+		return true;
 		
 	}
 

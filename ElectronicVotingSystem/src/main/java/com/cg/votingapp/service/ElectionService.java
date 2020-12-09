@@ -15,13 +15,13 @@ import com.cg.votingapp.exceptions.RecordNotFoundException;
 
 
 public interface ElectionService {
-	void addElection(ElectionEntity entity) throws  InvalidStateException, RecordNotFoundException;
+	void addElection(ElectionEntity entity) throws  InvalidStateException, RecordNotFoundException, NullValueFoundException;
 	
 	
 	Election findById(int itemId) throws RecordNotFoundException;
 
 
-	Boolean viewElection();
+	Boolean viewElection() throws RecordNotFoundException;
 
 
 	Boolean viewElectionById(int election_id) throws NullValueFoundException;

@@ -38,7 +38,10 @@ public class PartysEntity
 	
 	
 	
-	/*------ Party to candidate One to Many ---*/
+	/*
+	 *  Party to candidate One to Many 
+	 */
+	
 	@OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REMOVE}, fetch=FetchType.LAZY, mappedBy="party")
 	private Set<CandidatesEntity> candidate;
 

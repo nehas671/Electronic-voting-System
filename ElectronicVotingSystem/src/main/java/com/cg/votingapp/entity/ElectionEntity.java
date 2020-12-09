@@ -4,23 +4,14 @@ package com.cg.votingapp.entity;
 
 import java.util.HashSet;
 import java.util.Set;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import com.cg.votingapp.service.ElectionServiceImpl;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-
-
 
 
 
@@ -42,9 +33,6 @@ public class ElectionEntity {
 	private String constituency;
 	
 	
-
-
-
 	@Column(name="date")
 	private String date;
 	
@@ -87,10 +75,6 @@ public class ElectionEntity {
 		this.date = date;
 		
 	}
-
-	
-	
-
 	
 	/*
 	 * Getter and Setter

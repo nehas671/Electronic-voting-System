@@ -2,7 +2,6 @@ package com.cg.votingapp.presentation;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import com.cg.votingapp.dto.Election;
 import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.exceptions.InvalidStateException;
@@ -18,8 +17,8 @@ public class ElectionController {
 	private static Logger logger = LogManager.getLogger(ElectionController.class.getName());
 	ElectionService electionService = new ElectionServiceImpl();
 	
-	public void addElection(ElectionEntity entity ) throws  InvalidStateException, RecordNotFoundException {
-		logger.info("Inserting election for id: " + entity.getElection_id());
+	public void addElection(ElectionEntity entity ) throws  InvalidStateException,  NullValueFoundException, RecordNotFoundException{
+		logger.info("Adding Election for id: " + entity.getElection_id());
 		 
 		try {
 			electionService.addElection(entity);
@@ -28,16 +27,17 @@ public class ElectionController {
 			logger.error("InvalidNotFoundException: " + e);
 			throw new InvalidStateException(e.getMessage());
 		}
-		catch(RecordNotFoundException e) {
+		catch(NullValueFoundException e) {
 			logger.error("InvalidNotFoundException: " + e);
-			throw new  RecordNotFoundException(e.getMessage());
+			throw new  NullValueFoundException(e.getMessage());
 		}
 		
 		
 	}
 	
 	
-	public Election findItemById(int itemId) throws RecordNotFoundException {
+	public Election findItemById(int itemId) throws RecordNotFoundException
+	{
 		logger.info("Finding item for id: " + itemId);
 		Election election = null;
 		try {
@@ -51,7 +51,8 @@ public class ElectionController {
 	}
 	
 	
-	public Boolean viewElection() throws RecordNotFoundException{
+	public Boolean viewElection() throws RecordNotFoundException
+	{
 		
 		Boolean viewelection = null;
 		try {
@@ -63,23 +64,21 @@ public class ElectionController {
 		}
 		return viewelection;
 		
-		
-		
 	}
 
 
-	public Boolean  viewElectionById(int election_id) throws  NullValueFoundException {
+	public Boolean  viewElectionById(int election_id) throws  NullValueFoundException 
+	{
 		
-		logger.info("Finding election for id: " + election_id);
+		logger.info("Finding election By id: " + election_id);
 		Boolean election = null;
 		try {
 			election = electionService.viewElectionById(election_id);
 		}
 		catch(Exception e) {
-			logger.error("ItemNotFoundException: " + e);
+			logger.error("NullValueFoundException: " + e);
 			throw new NullValueFoundException(e.getMessage());
 		}
-		return election;
-		
+		return election;	
 	}
 }

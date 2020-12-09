@@ -22,18 +22,21 @@ public class ScheduleServiceImpl implements ScheduleService {
 	private static Logger logger;
 
 	ScheduleDAO scheduleDAO = new ScheduleDAOImpl();
-	public void addSchedule() {
+	public boolean addSchedule() {
+		boolean s=false;
 		logger = LogManager.getLogger(ScheduleServiceImpl.class.getName());
 		logger.info("adding data into Schedule");
 
-		scheduleDAO.addSchedule();
+		s=scheduleDAO.addSchedule();
+		return s;
 		
 	}
-	public void viewSchedule() {
+	public boolean viewSchedule() {
+		boolean s=false;
 		logger = LogManager.getLogger(ScheduleServiceImpl.class.getName());
 		logger.info("viewing data from Schedule");
-		scheduleDAO.viewSchedule();
-		
+		s=scheduleDAO.viewSchedule();
+		return s;
 	}
 
 	/*public Schedule viewScheduleById(int election_id) throws ScheduleNotFound {

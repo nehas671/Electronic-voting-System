@@ -1,5 +1,6 @@
 package com.cg.votingapp.dao;
 
+import com.cg.votingapp.dto.VoterRequest;
 import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.entity.VoterRequestEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
@@ -35,8 +36,8 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		return entity;
 	}
 
-	public VoterRequestEntity viewVoterRequest(String application_status) throws RecordNotFoundException {
-		VoterRequestEntity entity = entityManager.find(VoterRequestEntity.class, application_status);
+	public VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException {
+		VoterRequestEntity entity = entityManager.find(VoterRequestEntity.class, constituency);
 		Query query = (Query) entityManager.createQuery("SELECT vr from VoterRequestEntity vr");
 		@SuppressWarnings("unchecked")
 		List<VoterRequestEntity> list = (List<VoterRequestEntity>)((javax.persistence.Query) query).getResultList();
@@ -50,6 +51,6 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		}
 		return entity;
 	}
-	
 
-}
+	}
+	
