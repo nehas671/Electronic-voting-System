@@ -30,11 +30,10 @@ ElectionDAO electionDAO = new ElectionDAOImpl();
 public void addElection(ElectionEntity entity) throws  InvalidStateException
 {
 	logger = LogManager.getLogger(ElectionServiceImpl.class.getName());
-	logger.info("addddiggg");
+	
 	
 	 electionDAO.addElection(entity);
-	//logger.info("ElectionEntity: " + Electionentity);
-	//return ElectionUtils.convertElectionEntityIntoElection(Electionentity);
+	
 }
 
 
