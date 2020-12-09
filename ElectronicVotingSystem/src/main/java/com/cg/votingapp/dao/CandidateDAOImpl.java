@@ -10,7 +10,7 @@ import javax.persistence.TypedQuery;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.VotingApp.dto.Candidate;
+
 import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
@@ -79,38 +79,6 @@ public class CandidateDAOImpl implements CandidateDAO {
 			throw new RecordNotFoundException("CandidateId"+candidate_id);
 		}
 		return entity;
-	}
-	
-	public CandidateEntity updateCandidateName(String candidate_id, String candidate_name) throws NullValueFoundException {
-		entityManager.getTransaction().begin();
-		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
-		candidateObj.setCandidate_name(candidate_name);
-		entityManager.getTransaction().commit();
-		System.out.println("Contact updated succssfully!!");
-	}
-	
-	public CandidateEntity updateAddress(String candidate_id, String address) throws NullValueFoundException {
-		entityManager.getTransaction().begin();
-		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
-		candidateObj.setAddress(address);
-		entityManager.getTransaction().commit();
-		System.out.println("Address updated succssfully!!");
-	}
-	
-	public CandidateEntity updateAge(String candidate_id, int age) throws NullValueFoundException {
-		entityManager.getTransaction().begin();
-		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
-		candidateObj.setAge(age);
-		entityManager.getTransaction().commit();
-		System.out.println("Contact updated succssfully!!");
-	}
-	
-	public CandidateEntity updateContactDetails(String candidate_id, int contact_details) {
-		entityManager.getTransaction().begin();
-		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
-		candidateObj.setContactDetails(contact_details);
-		entityManager.getTransaction().commit();
-		System.out.println("Contact updated succssfully!!");
 	}
 }
 
