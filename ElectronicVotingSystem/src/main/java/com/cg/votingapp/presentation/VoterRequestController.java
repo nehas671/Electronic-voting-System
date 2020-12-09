@@ -10,54 +10,54 @@ import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.service.CandidateService;
 import com.cg.votingapp.service.CandidateServiceImpl;
 
-public class CandidateController {
+public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
 	CandidateService candidateService = new CandidateServiceImpl();
 	
-	public Candidate addCandidate(Candidate candidate)
+	public VoterRequest addVoterRequest(VoterRequest voterrequest)
 	{
-		logger.info("Adding Candidate");
-		Candidate c=candidateService.addCandidate(candidate);
-	    return c;
+		logger.info("Adding user");
+		Voterrequest v =voterrequestService.addVoterRequest(VoterRequest);
+	    return v;
 	}
 	
-	public Candidate checkId(int candidateId) throws NullValueFoundException {
-		logger.info("Checking candidate for id: " + candidateId);
-		Candidate candidate = null;
+	public VoterRequest checkId(int userId) throws NullValueFoundException {
+		logger.info("Checking user for id: " + userId);
+		VoterRequest voterRequest = null;
 		try {
-			candidate = candidateService.checkId(candidateId);
+			voterRequest = voterRequestService.checkId(userId);
 		}
 		catch(NullValueFoundException e) {
 			logger.error("NullValueFoundException: " + e);
 			throw new NullValueFoundException(e.getMessage());
 		}
-		return candidate;
+		return voterRequest;
 	}
 	
-	public Candidate checkName(String candidateName) throws NullValueFoundException {
-		logger.info("Checking candidate for name: " + candidateName);
-		Candidate candidate = null;
+	public VoterRequest checkName(String userName) throws NullValueFoundException {
+		logger.info("Checking user for name: " + userName);
+		VoterRequest voterRequest = null;
 		try {
-			candidate = candidateService.checkName(candidateName);
+			voterRequest = voterRequestService.checkName(userName);
 		}
 		catch(NullValueFoundException e) {
 			logger.error("NullValueFoundException: " + e);
 			throw new NullValueFoundException(e.getMessage());
 		}
-		return candidate;
+		return voterRequest;
 	}
 	
-	public Candidate viewCandidate(int candidate_id) throws RecordNotFoundException{
-		logger.info("Viewing Candidate List");
-		Candidate candidate= null;
+	public Candidate viewVoterRequest(int user_id) throws RecordNotFoundException{
+		logger.info("Viewing VoterRequest List");
+		VoterRequest voterRequest= null;
 		try {
-			candidate = candidateService.viewCandidate(candidate_id);
+			voterRequest = voterRequestService.viewVoterRequest(candidate_id);
 		}
 		catch(Exception e) {
 			logger.error("RecordNotFoundException: " + e);
 			throw new RecordNotFoundException(e.getMessage());
 		}
-		return candidate;
+		return VoterRequest;
     }
 
 }
