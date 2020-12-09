@@ -16,14 +16,4 @@ public class RecordNotFoundException extends Exception
 		// TODO Auto-generated constructor stub
 	}
 
-	/*public RecordNotFoundException(Throwable cause) {
-		super(cause);
-		// TODO Auto-generated constructor stub
-	}
-
-	public RecordNotFoundException(String message, Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}*/
-
 }
