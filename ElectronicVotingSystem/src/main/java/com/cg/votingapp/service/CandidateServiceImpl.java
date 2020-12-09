@@ -43,26 +43,26 @@ public class CandidateServiceImpl implements CandidateService {
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 	
-	public Candidate updateCandidateName(String candidate_id, String candidate_name) throws NullValueFoundException {
+	public Candidate updateCandidateName(int candidate_id, String candidate_name) throws NullValueFoundException {
 		CandidateEntity candidateEntity = candidateDAO.updateCandidateName(candidate_id, candidate_name);
 		logger.info("CandidateEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 	
-	public Candidate updateAddress(String candidate_id, String address) throws NullValueFoundException {
+	public Candidate updateAddress(int candidate_id, String address) throws NullValueFoundException {
 		CandidateEntity candidateEntity = candidateDAO.updateAddress(candidate_id, address);
 		logger.info("CandidateEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 	
-	public Candidate updateAge(String candidate_id, int age) throws NullValueFoundException {
+	public Candidate updateAge(int candidate_id, int age) throws NullValueFoundException {
 		CandidateEntity candidateEntity = candidateDAO.updateAge(candidate_id, age);
 		logger.info("CandidateEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 
 	}
 	
-	public Candidate updateContactDetails(String candidate_id, int contact_details) {
+	public Candidate updateContactDetails(int candidate_id, int contact_details) {
 		CandidateEntity candidateEntity = candidateDAO.updateContactDetails(candidate_id, contact_details);
 		logger.info("CandidateEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		

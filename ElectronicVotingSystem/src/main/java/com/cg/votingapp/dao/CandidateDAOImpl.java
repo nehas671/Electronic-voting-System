@@ -81,7 +81,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 		return entity;
 	}
 	
-	public CandidateEntity updateCandidateName(String candidate_id, String candidate_name) throws NullValueFoundException {
+	public CandidateEntity updateCandidateName(int candidate_id, String candidate_name) throws NullValueFoundException {
 		entityManager.getTransaction().begin();
 		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setCandidate_name(candidate_name);
@@ -89,7 +89,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 		System.out.println("Contact updated succssfully!!");
 	}
 	
-	public CandidateEntity updateAddress(String candidate_id, String address) throws NullValueFoundException {
+	public CandidateEntity updateAddress(int candidate_id, String address) throws NullValueFoundException {
 		entityManager.getTransaction().begin();
 		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setAddress(address);
@@ -97,7 +97,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 		System.out.println("Address updated succssfully!!");
 	}
 	
-	public CandidateEntity updateAge(String candidate_id, int age) throws NullValueFoundException {
+	public CandidateEntity updateAge(int candidate_id, int age) throws NullValueFoundException {
 		entityManager.getTransaction().begin();
 		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setAge(age);
@@ -105,7 +105,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 		System.out.println("Contact updated succssfully!!");
 	}
 	
-	public CandidateEntity updateContactDetails(String candidate_id, int contact_details) {
+	public CandidateEntity updateContactDetails(int candidate_id, int contact_details) {
 		entityManager.getTransaction().begin();
 		Candidate candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setContactDetails(contact_details);

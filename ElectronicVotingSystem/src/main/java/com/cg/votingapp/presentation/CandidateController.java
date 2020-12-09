@@ -59,5 +59,60 @@ public class CandidateController {
 		}
 		return candidate;
     }
+	
+	public Candidate updateCandidateName(int candidate_id, String candidate_name) throws RecordNotFoundException{
+		logger.info("Updating Candidate List");
+		Candidate candidate= null;
+		try {
+			candidate = candidateService.updateCandidateName(candidate_id, candidate_name);
+		}
+		catch(Exception e) {
+			logger.error("NullValueFoundException: " + e);
+			throw new NullValueFoundException(e.getMessage());
+		}
+		return candidate;
+    }
+	
+	public Candidate updateAddress(int candidate_id, String address) throws RecordNotFoundException{
+		logger.info("Updating Candidate List");
+		Candidate candidate= null;
+		try {
+			candidate = candidateService.updateAddress(candidate_id, address);
+		}
+		catch(Exception e) {
+			logger.error("NullValueFoundException: " + e);
+			throw new NullValueFoundException(e.getMessage());
+		}
+		return candidate;
+    }
+	
+	public Candidate updateAge(int candidate_id, int age) throws RecordNotFoundException{
+		logger.info("Updating Candidate List");
+		Candidate candidate= null;
+		try {
+			candidate = candidateService.updateAge(candidate_id, age);
+		}
+		catch(Exception e) {
+			logger.error("NullValueFoundException: " + e);
+			throw new NullValueFoundException(e.getMessage());
+		}
+		return candidate;
+    }
+	
+	public Candidate updateContactDetails(int candidate_id, int contact_details) throws RecordNotFoundException{
+		logger.info("Updating Candidate List");
+		Candidate candidate= null;
+		try {
+			candidate = candidateService.updateContactDetails(candidate_id, contact_details);
+		}
+		catch(Exception e) {
+			logger.error("NullValueFoundException: " + e);
+			throw new NullValueFoundException(e.getMessage());
+		}
+		return candidate;
+    }
+
+
+
 
 }
