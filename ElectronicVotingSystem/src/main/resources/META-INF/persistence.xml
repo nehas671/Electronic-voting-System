@@ -15,11 +15,11 @@
 		<class>com.cg.votingapp.entity.ElectionPartyEntity</class>
 		<class>com.cg.votingapp.entity.ElectionsEntity</class>
 		<class>com.cg.votingapp.entity.PartyEntity</class>
-<<<<<<< HEAD
+
 		<class>com.cg.votingapp.dto.Party</class>
 		<class>com.cg.votingapp.dto.Candidate</class>
 		<class>com.cg.votingapp.entity.ScheduleEntity</class>
-=======
+
 		<class>com.cg.votingapp.entity.PartysEntity</class>
 		<class>com.cg.votingapp.entity.RegisterUser</class>
 		<class>com.cg.votingapp.entity.ResultEntity</class>
@@ -27,7 +27,7 @@
 		<class>com.cg.votingapp.entity.VoterIdEntity</class>
 		<class>com.cg.votingapp.entity.VoterRequestEntity</class>
 		
->>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
+
 		<properties>
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/postgres" />
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />

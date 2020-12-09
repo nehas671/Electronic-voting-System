@@ -3,15 +3,15 @@ package com.cg.votingapp.presentation;
 import static org.junit.Assert.assertEquals;
 
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-<<<<<<< HEAD
+
 import com.cg.votingapp.entity.ElectionEntity;
-=======
->>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
+
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 
@@ -28,10 +28,10 @@ public class ScheduleControllerTest {
 		public void addIdSuccess() {
 			logger.info("[START] addScheduleSuccess()");
 
-			ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
+		//	ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 				try {
-					scheduleController.addSchedule(entity);
+					scheduleController.addSchedule();
 				} catch (ScheduleNotFound e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -48,14 +48,22 @@ public class ScheduleControllerTest {
 
 			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
-				
+			try {
 					scheduleController.viewSchedule();
-				
+			}
+			catch (ScheduleNotFound e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
 				
 
-			assertEquals(1,1);
+			//assertEquals(1,1);
 			logger.info("[END] viewScheduleSuccess()");
 		}
+		
+	
 
 
 }

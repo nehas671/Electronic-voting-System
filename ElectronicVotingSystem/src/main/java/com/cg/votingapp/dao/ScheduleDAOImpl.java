@@ -2,6 +2,7 @@ package com.cg.votingapp.dao;
 
 import java.util.List;
 
+
 import javax.persistence.EntityManager;
 
 import javax.persistence.EntityManagerFactory;
@@ -11,11 +12,11 @@ import javax.persistence.Query;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-<<<<<<< HEAD
+
 import com.cg.votingapp.entity.ElectionEntity;
-=======
->>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
+
 import com.cg.votingapp.entity.ScheduleEntity;
+import com.cg.votingapp.exceptions.ScheduleNotFound;
 
 public class ScheduleDAOImpl implements ScheduleDAO{
 
@@ -28,7 +29,7 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	}
 	
 	
-	public void addSchedule(ElectionEntity entity) {
+	public void addSchedule() {
 		// TODO Auto-generated method stub
 		logger.info("Schedule data start");
 	/*	entityManager.getTransaction().begin();
@@ -59,12 +60,27 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	}
 
 
-	@Override
-	public List<ScheduleEntity> viewSchedule() {
-		Query query=entityManager.createQuery("SELECT s FROM ScheduleEntity s ORDER BY s.date,s.schedule_id");
+	public void viewSchedule() {
+		//Query query=entityManager.createQuery("SELECT DISTINCT s.schedule_id,s.date,s.election_id,s.election_name,s.state,s.constituency FROM ScheduleEntity s order by s.date,s.election_id");
+		Query query=entityManager.createQuery("SELECT DISTINCT s FROM ScheduleEntity s ORDER BY s.date");
 		List<ScheduleEntity> se=query.getResultList();
-		return se;
+		
+		for(ScheduleEntity schedule: se) {
+			
+			logger.info("Election Schedule:    "+schedule);
+		}
+		
 	}
+
+
+	/*public ScheduleEntity viewScheduleById(int election_id) throws ScheduleNotFound {
+		ScheduleEntity scheduleEntity = entityManager.find(ScheduleEntity.class, election_id);
+		logger.info("Database returned ScheduleEntity: " + scheduleEntity);
+		if(scheduleEntity==null)
+			throw new ScheduleNotFound("ItemId: " + election_id);
+		return scheduleEntity;
+		
+	}*/
 
 
 	
