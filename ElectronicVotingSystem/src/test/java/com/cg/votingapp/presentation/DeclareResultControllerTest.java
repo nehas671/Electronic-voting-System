@@ -15,6 +15,7 @@ public class DeclareResultControllerTest
 	private static DeclareResultControllerTest declareResultControllerTest;
 	private static Logger logger;
 	
+	
 	@BeforeClass
 	public static void setUp()
 	{
