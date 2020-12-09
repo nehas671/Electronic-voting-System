@@ -12,7 +12,7 @@ import com.cg.votingapp.service.VoterRequestServiceImpl;
 
 public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
-	CandidateService candidateService = new CandidateServiceImpl();
+	VoterRequestService voterRequestService = new VoterRequestServiceImpl();
 	
 	public VoterRequest addVoterRequest(VoterRequest voterrequest)
 	{
@@ -21,7 +21,7 @@ public class VoterRequestController {
 	    return v;
 	}
 	
-	public VoterRequest checkId(int userId) throws NullValueFoundException {
+	public VoterRequest checkById(int userId) throws NullValueFoundException {
 		logger.info("Checking user for id: " + userId);
 		VoterRequest voterRequest = null;
 		try {
@@ -34,7 +34,7 @@ public class VoterRequestController {
 		return voterRequest;
 	}
 	
-	public VoterRequest checkName(String userName) throws NullValueFoundException {
+	public VoterRequest checkByName(String userName) throws NullValueFoundException {
 		logger.info("Checking user for name: " + userName);
 		VoterRequest voterRequest = null;
 		try {
@@ -47,7 +47,7 @@ public class VoterRequestController {
 		return voterRequest;
 	}
 	
-	public Candidate viewVoterRequest(int user_id) throws RecordNotFoundException{
+	public VoterRequest viewVoterRequest(int user_id) throws RecordNotFoundException{
 		logger.info("Viewing VoterRequest List");
 		VoterRequest voterRequest= null;
 		try {

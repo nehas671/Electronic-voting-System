@@ -1,5 +1,14 @@
 package com.cg.votingapp.dao;
 
+import com.cg.votingapp.entity.VoterIdEntity;
+import com.cg.votingapp.entity.VoterRequestEntity;
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class VoterRequestDAOImpl implements VoterRequestDAO {
 	
 	private static Logger logger = LogManager.getLogger(VoterRequestDAOImpl.class.getName());	
@@ -19,7 +28,7 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		return entity;
 	}
 	
-	public VoterRequestEntity checkId(int userId) throws NullValueFoundException {
+	public VoterRequestEntity checkById(int userId) throws NullValueFoundException {
 		VoterRequestEntity voterRequestEntity = entityManager.find(VoterRequestEntity.class, userId);
 		logger.info("Checking user with id: " + voterRequestEntity);
 		if(voterRequestEntity==null)
@@ -27,7 +36,7 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		return voterRequestEntity;
 	}
 	
-	public VoterRequestEntity checkName(String userName) throws NullValueFoundException {
+	public VoterRequestEntity checkByName(String userName) throws NullValueFoundException {
 		String jpql = "SELECT voterRequest FROM VoterRequestEntity voterRequest where voterRequest.voterRequest_name=:pname";
 		TypedQuery<VoterRequestEntity> query = entityManager.createQuery(jpql, VoterRequestEntity.class);
 		query.setParameter("pname", userName);
