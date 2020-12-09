@@ -1,8 +1,7 @@
 package com.cg.votingapp.presentation;
 
 import static org.junit.Assert.assertEquals;
-
-
+import static org.junit.Assert.assertNotNull;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -25,42 +24,28 @@ public class ScheduleControllerTest {
 		scheduleController = new ScheduleController();
 	}
 		@Test
-		public void addSuccess() {
+		public void addSuccess() throws ScheduleNotFound {
 			logger.info("[START] addScheduleSuccess()");
-				try {
-					scheduleController.addSchedule();
-				} catch (ScheduleNotFound e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-					assertEquals(1,1);
+			assertEquals(true,scheduleController.addSchedule());
 			logger.info("[END] addScheduleSuccess()");
 		}
 		
 		@Test
-		public void viewSuccess() {
+		public void viewSuccess() throws ScheduleNotFound {
 			logger.info("[START] viewScheduleSuccess()");
-
-			try {
-					scheduleController.viewSchedule();
-			}
-			catch (ScheduleNotFound e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			//assertEquals(1,1);
+			scheduleController.viewSchedule();
+			assertEquals(true,scheduleController.viewSchedule());
 			logger.info("[END] viewScheduleSuccess()");
 		}
 		
-		/*@Test
+	/*	@Test
 		public void viewIdSuccess() {
 			logger.info("[START] viewIdScheduleSuccess()");
 
 			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 			try {
-					scheduleController.viewScheduleById(102);
+					assertNotNull(scheduleController.viewScheduleById(102));
 			}
 			catch (ScheduleNotFound e) {
 				// TODO Auto-generated catch block
@@ -71,7 +56,7 @@ public class ScheduleControllerTest {
 				
 
 			//assertEquals(1,1);
-			logger.info("[END] viewScheduleSuccess()");
+			logger.info("[END] viewIdScheduleSuccess()");
 		}*/
 
 		

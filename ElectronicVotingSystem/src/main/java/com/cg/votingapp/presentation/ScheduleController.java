@@ -19,28 +19,30 @@ public class ScheduleController {
 	private static Logger logger = LogManager.getLogger(ScheduleController.class.getName());
 	ScheduleService scheduleService = new ScheduleServiceImpl();
 	
-	public void addSchedule()  throws ScheduleNotFound {
+	public boolean addSchedule()  throws ScheduleNotFound {
 		//logger.info("Inserting schedule for id: " + entity.getElection_id());
-
+		boolean s=false;
 		try {
-			scheduleService.addSchedule();
+			s=scheduleService.addSchedule();
 		}
 		catch(Exception e) {
 			logger.error("ScheduleNotFoundException: " + e);
 			throw new ScheduleNotFound(e.getMessage());
 		}
-		
+		return s;
 
 	}
-	public void viewSchedule() throws ScheduleNotFound{
+	public boolean viewSchedule() throws ScheduleNotFound{
 		logger.info(" viewing schedule of lection:   ");
+		boolean s=false;
 		try {
-		scheduleService.viewSchedule();
+		s=scheduleService.viewSchedule();
 		}
 		catch(Exception e) {
 			logger.error("ScheduleNotFoundException: " + e);
 			throw new ScheduleNotFound(e.getMessage());
 		}
+		return s;
 		}
 	/*public Schedule viewScheduleById(int election_id) throws ScheduleNotFound{
 	
