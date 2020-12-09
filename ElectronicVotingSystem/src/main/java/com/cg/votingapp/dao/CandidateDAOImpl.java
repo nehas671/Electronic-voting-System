@@ -15,6 +15,7 @@ import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.service.CandidateServiceImpl;
+import com.cg.votingapp.entity.PartyEntity;
 
 import java.util.List;
 
@@ -34,6 +35,8 @@ public class CandidateDAOImpl implements CandidateDAO {
 	 */
 	
 	public CandidateEntity addCandidate(CandidateEntity entity){
+		PartyEntity party =new PartyEntity("BJP", "PM", "Lotus");
+		entity.setParty(party);
 		entityManager.getTransaction().begin();
 		entityManager.merge(entity);
 		entityManager.getTransaction().commit();
@@ -62,17 +65,20 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 
 	
-	public boolean viewCandidate(){
-        entityManager.getTransaction().begin();
-		Query query = entityManager.createQuery("Select c from CandidateEntity c");
+	public CandidateEntity viewCandidate(int candidate_id) throws RecordNotFoundException {
+		CandidateEntity entity = entityManager.find(CandidateEntity.class, candidate_id);
+		Query query = entityManager.createQuery("SELECT c from CandidateEntity c");
 		@SuppressWarnings("unchecked")
-		List<CandidateEntity> list=query.getResultList();
-		entityManager.getTransaction().commit();
-		for(CandidateEntity entity : list)
-		{
-		       logger.info("Candidate is displayed");
+		List<CandidateEntity> list = (List<CandidateEntity>)query.getResultList();
+	    logger.info("Candidate List");
+		for(CandidateEntity c: list) {
+			System.out.println(c);
 		}
-		return true;			
+		if(entity==null)
+		{
+			throw new RecordNotFoundException("CandidateId"+candidate_id);
+		}
+		return entity;
 	}
 }
 

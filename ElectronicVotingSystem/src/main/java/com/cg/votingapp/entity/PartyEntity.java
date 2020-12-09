@@ -1,6 +1,5 @@
 package com.cg.votingapp.entity;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -9,19 +8,15 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import com.cg.votingapp.dto.Election;
 
 
 @Entity
 @Table(name="party")
 public class PartyEntity {
 	@Id
+	@GeneratedValue
 	@Column(name="party_name")
 	private String party_name;
 	
@@ -30,13 +25,6 @@ public class PartyEntity {
 	
 	@Column(name="symbol")
 	private String symbol;
-	
-	/*@ManyToMany(cascade = CascadeType.ALL)
-	@JoinTable(name = "student_course", 
-				joinColumns = { @JoinColumn(name = "party_id") }, 
-				inverseJoinColumns = { @JoinColumn(name = "election_id") })
-	private Set<Election> students = new HashSet<Election>();*/
-
 	
 	/*
 	 * Creating one to many relation with party
@@ -108,3 +96,4 @@ public class PartyEntity {
 		return "PartyEntity [party_name=" + party_name + ", leader=" + leader + ", symbol=" + symbol + "]";
 	}
 }
+

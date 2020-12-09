@@ -10,7 +10,7 @@ import com.cg.votingapp.dto.Candidate;
 import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
-import com.cg.votingapp.presentation.VotingAppAdministratorService;
+import com.cg.votingapp.presentation.CandidateController;
 import com.cg.votingapp.utils.VotingAppUtils;
 
 public class CandidateServiceImpl implements CandidateService {
@@ -35,6 +35,12 @@ public class CandidateServiceImpl implements CandidateService {
 		CandidateEntity candidateEntity = candidateDAO.checkName(candidateName);
 		logger.info("ItemEntity: " + candidateEntity);
 		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);
+	}
+	
+	public Candidate viewCandidate(int candidate_id) throws RecordNotFoundException{
+		CandidateEntity candidateEntity = candidateDAO.viewCandidate(candidate_id);
+		logger.info("CandidateEntity: " + candidateEntity);
+		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 
 }
