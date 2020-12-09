@@ -44,7 +44,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 	
 	/*
-	 * This method check Id of  entity is not null in Candidate table
+	 * This method check Id   entity is not null in Candidate table
 	 */
 	
 	public CandidateEntity checkId(int candidateId) throws NullValueFoundException {
@@ -56,7 +56,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 	
 	/*
-	 * This method check name of  entity is not null in candidate table
+	 * This method check name   entity is not null in candidate table
 	 */
 	
 	public CandidateEntity checkName(String candidateName) throws NullValueFoundException {

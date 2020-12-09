@@ -34,7 +34,7 @@ public class PartyEntity {
 	private Set<CandidateEntity> candidate;
 	
 	/*
-	 * Constructor for class CandidateEntity
+	 * Constructor for class PartyEntity
 	 */
 	
 	public PartyEntity() {}
@@ -91,6 +91,9 @@ public class PartyEntity {
 	}
 	
 
+	/*
+	 * ToString method for above variables 
+	 */
 	@Override
 	public String toString() {
 		return "PartyEntity [party_name=" + party_name + ", leader=" + leader + ", symbol=" + symbol + "]";

@@ -9,7 +9,7 @@ import com.cg.votingapp.dao.UpdateCandidateDao;
 import com.cg.votingapp.dto.Candidate;
 import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
-import com.cg.votingapp.utils.VotingAppUtils;
+import com.cg.votingapp.utils.CandidateUtils;
 
 public class UpdateCandiateServiceImpl implements UpdateCandidateService{
 	
@@ -20,25 +20,25 @@ public class UpdateCandiateServiceImpl implements UpdateCandidateService{
 	public Candidate updateCandidateName(int candidate_id, String candidate_name) throws NullValueFoundException {
 		CandidateEntity candidateEntity = updateCandidateDao.updateCandidateName(candidate_id, candidate_name);
 		logger.info("CandidateEntity: " + candidateEntity);
-		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
+		return CandidateUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 	
 	public Candidate updateAddress(int candidate_id, String address) throws NullValueFoundException {
 		CandidateEntity candidateEntity = updateCandidateDao.updateAddress(candidate_id, address);
 		logger.info("CandidateEntity: " + candidateEntity);
-		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
+		return CandidateUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 	
 	public Candidate updateAge(int candidate_id, int age) throws NullValueFoundException {
 		CandidateEntity candidateEntity = updateCandidateDao.updateAge(candidate_id, age);
 		logger.info("CandidateEntity: " + candidateEntity);
-		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
+		return CandidateUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 
 	}
 	
 	public Candidate updateContactDetails(int candidate_id, int contact_details) {
 		CandidateEntity candidateEntity = updateCandidateDao.updateContactDetails(candidate_id, contact_details);
 		logger.info("CandidateEntity: " + candidateEntity);
-		return VotingAppUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
+		return CandidateUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
 	}
 }
