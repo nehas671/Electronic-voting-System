@@ -16,4 +16,5 @@ public class ResultUtils
 		{
 				return new Result(resultEntity.getResult_id(),resultEntity.getElection_id(),resultEntity.getState(),resultEntity.getDate(),resultEntity.getCandidate_id(),resultEntity.getCandidate_name(),resultEntity.getParty_name(),resultEntity.getVotes());
 		}
+//}
 }
