@@ -16,8 +16,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="party")
-public class PartysEntity {
-	
+public class PartysEntity
+{	
 	@Id
 	@Column(name="party_name")
 	private String party_name;
@@ -36,11 +36,13 @@ public class PartysEntity {
 	@OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REMOVE}, fetch=FetchType.LAZY, mappedBy="party")
 	private Set<CandidatesEntity> candidate;
 
-	public PartysEntity() {
+	public PartysEntity()
+	{
 		super();
 	}
 
-	public PartysEntity(String party_name, String leader, String symbol) {
+	public PartysEntity(String party_name, String leader, String symbol)
+	{
 		super();
 		this.party_name = party_name;
 		this.leader = leader;
@@ -48,7 +50,8 @@ public class PartysEntity {
 	}
 
 	public PartysEntity(String party_name, String leader, String symbol, Set<ElectionsEntity> election,
-			Set<CandidatesEntity> candidate) {
+			Set<CandidatesEntity> candidate)
+	{
 		super();
 		this.party_name = party_name;
 		this.leader = leader;
@@ -57,50 +60,60 @@ public class PartysEntity {
 		this.candidate = candidate;
 	}
 
-	public String getParty_name() {
+	public String getParty_name()
+	{
 		return party_name;
 	}
 
-	public void setParty_name(String party_name) {
+	public void setParty_name(String party_name)
+	{
 		this.party_name = party_name;
 	}
 
-	public String getLeader() {
+	public String getLeader()
+	{
 		return leader;
 	}
 
-	public void setLeader(String leader) {
+	public void setLeader(String leader)
+	{
 		this.leader = leader;
 	}
 
-	public String getSymbol() {
+	public String getSymbol()
+	{
 		return symbol;
 	}
 
-	public void setSymbol(String symbol) {
+	public void setSymbol(String symbol)
+	{
 		this.symbol = symbol;
 	}
 
-	public Set<ElectionsEntity> getElection() {
+	public Set<ElectionsEntity> getElection()
+	{
 		return election;
 	}
 
-	public void setElection(Set<ElectionsEntity> election) {
+	public void setElection(Set<ElectionsEntity> election)
+	{
 		this.election = election;
 	}
 
-	public Set<CandidatesEntity> getCandidate() {
+	public Set<CandidatesEntity> getCandidate()
+	{
 		return candidate;
 	}
 
-	public void setCandidate(Set<CandidatesEntity> candidate) {
+	public void setCandidate(Set<CandidatesEntity> candidate)
+	{
 		this.candidate = candidate;
 	}
 
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "PartyEntity [party_name=" + party_name + ", leader=" + leader + ", symbol=" + symbol + ", election="
 				+ election + ", candidate=" + candidate + "]";
 	}
-	
 }

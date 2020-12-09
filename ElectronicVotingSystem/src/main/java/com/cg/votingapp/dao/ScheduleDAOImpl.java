@@ -11,10 +11,16 @@ import javax.persistence.Query;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ElectionEntity;
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 
@@ -60,9 +66,14 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	}
 
 
+<<<<<<< HEAD
 	public void viewSchedule() {
 		//Query query=entityManager.createQuery("SELECT DISTINCT s.schedule_id,s.date,s.election_id,s.election_name,s.state,s.constituency FROM ScheduleEntity s order by s.date,s.election_id");
 		Query query=entityManager.createQuery("SELECT DISTINCT s FROM ScheduleEntity s ORDER BY s.date");
+=======
+	public List<ScheduleEntity> viewSchedule() {
+		Query query=entityManager.createQuery("SELECT s FROM ScheduleEntity s ORDER BY s.date,s.schedule_id");
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 		List<ScheduleEntity> se=query.getResultList();
 		
 		for(ScheduleEntity schedule: se) {

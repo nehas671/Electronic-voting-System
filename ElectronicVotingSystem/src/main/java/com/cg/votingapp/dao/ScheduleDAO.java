@@ -1,10 +1,16 @@
 package com.cg.votingapp.dao;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import java.util.List;
 
 import com.cg.votingapp.entity.ElectionEntity;
+<<<<<<< HEAD
 
+=======
+>>>>>>> branch 'master' of https://github.com/nehas671/Electronic-voting-System
 import com.cg.votingapp.entity.ScheduleEntity;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 

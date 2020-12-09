@@ -17,7 +17,6 @@ import javax.persistence.Table;
 public class CandidateEntity {
 	
 	@Id
-	@GeneratedValue
 	@Column(name="candidate_id")
 	private int candidate_id;
 
@@ -31,7 +30,7 @@ public class CandidateEntity {
 	private int age;
 	
 	@Column(name="contact_number")
-	private int contact_details;
+	private long contact_number;
 	
 	@Column(name="count")
 	private int count;
@@ -50,21 +49,23 @@ public class CandidateEntity {
 	
 	public CandidateEntity() {}
 	
-	public CandidateEntity(String candidate_name, String address, int age, int contact_details, int count) {
+	public CandidateEntity(int candidate_id, String candidate_name, String address, int age, long contact_number, int count) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
-		this.contact_details = contact_details;
+		this.contact_number = contact_number;
 		this.count=count;
 	}
 	
-	public CandidateEntity(String candidate_name, String address, int age, int contact_details, int count, PartyEntity party) {
+	public CandidateEntity(int candidate_id, String candidate_name, String address, int age, long contact_number, int count, PartyEntity party) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
-		this.contact_details = contact_details;
+		this.contact_number = contact_number;
 		this.count=count;
 		this.party = party;
 	}
@@ -105,12 +106,12 @@ public class CandidateEntity {
 		this.age = age;
 	}
 
-	public int getContact_details() {
-		return contact_details;
+	public long getContact_number() {
+		return contact_number;
 	}
 
-	public void setContact_details(int contact_details) {
-		this.contact_details = contact_details;
+	public void setContact_details(long contact_number) {
+		this.contact_number = contact_number;
 	}
 	
 	public int getCount() {
@@ -136,7 +137,7 @@ public class CandidateEntity {
 	@Override
 	public String toString() {
 		return "CandidateEntity [candidate_id=" + candidate_id + ", candidate_name=" + candidate_name + ", address="
-				+ address + ", age=" + age + ", contact_details=" + contact_details + ", party=" + party + ", count=" + count + "]";
+				+ address + ", age=" + age + ", contact_details=" + contact_number + ", party=" + party + ", count=" + count + "]";
 	}
 	
 }

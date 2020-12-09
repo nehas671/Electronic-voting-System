@@ -5,7 +5,7 @@ public class Candidate {
 	private String candidate_name;
 	private String address;
 	private int age;
-	private int contact_details;
+	private long contact_number;
 	private int count;
 	private Party party;
 	
@@ -15,21 +15,23 @@ public class Candidate {
 	
 	public Candidate() {}
 	
-	public Candidate(String candidate_name, String address, int age, int contact_details, int count) {
+	public Candidate(int candidate_id, String candidate_name, String address, int age, long contact_number, int count) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
-		this.contact_details = contact_details;
+		this.contact_number = contact_number;
 		this.count=count;
 	}
 	
-	public Candidate(String candidate_name, String address, int age, int contact_details, int count, Party party) {
+	public Candidate(int candidate_id, String candidate_name, String address, int age, long contact_number, int count, Party party) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
-		this.contact_details = contact_details;
+		this.contact_number = contact_number;
 		this.count=count;
 		this.party = party;
 	}
@@ -70,12 +72,12 @@ public class Candidate {
 		this.age = age;
 	}
 
-	public int getContact_details() {
-		return contact_details;
+	public long getContact_number() {
+		return contact_number;
 	}
 
-	public void setContact_details(int contact_details) {
-		this.contact_details = contact_details;
+	public void setContact_details(long contact_number) {
+		this.contact_number = contact_number;
 	}
 	public int getCount() {
 		return count;
@@ -100,7 +102,7 @@ public class Candidate {
 	@Override
 	public String toString() {
 		return "CandidateEntity [candidate_id=" + candidate_id + ", candidate_name=" + candidate_name + ", address="
-				+ address + ", age=" + age + ", contact_details=" + contact_details + ", count=" + count + "]";
+				+ address + ", age=" + age + ", contact_details=" + contact_number + ", count=" + count + "]";
 	}
 	
 }

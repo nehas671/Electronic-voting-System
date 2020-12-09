@@ -7,16 +7,15 @@ import com.cg.votingapp.dao.ElectionCastVoteDAO;
 import com.cg.votingapp.dao.ElectionCastVoteDAOImpl;
 import com.cg.votingapp.exceptions.CandidateNotFoundException;
 
-public class ElectionServiceCastVoteImpl implements ElectionServiceCastVote{
-	
+public class ElectionServiceCastVoteImpl implements ElectionServiceCastVote
+{	
 	private static Logger logger; 
 	ElectionCastVoteDAO electionDao = new ElectionCastVoteDAOImpl();
-	public void castVote(int candidateId) throws CandidateNotFoundException {
-		
+	
+	public Boolean castVote(int candidateId) throws CandidateNotFoundException
+	{	
 		logger = LogManager.getLogger(ElectionServiceCastVoteImpl.class.getName());
 		logger.info("Cast Vote");
-		electionDao.castVote(candidateId);
-		
+		return electionDao.castVote(candidateId);	
 	}
-
 }

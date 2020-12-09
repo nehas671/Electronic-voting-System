@@ -7,6 +7,7 @@ import javax.persistence.Persistence;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.cg.votingapp.exceptions.ReqNotFoundException;
 import com.cg.votingapp.entity.VoterIdEntity;
 
 import com.cg.votingapp.exceptions.UserNotFoundException;
@@ -28,6 +29,13 @@ public class VoterIdDAOImpl implements VoterIdDAO{
 		return VoterIdEntity;
 	}
 
+	public VoterIdEntity findByReqId(int request_id) throws ReqNotFoundException {
+		VoterIdEntity VoterIdEntity = entityManager.find(VoterIdEntity.class, request_id);
+		logger.info("Database returned VoterIdEntity: " + VoterIdEntity);
+		if(VoterIdEntity==null)
+			throw new ReqNotFoundException("Request id: " + request_id);
+		return VoterIdEntity;
+	}
 
 
 }
