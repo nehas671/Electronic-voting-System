@@ -25,20 +25,15 @@ public class ScheduleControllerTest {
 		scheduleController = new ScheduleController();
 	}
 		@Test
-		public void addIdSuccess() {
+		public void addSuccess() {
 			logger.info("[START] addScheduleSuccess()");
-
-		//	ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
-
 				try {
 					scheduleController.addSchedule();
 				} catch (ScheduleNotFound e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				
-
-			assertEquals(1,1);
+					assertEquals(1,1);
 			logger.info("[END] addScheduleSuccess()");
 		}
 		
@@ -46,10 +41,26 @@ public class ScheduleControllerTest {
 		public void viewSuccess() {
 			logger.info("[START] viewScheduleSuccess()");
 
+			try {
+					scheduleController.viewSchedule();
+			}
+			catch (ScheduleNotFound e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			//assertEquals(1,1);
+			logger.info("[END] viewScheduleSuccess()");
+		}
+		
+		/*@Test
+		public void viewIdSuccess() {
+			logger.info("[START] viewIdScheduleSuccess()");
+
 			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 			try {
-					scheduleController.viewSchedule();
+					scheduleController.viewScheduleById(102);
 			}
 			catch (ScheduleNotFound e) {
 				// TODO Auto-generated catch block
@@ -61,7 +72,8 @@ public class ScheduleControllerTest {
 
 			//assertEquals(1,1);
 			logger.info("[END] viewScheduleSuccess()");
-		}
+		}*/
+
 		
 	
 
