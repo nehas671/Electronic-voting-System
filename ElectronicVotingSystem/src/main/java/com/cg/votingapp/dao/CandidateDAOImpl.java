@@ -14,7 +14,6 @@ import org.apache.logging.log4j.Logger;
 import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
-import com.cg.votingapp.service.CandidateServiceImpl;
 import com.cg.votingapp.entity.PartyEntity;
 
 import java.util.List;
@@ -44,6 +43,10 @@ public class CandidateDAOImpl implements CandidateDAO {
 		return entity;
 	}
 	
+	/*
+	 * This method check Id of  entity is not null in Candidate table
+	 */
+	
 	public CandidateEntity checkId(int candidateId) throws NullValueFoundException {
 		CandidateEntity candidateEntity = entityManager.find(CandidateEntity.class, candidateId);
 		logger.info("Checking candidate with id: " + candidateEntity);
@@ -51,6 +54,10 @@ public class CandidateDAOImpl implements CandidateDAO {
 			throw new NullValueFoundException("CandidateId: " + candidateId);
 		return candidateEntity;
 	}
+	
+	/*
+	 * This method check name of  entity is not null in candidate table
+	 */
 	
 	public CandidateEntity checkName(String candidateName) throws NullValueFoundException {
 		String jpql = "SELECT candidate FROM CandidateEntity candidate where candidate.candidate_name=:pname";
@@ -64,6 +71,9 @@ public class CandidateDAOImpl implements CandidateDAO {
 		return entity;
 	}
 
+	/*
+	 * This method display all entity from Candidate table
+	 */
 	
 	public CandidateEntity viewCandidate(int candidate_id) throws RecordNotFoundException {
 		CandidateEntity entity = entityManager.find(CandidateEntity.class, candidate_id);

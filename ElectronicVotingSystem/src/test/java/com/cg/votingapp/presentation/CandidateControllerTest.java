@@ -4,17 +4,12 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.cg.votingapp.dto.Candidate;
-import com.cg.votingapp.dto.Party;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
-import com.cg.votingapp.presentation.CandidateController;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
