@@ -12,12 +12,11 @@ import javax.persistence.Query;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.cg.votingapp.dto.Election;
+
 import com.cg.votingapp.entity.ElectionEntity;
 import com.cg.votingapp.exceptions.InvalidStateException;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
-import com.cg.votingapp.service.ElectionServiceImpl;
 
 
 
@@ -36,7 +35,14 @@ public class ElectionDAOImpl implements ElectionDAO {
 
 	
 	/*---This method Adding Election to Database---*/
-	public void addElection(ElectionEntity entity) throws InvalidStateException ,RecordNotFoundException{
+	
+	public void addElection(ElectionEntity entity) throws InvalidStateException , NullValueFoundException{
+		
+		
+		if(entity==null)
+		{
+			throw new NullValueFoundException(null);
+		}
 		
 		ArrayList<String> statelists = new ArrayList<String>();
 		statelists.addAll(Arrays.asList("AndhraPradesh","ArunachalPradesh","Assam","Chhattisgarh","Goa","Gujarat","Haryana",
@@ -66,9 +72,9 @@ public class ElectionDAOImpl implements ElectionDAO {
 	public ElectionEntity findById(int ElectionId) throws RecordNotFoundException {
 		
 		ElectionEntity electionEntity = entityManager.find(ElectionEntity.class, ElectionId);
-		logger.info("Database returned ItemEntity: " + electionEntity);
+		logger.info("Database returned ElectionEntity: " + electionEntity);
 		if(electionEntity==null)
-			throw new RecordNotFoundException("ItemId: " + ElectionId);
+			throw new RecordNotFoundException("Election_Id: " + ElectionId);
 		return electionEntity ;
 	}
 
@@ -78,14 +84,17 @@ public class ElectionDAOImpl implements ElectionDAO {
 	
 	/*---------View All Election in Database-----------*/
 	
-	public boolean viewElection() {
+	public boolean viewElection() throws RecordNotFoundException {
 	
 		Query query = entityManager.createQuery("SELECT ct from ElectionEntity ct");
-		
+		if(query==null)
+		{
+			throw new RecordNotFoundException();
+		}
 		List<ElectionEntity> ElectionList = query.getResultList();
-		for(ElectionEntity employee: ElectionList) {
+		for(ElectionEntity election: ElectionList) {
 			
-			logger.info("each election"+employee);
+			logger.info("Election "+election);
 		}
 		return true;
 	}
@@ -106,20 +115,6 @@ public class ElectionDAOImpl implements ElectionDAO {
 		
 		return true;
 	}
-	
-	
-
-
-	
-
-	
-	
-	
-
-
-	
-
-
 	
 	
 	

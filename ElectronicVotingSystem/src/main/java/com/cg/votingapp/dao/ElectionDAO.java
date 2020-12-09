@@ -8,11 +8,11 @@ import com.cg.votingapp.exceptions.RecordNotFoundException;
 public interface ElectionDAO {
 
 	
-	public void addElection(ElectionEntity entity) throws  InvalidStateException, RecordNotFoundException;
+	public void addElection(ElectionEntity entity) throws  InvalidStateException, NullValueFoundException;
 	
 	ElectionEntity findById(int ElectionId) throws RecordNotFoundException;
 	
-	boolean viewElection();
+	boolean viewElection() throws RecordNotFoundException;
 	
 	boolean viewElectionById(int election_id) throws  NullValueFoundException;
 }
