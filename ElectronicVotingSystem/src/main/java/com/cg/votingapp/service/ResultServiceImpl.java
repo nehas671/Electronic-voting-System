@@ -28,8 +28,11 @@ public class ResultServiceImpl implements ResultService  //Service Interface imp
 				logger.info("Declaring Result");
 				s=resultDao.declareResult();    //calling declareResult from ResultDaoImpl class 
 				return s;
-				
 		}
+				
+
+
+	
 	
 	public Result findByResultId(int result_id) throws ResultNotFoundException
 		{

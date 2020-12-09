@@ -5,9 +5,9 @@ import java.util.Date;
 public class Result 
 {
 	private int result_id;
-	private String election_id;
+	private int election_id;
 	private String state;
-	private Date date;
+	private String date;
 	private int candidate_id;
 	private String candidate_name;
 	private String party_name;
@@ -16,7 +16,7 @@ public class Result
 	{
 		super();
 	}
-	public Result(int result_id, String election_id, String state, Date date, int candidate_id, String candidate_name,
+	public Result(int result_id, int election_id, String state, String date, int candidate_id, String candidate_name,
 			String party_name, int votes)     //parameterize Constructor
 	{
 		super();
@@ -29,7 +29,7 @@ public class Result
 		this.party_name = party_name;
 		this.votes = votes;
 	}
-	public Result(String election_id, String state, Date date, int candidate_id, String candidate_name,
+	public Result(int election_id, String state, String date, int candidate_id, String candidate_name,
 			String party_name, int votes)   //parameterize Constructor
 	{
 		super();
@@ -50,11 +50,11 @@ public class Result
 	{
 		this.result_id = result_id;
 	}
-	public String getElection_id()
+	public int getElection_id()
 	{
 		return election_id;
 	}
-	public void setElection_id(String election_id)
+	public void setElection_id(int election_id)
 	{
 		this.election_id = election_id;
 	}
@@ -66,11 +66,11 @@ public class Result
 	{
 		this.state = state;
 	}
-	public Date getDate()
+	public String getDate()
 	{
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 	public int getCandidate_id()

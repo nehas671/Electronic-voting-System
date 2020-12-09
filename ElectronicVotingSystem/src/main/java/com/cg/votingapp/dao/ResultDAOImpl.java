@@ -51,9 +51,9 @@ public class ResultDAOImpl  implements ResultDAO
 			List<Object[]> list = query.getResultList();      //Creating Object array
 			for (Object[] obj : list) 
 			{
-				String election_id=(String) obj[0];            //Converting from Object type to Corresponding type of data
+				int election_id=(Integer) obj[0];            //Converting from Object type to Corresponding type of data
 				String state=(String)obj[1];
-				Date date=(Date)obj[2];
+				String date=(String)obj[2];
 				int candidate_id=(Integer)obj[3];
 				String candidate_name=(String)obj[4];
 				String party_name=(String)obj[5];

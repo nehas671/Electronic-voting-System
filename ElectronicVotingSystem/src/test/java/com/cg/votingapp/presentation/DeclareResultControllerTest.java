@@ -44,7 +44,7 @@ public class DeclareResultControllerTest
 	public void testDeclareResultIdSearchSucess() throws ResultNotFoundException	//test NotNull by passing correct ResultId
 	{
 		logger.info("[Start] testDeclareResultIdSearchSucess()");
-		assertNotNull(ResultController.findByResultId(198));
+		assertNotNull(ResultController.findByResultId(332));
 		logger.info("[END] testDeclareResultIdSearchSucess()");
 	
 	}

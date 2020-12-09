@@ -21,13 +21,13 @@ public class ResultEntity
 	private int result_id;
 
 	@Column(name="election_id")
-	private String election_id;
+	private int election_id;
 	
 	@Column(name="state")
 	private String state;
 	
 	@Column(name="date")
-	private Date date;
+	private String date;
 	
 	@Column(name="candidate_id")
 	private int candidate_id;
@@ -47,7 +47,7 @@ public class ResultEntity
 		super();
 	}
 
-	public ResultEntity(String election_id, String state, Date date, int candidate_id, String candidate_name,
+	public ResultEntity(int election_id, String state, String date, int candidate_id, String candidate_name,
 			String party_name, int votes) //Parameterize Constructor
 	{
 		super();
@@ -60,7 +60,7 @@ public class ResultEntity
 		this.votes = votes;
 	}
 
-	public ResultEntity(int result_id, String election_id, String state, Date date, int candidate_id,
+	public ResultEntity(int result_id, int election_id, String state, String date, int candidate_id,
 			String candidate_name, String party_name, int votes) 
 	{
 		super();
@@ -82,11 +82,11 @@ public class ResultEntity
 	{
 		this.result_id = result_id;
 	}
-	public String getElection_id()
+	public int getElection_id()
 	{
 		return election_id;
 	}
-	public void setElection_id(String election_id) 
+	public void setElection_id(int election_id) 
 	{
 		this.election_id = election_id;
 	}
@@ -98,11 +98,11 @@ public class ResultEntity
 	{
 		this.state = state;
 	}
-	public Date getDate()
+	public String getDate()
 	{
 		return date;
 	}
-	public void setDate(Date date)
+	public void setDate(String date)
 	{
 		this.date = date;
 	}
