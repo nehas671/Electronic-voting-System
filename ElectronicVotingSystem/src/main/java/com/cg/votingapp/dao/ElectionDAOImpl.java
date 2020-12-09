@@ -31,17 +31,11 @@ public class ElectionDAOImpl implements ElectionDAO {
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("VotingAppPU");
 		entityManager = entityManagerFactory.createEntityManager();
 		
-		/*String[] statearray = {"Andhra Pradesh","Arunachal Pradesh","Assam","Chhattisgarh","Goa","Gujarat","Haryana",
-				"Himachal Pradesh","Mizoram","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya",
-				"Nagaland","Odisha","Punjab","Rajasthan","Sikkim","TamilNadu","Tripura"};*/
 		
 	}
+
 	
-	
-	
-	
-	
-	
+	/*---This method Adding Election to Database---*/
 	public void addElection(ElectionEntity entity) throws InvalidStateException{
 		
 		ArrayList<String> statelists = new ArrayList<String>();
@@ -65,9 +59,11 @@ public class ElectionDAOImpl implements ElectionDAO {
 		
 	}
 
-
+	
+	
+	/*-----Method finding ElectionEntity by ID----- */
 	public ElectionEntity findById(int ElectionId) throws RecordNotFoundException {
-		// TODO Auto-generated method stub
+		
 		ElectionEntity electionEntity = entityManager.find(ElectionEntity.class, ElectionId);
 		logger.info("Database returned ItemEntity: " + electionEntity);
 		if(electionEntity==null)
@@ -79,7 +75,8 @@ public class ElectionDAOImpl implements ElectionDAO {
 	
 	
 	
-
+	/*---------View All Election in Database-----------*/
+	
 	public boolean viewElection() {
 	
 		Query query = entityManager.createQuery("SELECT ct from ElectionEntity ct");
@@ -92,12 +89,15 @@ public class ElectionDAOImpl implements ElectionDAO {
 		return true;
 	}
 
-
+	
+	
+	
+	/*---------View Election Details By Id---------*/
+	
 	public boolean viewElectionById(int election_id) throws  NullValueFoundException {
 		
+	ElectionEntity electionEntity = entityManager.find(ElectionEntity.class, election_id);
 		
-		ElectionEntity electionEntity = entityManager.find(ElectionEntity.class, election_id);
-		//logger.info("Database returned ItemEntity: " + electionEntity);
 		if(electionEntity==null)
 			throw new NullValueFoundException("Election Id: " + election_id);
 		else
@@ -109,13 +109,7 @@ public class ElectionDAOImpl implements ElectionDAO {
 	
 
 
-	/*@Override
-	public Boolean validateState() {
-		// TODO Auto-generated method stub
-		ArrayList<String> statelist = new ArrayList<String>();
-		return true;
-	}*/
-
+	
 
 	
 	

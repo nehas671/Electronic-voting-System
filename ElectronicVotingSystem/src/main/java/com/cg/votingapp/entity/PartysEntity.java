@@ -28,17 +28,32 @@ public class PartysEntity
 	@Column(name="symbol")
 	private String symbol;
 	
+	
+	/*----Party to Election Many to Many----*/
+	
 	@ManyToMany(cascade=CascadeType.ALL)
 	@JoinTable(name="election_party", joinColumns = { @JoinColumn(name = "party_name") }, 
 				inverseJoinColumns = { @JoinColumn(name = "election_id") })
-	private Set<ElectionsEntity> election=new HashSet<ElectionsEntity>();
+	private Set<ElectionEntity> election=new HashSet<ElectionEntity>();
 	
+	
+	
+	/*------ Party to candidate One to Many ---*/
 	@OneToMany(cascade= {CascadeType.PERSIST, CascadeType.REMOVE}, fetch=FetchType.LAZY, mappedBy="party")
 	private Set<CandidatesEntity> candidate;
 
-	public PartysEntity()
+	
+	public PartysEntity() {
+		super();
+	}
+
+	public PartysEntity(String party_name, String leader, String symbol,Set<ElectionEntity> election)
 	{
 		super();
+		this.party_name = party_name;
+		this.leader = leader;
+		this.symbol = symbol;
+		this.election=election;
 	}
 
 	public PartysEntity(String party_name, String leader, String symbol)
@@ -49,7 +64,7 @@ public class PartysEntity
 		this.symbol = symbol;
 	}
 
-	public PartysEntity(String party_name, String leader, String symbol, Set<ElectionsEntity> election,
+	public PartysEntity(String party_name, String leader, String symbol, Set<ElectionEntity> election,
 			Set<CandidatesEntity> candidate)
 	{
 		super();
@@ -59,6 +74,10 @@ public class PartysEntity
 		this.election = election;
 		this.candidate = candidate;
 	}
+	
+	
+	/*
+	 * Getter and Setters*/
 
 	public String getParty_name()
 	{
@@ -90,12 +109,12 @@ public class PartysEntity
 		this.symbol = symbol;
 	}
 
-	public Set<ElectionsEntity> getElection()
+	public Set<ElectionEntity> getElection()
 	{
 		return election;
 	}
 
-	public void setElection(Set<ElectionsEntity> election)
+	public void setElection(Set<ElectionEntity> election)
 	{
 		this.election = election;
 	}

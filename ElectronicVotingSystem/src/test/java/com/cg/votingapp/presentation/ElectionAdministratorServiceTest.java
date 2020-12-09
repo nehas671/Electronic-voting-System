@@ -4,6 +4,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
@@ -13,16 +16,14 @@ import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
 import com.cg.votingapp.exceptions.InvalidStateException;
 import com.cg.votingapp.entity.ElectionEntity;
-
-
-
+import com.cg.votingapp.entity.PartysEntity;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
 
 
 public class ElectionAdministratorServiceTest {
 
 	private static ElectionController electionController;
-	//private static ElectionServiceImpl electionService;
+	
 	private static Logger logger;
 	
 	@BeforeClass
@@ -36,7 +37,14 @@ public class ElectionAdministratorServiceTest {
 	public void addElectionSuccess() throws RecordNotFoundException, InvalidStateException{
 		logger.info("[START] addElectionSuccess()");
 		
-		ElectionEntity entity=new ElectionEntity(8,"xyz","Maharashtra","nashik","12-02-2021");
+		PartysEntity p2 = new PartysEntity("congress","rahul gandhi","hand");
+		PartysEntity p1 = new PartysEntity("bjp","modiji","lotus");
+	
+		Set<PartysEntity> parties = new HashSet<PartysEntity>();
+		parties.add(p1);
+		parties.add(p2);
+		
+		ElectionEntity entity=new ElectionEntity(10,"xyz","Mizoram","nashik","12-02-2021",parties);
 		
 			
 				electionController.addElection(entity);
@@ -44,14 +52,14 @@ public class ElectionAdministratorServiceTest {
 				
 		
 		assertEquals(electionController.findItemById(id).getElection_id(),id);
-		logger.info("[END] testItemSearchSuccess()");
+		logger.info("[END] addElectionSuccess()");
 	}
 	
 	
 	
 	@Test(expected =InvalidStateException.class)
 	public void addStateFails() throws InvalidStateException, RecordNotFoundException{
-		logger.info("[START] addElectionSuccess()");
+		logger.info("[START] addStateFails()");
 		
 		ElectionEntity entity=new ElectionEntity(9,"xyz","usa","nashik","12-02-2021");
 		
@@ -60,8 +68,8 @@ public class ElectionAdministratorServiceTest {
 				int id = entity.getElection_id();
 				
 		
-		assertNotEquals(1,id);
-		logger.info("[END] testItemSearchSuccess()");
+		assertNotEquals(electionController.findItemById(id),id);
+		logger.info("[END] addStateFails()");
 	}
 	
 	
@@ -96,21 +104,7 @@ public class ElectionAdministratorServiceTest {
 	
 	
 	
-	/*@Test
-	public void testItemSearchSuccess() throws RecordNotFoundException {
-		logger.info("[START] testItemSearchSuccess()");
-		assertNotNull("Item Found", electionController.findItemById(1));
-		logger.info("[END] testItemSearchSuccess()");
-	}
 	
-	
-	
-	@Test(expected = RecordNotFoundException.class)
-	public void testItemSearchFailed() throws RecordNotFoundException{
-		logger.info("[START] testItemSearchFailed()");
-		electionController.findItemById(-2);
-		logger.info("[END] testItemSearchFailed()");
-	}*/
 	
 }
 

@@ -1,8 +1,5 @@
 package com.cg.votingapp.dto;
 
-import java.sql.Date;
-
-import javax.persistence.Column;
 
 public class Election {
 	
@@ -13,9 +10,16 @@ public class Election {
 	private String date;
 	
 	
+	
+	/*
+	 * Constructors for Election
+	  */
+	
 	public Election() {
 		super();
 	}
+	
+	
 	public Election(int election_id, String election_name, String state, String constituency, String date) {
 		super();
 		this.election_id = election_id;
@@ -33,6 +37,14 @@ public class Election {
 		this.constituency = constituency;
 		this.date = date;
 	}
+	
+	
+	/*
+	 * Getter and Setter
+	 * 
+	 */	
+	
+	
 	public int getElection_id() {
 		return election_id;
 	}
@@ -63,6 +75,8 @@ public class Election {
 	public void setDate(String date) {
 		this.date = date;
 	}
+	
+	
 	@Override
 	public String toString() {
 		return "Election [election_id=" + election_id + ", election_name=" + election_name + ", state=" + state
