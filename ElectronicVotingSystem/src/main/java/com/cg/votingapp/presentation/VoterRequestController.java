@@ -14,50 +14,24 @@ public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
 	VoterRequestService voterRequestService = new VoterRequestServiceImpl();
 	
-	/*public VoterRequest addVoterRequest(VoterRequest voterrequest)
+	/*public VoterRequestEntity addVoterRequest(VoterRequest voterrequest)
 	{
 		logger.info("Adding user");
-	//	VoterRequest v =voterRequestService.addVoterRequest(v);
+		VoterRequestEntity v =voterRequestService.addVoterRequest(v);
 	    return v;
-	}
+	}*/
 	
-	public VoterRequest checkById(int userId) throws NullValueFoundException {
-		logger.info("Checking user for id: " + userId);
-		VoterRequest voterRequest = null;
-		try {
-			voterRequest = voterRequestService.checkId(userId);
-		}
-		catch(NullValueFoundException e) {
-			logger.error("NullValueFoundException: " + e);
-			throw new NullValueFoundException(e.getMessage());
-		}
-		return voterRequest;
-	}
-	
-	public VoterRequest checkByName(String userName) throws NullValueFoundException {
-		logger.info("Checking user for name: " + userName);
-		VoterRequest voterRequest = null;
-		try {
-			voterRequest = voterRequestService.checkByName(userName);
-		}
-		catch(NullValueFoundException e) {
-			logger.error("NullValueFoundException: " + e);
-			throw new NullValueFoundException(e.getMessage());
-		}
-		return voterRequest;
-	}
-	
-	public VoterRequest viewVoterRequest(int user_id) throws RecordNotFoundException{
+	public VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException{
 		logger.info("Viewing VoterRequest List");
-		VoterRequest voterRequest= null;
+		VoterRequestEntity voterRequest= null;
 		try {
-			voterRequest = voterRequestService.viewVoterRequest(candidate_id);
+			voterRequest = voterRequestService.viewVoterRequest(constituency);
 		}
 		catch(Exception e) {
 			logger.error("RecordNotFoundException: " + e);
 			throw new RecordNotFoundException(e.getMessage());
 		}
-		return VoterRequest;
-    }*/
+		return voterRequest;
+    }
 
 }

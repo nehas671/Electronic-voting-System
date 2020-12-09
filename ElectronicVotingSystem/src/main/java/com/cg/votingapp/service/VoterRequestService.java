@@ -14,7 +14,5 @@ import org.apache.logging.log4j.Logger;
 public interface VoterRequestService {
 
 	VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity );
-	VoterRequestEntity checkById(int userId) throws NullValueFoundException;
-	VoterRequestEntity checkByName(String userName) throws NullValueFoundException;
-	VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException;;
+	VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException;;
 }

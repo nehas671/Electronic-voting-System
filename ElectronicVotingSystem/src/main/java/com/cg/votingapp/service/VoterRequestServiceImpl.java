@@ -21,65 +21,17 @@ public class VoterRequestServiceImpl implements VoterRequestService {
 	
 	private static Logger logger = LogManager.getLogger(VoterRequestServiceImpl.class.getName());	
 	VoterRequestDAO voterRequestDAO = new VoterRequestDAOImpl();
+	
+	
 	public VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	public VoterRequestEntity checkById(int userId) throws NullValueFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public VoterRequestEntity checkByName(String userName) throws NullValueFoundException {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
+	public VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException {
+		VoterRequestEntity VoterRequestEntity = voterRequestDAO.viewVoterRequest(constituency);
+		logger.info("VoterRequestEntity: " + VoterRequestEntity);
+		return VoterRequestEntity;
 	}
 
-	/*public VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity) {
-		entityManager.getTransaction().begin();
-		entityManager.merge(entity);
-		entityManager.getTransaction().commit();
-		logger.info("User with Id" + entity.getUser_id()+ "is added");
-		return entity;
-	}
-
-	public VoterRequestEntity checkById(int userId) throws NullValueFoundException {
-		VoterRequest voterRequest = voterRequest.find(VoterRequest.class, userId);
-		logger.info("Checking user with id: " + voterRequest);
-		if(voterRequestEntity==null)
-			throw new NullValueFoundException("Voter Request Id: " + userId);
-		return voterRequest;
-	}
-
-	public VoterRequestEntity checkByName(String userName) throws NullValueFoundException {
-		String jpql = "SELECT voterRequest FROM VoterRequestEntity voterRequest where voterRequest.voterRequest_name=:pname";
-		TypedQuery<VoterRequest> query = entityManager.createQuery(jpql, VoterRequest.class);
-		query.setParameter("pname", userName);
-		query.setMaxResults(1);
-		VoterRequest entity = query.getSingleResult();
-		if (entity == null) {
-			throw new NullValueFoundException("Not found");
-		}
-		return entity;
-	}
-
-	public VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException {
-		VoterRequest entity = entityManager.find(VoterRequest.class, user_id);
-		Query query = entityManager.createQuery("SELECT v from VoterRequest v");
-		@SuppressWarnings("unchecked")
-		List<VoterRequest> list = (List<VoterRequest>)query.getResultList();
-	    logger.info("Voter Request List");
-		for(VoterRequest v: list) {
-			System.out.println(v);
-		}
-		if(entity==null)
-		{
-			throw new RecordNotFoundException("User Id"+user_id);
-		}
-		return entity;
-	}*/
 
 }
