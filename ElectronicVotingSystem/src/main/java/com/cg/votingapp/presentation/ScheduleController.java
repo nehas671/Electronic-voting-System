@@ -44,7 +44,7 @@ public class ScheduleController {
 		}
 		return s;
 		}
-	/*public Schedule viewScheduleById(int election_id) throws ScheduleNotFound{
+	public Schedule viewScheduleById(int election_id) throws ScheduleNotFound{
 	
 		logger.info("Finding schedule for id: " + election_id);
 		Schedule schedule=null;
@@ -56,6 +56,18 @@ public class ScheduleController {
 			throw new ScheduleNotFound(e.getMessage());
 		}
 		return schedule;
-	}*/
+	}
+	/* public Schedule viewScheduleByState(String state) throws ScheduleNotFound{
+		 logger.info(" viewing schedule of lection sate wise:   ");
+		 Schedule schedule=null;
+	 try {
+		 scheduleService.viewScheduleByState(state);
+	 }
+	 catch(Exception e) {
+			logger.error("ScheduleNotFoundException: " + e);
+			throw new ScheduleNotFound(e.getMessage());
+		}
+	 return schedule;
+	 }*/
 	
 }

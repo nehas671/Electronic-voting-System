@@ -3,6 +3,7 @@ package com.cg.votingapp.dao;
 import java.util.List;
 
 
+
 import javax.persistence.EntityManager;
 
 import javax.persistence.EntityManagerFactory;
@@ -34,14 +35,7 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 	public boolean addSchedule() {
 		// TODO Auto-generated method stub
 		logger.info("Schedule data start");
-	/*	entityManager.getTransaction().begin();
-		logger.info("Schedule  begin persist");
-		entityManager.merge(entity);
-		logger.info("Election after persist");
-		entityManager.getTransaction().commit();*/
-		
-		
-		
+	
 		ScheduleEntity s=null;
 		Query query=entityManager.createQuery("SELECT e.election_id,e.election_name,e.state,e.constituency,e.date FROM ElectionEntity e");
 		List<Object[]> li=query.getResultList();
@@ -60,8 +54,8 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 		logger.info("Schedule data inserted successfully");
 		return true;
 		
-		
 	}
+	
 
 
 
@@ -79,16 +73,34 @@ public class ScheduleDAOImpl implements ScheduleDAO{
 		
 	}
 
-
-	/*public ScheduleEntity viewScheduleById(int election_id) throws ScheduleNotFound {
+	public ScheduleEntity viewScheduleById(int election_id) throws ScheduleNotFound {
 		ScheduleEntity scheduleEntity = entityManager.find(ScheduleEntity.class, election_id);
-		logger.info("Database returned ScheduleEntity: " + scheduleEntity);
+		logger.info("Database returned Schedule Entity for id: " + scheduleEntity);
 		if(scheduleEntity==null)
 			throw new ScheduleNotFound("ItemId: " + election_id);
 		return scheduleEntity;
-		
-	}*/
+	}
+
+
 
 
 	
+
+
+
+
+
+
+
+	/*public ScheduleEntity viewScheduleByState(String state) throws ScheduleNotFound {
+		Query query=entityManager.createQuery("SELECT s FROM ScheduleEntity s");
+		
+		List<Object[]> se=query.getResultList();
+		for(Object[] li: se) {
+			if(li[2]==state)
+				logger.info("Election Schedule of:    "+state+" "+li);
+		}
+		return (ScheduleEntity) se;
+	}*/
+
 }

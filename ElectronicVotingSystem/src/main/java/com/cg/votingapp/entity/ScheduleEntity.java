@@ -15,14 +15,14 @@ import com.cg.votingapp.service.ScheduleServiceImpl;
 @Entity
 @Table(name="schedule1")
 public class ScheduleEntity {
-	@Id
+	
 /*	@GeneratedValue
 @Column(name="schedule_id")
 private int schedule_id;*/
 
 @Column(name="date")
 private String date;
-
+@Id
 @Column(name="election_id")
 private int election_id;
 

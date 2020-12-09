@@ -38,8 +38,14 @@ public class ScheduleServiceImpl implements ScheduleService {
 		s=scheduleDAO.viewSchedule();
 		return s;
 	}
+/*	public Schedule viewScheduleByState(String state) throws ScheduleNotFound {
+		logger = LogManager.getLogger(ScheduleServiceImpl.class.getName());
+		logger.info("viewing data from Schedule state wise");
+		ScheduleEntity scheduleEntity=scheduleDAO.viewScheduleByState(state);
+		return ScheduleUtils.convertScheduleEntityIntoSchedule(scheduleEntity);
+	}*/
 
-	/*public Schedule viewScheduleById(int election_id) throws ScheduleNotFound {
+	public Schedule viewScheduleById(int election_id) throws ScheduleNotFound {
 		// TODO Auto-generated method stub
 	
 		logger = LogManager.getLogger(ScheduleServiceImpl.class.getName());
@@ -48,6 +54,6 @@ public class ScheduleServiceImpl implements ScheduleService {
 
 		
 		return ScheduleUtils.convertScheduleEntityIntoSchedule(scheduleEntity);
-	}*/
+	}
 
 }

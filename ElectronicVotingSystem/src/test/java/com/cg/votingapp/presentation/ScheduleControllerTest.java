@@ -12,6 +12,7 @@ import org.junit.Test;
 import com.cg.votingapp.entity.ElectionEntity;
 
 import com.cg.votingapp.entity.ScheduleEntity;
+import com.cg.votingapp.exceptions.ResultNotFoundException;
 import com.cg.votingapp.exceptions.ScheduleNotFound;
 
 public class ScheduleControllerTest {
@@ -33,30 +34,36 @@ public class ScheduleControllerTest {
 		@Test
 		public void viewSuccess() throws ScheduleNotFound {
 			logger.info("[START] viewScheduleSuccess()");
-			scheduleController.viewSchedule();
 			assertEquals(true,scheduleController.viewSchedule());
 			logger.info("[END] viewScheduleSuccess()");
 		}
 		
-	/*	@Test
-		public void viewIdSuccess() {
+		@Test
+		public void viewIdSuccess() throws ScheduleNotFound {
 			logger.info("[START] viewIdScheduleSuccess()");
-
-			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
-
-			try {
-					assertNotNull(scheduleController.viewScheduleById(102));
-			}
-			catch (ScheduleNotFound e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
-			
+					scheduleController.viewScheduleById(102);
 				
-
-			//assertEquals(1,1);
 			logger.info("[END] viewIdScheduleSuccess()");
+		}
+		
+		@Test(expected=ScheduleNotFound.class)   				
+		public void viewIdFailure() throws ScheduleNotFound
+		{
+			logger.info("[Start] testDeclareResultIdSearchFailure()");
+			scheduleController.viewScheduleById(-10);
+			logger.info("[END] estDeclareResultIdSearchFailure()");	
+		}
+		
+		
+		
+		
+		
+		
+	/*	@Test
+		public void viewStateSuccess() throws ScheduleNotFound{
+			logger.info("[START] viewStateScheduleSuccess()");
+			scheduleController.viewScheduleByState("maharashtra");
+			logger.info("[END] viewStateScheduleSuccess()");
 		}*/
 
 		

@@ -4,6 +4,7 @@ package com.cg.votingapp.service;
 
 import java.util.List;
 
+
 import com.cg.votingapp.dto.Schedule;
 
 import com.cg.votingapp.entity.ElectionEntity;
@@ -18,6 +19,7 @@ public interface ScheduleService {
 	boolean addSchedule();
 
 	 boolean viewSchedule();
-	// Schedule viewScheduleById(int election_id) throws ScheduleNotFound;
+	Schedule viewScheduleById(int election_id) throws ScheduleNotFound;
+	// Schedule viewScheduleByState(String state) throws ScheduleNotFound;
 	
 }
