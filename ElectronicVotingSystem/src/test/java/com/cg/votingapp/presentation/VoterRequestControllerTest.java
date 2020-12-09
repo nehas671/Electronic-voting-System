@@ -25,7 +25,7 @@ public class VoterRequestControllerTest {
 	public void CheckByConstituency() throws RecordNotFoundException 
 	{	
 		logger.info("[START] CheckByConstituency()");
-		assertEquals(true,voterRequestController.viewVoterRequest("Ambikapur"));
+		assertEquals(true,voterRequestController.viewVoterRequest("bel"));
 		logger.info("[END] testCastVoteSuccess()");
 	}
 

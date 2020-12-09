@@ -37,19 +37,16 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 	}
 
 	public VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException {
-		VoterRequestEntity entity = entityManager.find(VoterRequestEntity.class, constituency);
-		Query query = (Query) entityManager.createQuery("SELECT vr from VoterRequestEntity vr");
-		@SuppressWarnings("unchecked")
-		List<VoterRequestEntity> list = (List<VoterRequestEntity>)((javax.persistence.Query) query).getResultList();
-	    logger.info("Candidate List");
-		for(VoterRequestEntity vr: list) {
-			System.out.println(vr);
-		}
-		if(entity==null)
-		{
-			throw new RecordNotFoundException("Records not found");
+		String jpql = "SELECT vr FROM VoterRequestEntity vr where vr.constituency=:pname";
+		TypedQuery<VoterRequestEntity> query = entityManager.createQuery(jpql, VoterRequestEntity.class);
+		query.setParameter("pname", constituency);
+		query.setMaxResults(1);
+		VoterRequestEntity entity = query.getSingleResult();
+		if (entity == null) {
+			throw new RecordNotFoundException("faculty not found");
 		}
 		return entity;
+		
 	}
 
 	}
