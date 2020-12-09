@@ -55,7 +55,7 @@ public class UpdateCandidateController {
 		return candidate;
     }
 	
-	public Candidate updateContactDetails(int candidate_id, int contact_details) throws NullValueFoundException{
+	public Candidate updateContactDetails(int candidate_id, long contact_details) throws NullValueFoundException{
 		logger.info("Updating Candidate List");
 		Candidate candidate= null;
 		try {

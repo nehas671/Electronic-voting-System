@@ -36,7 +36,7 @@ public class UpdateCandiateServiceImpl implements UpdateCandidateService{
 
 	}
 	
-	public Candidate updateContactDetails(int candidate_id, int contact_details) {
+	public Candidate updateContactDetails(int candidate_id, long contact_details) throws NullValueFoundException{
 		CandidateEntity candidateEntity = updateCandidateDao.updateContactDetails(candidate_id, contact_details);
 		logger.info("CandidateEntity: " + candidateEntity);
 		return CandidateUtils.convertCandidateEntityIntoCandidate(candidateEntity);		
