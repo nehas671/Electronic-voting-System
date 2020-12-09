@@ -46,8 +46,6 @@ public class ElectionAdministratorServiceTest {
 		
 		
 		ElectionEntity entity=new ElectionEntity(10,"xyz","Mizoram","nashik","12-02-2021",parties);
-		//ElectionEntity entity=new ElectionEntity(8,"xyz","Maharashtra","nashik","12-02-2021");
-			
 				electionController.addElection(entity);
 				int id = entity.getElection_id();
 				
@@ -91,7 +89,7 @@ public class ElectionAdministratorServiceTest {
 	public void viewElectionByIdSuccess() throws  NullValueFoundException{
 		logger.info("[START] viewElectionByIdSuccess()");
 		
-		assertEquals(true,electionController.viewElectionById(3));
+		assertEquals(true,electionController.viewElectionById(10));
 		logger.info("[END] viewElectionByIdSuccess()");
 	}
 	
