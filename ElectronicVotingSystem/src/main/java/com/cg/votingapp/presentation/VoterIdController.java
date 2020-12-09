@@ -13,9 +13,9 @@ public class VoterIdController {
 	private  static Logger logger = LogManager.getLogger(VoterIdController.class.getName());
 	VoterIdService voterIdService = new VoterIdServiceImpl();
 
-	public VoterId findByUserId(int user_id) throws UserNotFoundException {
+	public String findByUserId(int user_id) throws UserNotFoundException {
 		logger.info("Finding voter id for userId: " + user_id);
-		VoterId voterId = null;
+		String voterId = null;
 		try {
 			voterId = voterIdService.findByUserId(user_id);
 		}
@@ -25,9 +25,9 @@ public class VoterIdController {
 		}
 		return voterId;
 	}
-	public VoterId findByreqId(int request_id) throws ReqNotFoundException {
+	public String findByreqId(int request_id) throws ReqNotFoundException {
 		logger.info("Finding voter id for request id : " + request_id);
-		VoterId voterId = null;
+		String voterId = null;
 		try {
 			voterId = voterIdService.findByReqId(request_id);
 		}

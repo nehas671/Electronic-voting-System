@@ -9,7 +9,7 @@ public class Party {
 	private Set<Candidate> candidate;
 	
 	/*
-	 * Constructor for class CandidateEntity
+	 * Constructor for class Party Entity
 	 */
 	
 	public Party() {}
@@ -64,7 +64,9 @@ public class Party {
 	public void setCandidate(Set<Candidate> candidate) {
 		this.candidate = candidate;
 	}
-	
+	/*
+	 * To string method for above variables
+	 */
 
 	@Override
 	public String toString() {

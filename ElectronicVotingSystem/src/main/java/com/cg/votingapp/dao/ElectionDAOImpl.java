@@ -36,7 +36,7 @@ public class ElectionDAOImpl implements ElectionDAO {
 
 	
 	/*---This method Adding Election to Database---*/
-	public void addElection(ElectionEntity entity) throws InvalidStateException{
+	public void addElection(ElectionEntity entity) throws InvalidStateException ,RecordNotFoundException{
 		
 		ArrayList<String> statelists = new ArrayList<String>();
 		statelists.addAll(Arrays.asList("AndhraPradesh","ArunachalPradesh","Assam","Chhattisgarh","Goa","Gujarat","Haryana",
@@ -44,13 +44,14 @@ public class ElectionDAOImpl implements ElectionDAO {
 				"Nagaland","Odisha","Punjab","Rajasthan","Sikkim","TamilNadu","Tripura"));
 		if(statelists.contains(entity.getState()))
 		{
-		
-		entityManager.getTransaction().begin();
-		
-		entityManager.merge(entity);
-		
-		entityManager.getTransaction().commit();
-		logger.info("Election data inserted successfully");
+				
+				entityManager.getTransaction().begin();
+				
+				entityManager.merge(entity);
+				
+				entityManager.getTransaction().commit();
+				logger.info("Election data inserted successfully");
+			
 		
 		}else
 		{

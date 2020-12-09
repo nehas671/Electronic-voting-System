@@ -4,17 +4,12 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.cg.votingapp.dto.Candidate;
-import com.cg.votingapp.dto.Party;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
-import com.cg.votingapp.presentation.CandidateController;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -37,13 +32,13 @@ public class CandidateControllerTest {
 	}
 	
 	@Test
-	public void testICandidateId() throws NullValueFoundException {
+	public void testCandidateIdSuccess() throws NullValueFoundException {
 		
-		logger.info("[START] testICandidateId");
+		logger.info("[START] testCandidateIdSuccess");
 		Candidate cand=new Candidate(222,"Komal","Mumbai", 25, 9188889700L, 0);
 		int id= candidateController.addCandidate(cand).getCandidate_id();
 		assertNotNull("Candidate_Id is not null", candidateController.checkId(id));
-		logger.info("[END] testICandidateId");
+		logger.info("[END] testCandidateIdSuccess");
 	}
 	
 	@Test
