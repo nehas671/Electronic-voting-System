@@ -13,7 +13,7 @@
         <!-- File Appender -->
         <File name="FILE" fileName="${basePath}/voting_app.log" append="true">
         	<PatternLayout pattern="%-5p | %d{yyyy-MM-dd HH:mm:ss} | [%t] %C{2} (%F:%L) - %m%n" />
-		</File>    
+		</File>
     </Appenders>
     
     <Loggers>

@@ -18,16 +18,21 @@ public class ElectionController {
 	private static Logger logger = LogManager.getLogger(ElectionController.class.getName());
 	ElectionService electionService = new ElectionServiceImpl();
 	
-	public void addElection(ElectionEntity entity ) throws RecordNotFoundException, InvalidStateException {
+	public void addElection(ElectionEntity entity ) throws  InvalidStateException, RecordNotFoundException {
 		logger.info("Inserting election for id: " + entity.getElection_id());
 		 
 		try {
 			electionService.addElection(entity);
 		}
 		catch(InvalidStateException e) {
-			logger.error("ElectionNotFoundException: " + e);
+			logger.error("InvalidNotFoundException: " + e);
 			throw new InvalidStateException(e.getMessage());
 		}
+		catch(RecordNotFoundException e) {
+			logger.error("InvalidNotFoundException: " + e);
+			throw new  RecordNotFoundException(e.getMessage());
+		}
+		
 		
 	}
 	
@@ -64,7 +69,7 @@ public class ElectionController {
 
 
 	public Boolean  viewElectionById(int election_id) throws  NullValueFoundException {
-		// TODO Auto-generated method stub
+		
 		logger.info("Finding election for id: " + election_id);
 		Boolean election = null;
 		try {

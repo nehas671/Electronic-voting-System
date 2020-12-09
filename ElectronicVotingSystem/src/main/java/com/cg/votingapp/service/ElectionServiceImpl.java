@@ -27,7 +27,7 @@ public class ElectionServiceImpl implements ElectionService {
 
 ElectionDAO electionDAO = new ElectionDAOImpl();
 
-public void addElection(ElectionEntity entity) throws  InvalidStateException
+public void addElection(ElectionEntity entity) throws  InvalidStateException,RecordNotFoundException
 {
 	logger = LogManager.getLogger(ElectionServiceImpl.class.getName());
 	
@@ -52,12 +52,8 @@ public Election findById(int ElectionId) throws RecordNotFoundException {
 public Boolean viewElection() {
 	// TODO Auto-generated method stub
 	
-	
-
 	 electionDAO.viewElection();
 		//logger.info("ElectionEntity: " + electionEntity);
-	
-	
 		return true;
 	
 	

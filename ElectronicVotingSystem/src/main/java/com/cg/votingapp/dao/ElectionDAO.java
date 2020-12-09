@@ -12,9 +12,6 @@ public interface ElectionDAO {
 	
 	ElectionEntity findById(int ElectionId) throws RecordNotFoundException;
 	
-	
-	//Boolean validateState(ElectionEntity entity);
-	
 	boolean viewElection();
 	
 	boolean viewElectionById(int election_id) throws  NullValueFoundException;
