@@ -43,7 +43,7 @@ public class UpdateCandidateDAOImpl implements UpdateCandidateDao {
 		CandidateEntity candidateObj = entityManager.find(CandidateEntity.class, candidate_id);	
 		candidateObj.setAge(age);
 		entityManager.getTransaction().commit();
-		System.out.println("Contact updated succssfully!!");
+		System.out.println("Age updated succssfully!!");
 		return candidateObj;
 	}
 	
