@@ -44,8 +44,9 @@ public class ElectionAdministratorServiceTest {
 		parties.add(p1);
 		parties.add(p2);
 		
-		ElectionEntity entity=new ElectionEntity(10,"xyz","Mizoram","nashik","12-02-2021",parties);
 		
+		ElectionEntity entity=new ElectionEntity(10,"xyz","Mizoram","nashik","12-02-2021",parties);
+		//ElectionEntity entity=new ElectionEntity(8,"xyz","Maharashtra","nashik","12-02-2021");
 			
 				electionController.addElection(entity);
 				int id = entity.getElection_id();
