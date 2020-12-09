@@ -39,11 +39,11 @@ public class CandidateControllerTest {
 	@Test
 	public void testICandidateId() throws NullValueFoundException {
 		
-		logger.info("[START] testCandidateId");
+		logger.info("[START] testICandidateId");
 		Candidate cand=new Candidate(222,"Komal","Mumbai", 25, 9188889700L, 0);
 		int id= candidateController.addCandidate(cand).getCandidate_id();
 		assertNotNull("Candidate_Id is not null", candidateController.checkId(id));
-		logger.info("[END] testCandidateId");
+		logger.info("[END] testICandidateId");
 	}
 	
 	@Test
