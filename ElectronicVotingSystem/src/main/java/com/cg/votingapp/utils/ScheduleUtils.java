@@ -1,7 +1,7 @@
 package com.cg.votingapp.utils;
 
-import com.cg.VotingApp.dto.Schedule;
-import com.cg.VotingApp.entity.ScheduleEntity;
+import com.cg.votingapp.dto.Schedule;
+import com.cg.votingapp.entity.ScheduleEntity;
 
 public class ScheduleUtils {
 	public static ScheduleEntity convertScheduleIntoScheduleEntity(Schedule schedule) {

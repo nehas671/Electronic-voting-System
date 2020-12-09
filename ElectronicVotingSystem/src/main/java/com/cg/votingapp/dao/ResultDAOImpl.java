@@ -63,11 +63,11 @@ public class ResultDAOImpl  implements ResultDAO{
 		    result=new ResultEntity(election_id,state,date,candidate_id,candidate_name,party_name,vote_count);
 		  
 		    entityManager.getTransaction().begin();
-			entityManager.persist(result);
+			entityManager.merge(result);
 			entityManager.getTransaction().commit();		    
 		}
 		
 		}
-		System.out.println("inserted succesfully");
+		logger.info("inserted succesfully");
 	}
 }

@@ -1,4 +1,4 @@
-package com.cg.VotingApp.dto;
+package com.cg.votingapp.dto;
 
 import javax.persistence.Column;
 

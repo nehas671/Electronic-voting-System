@@ -20,6 +20,11 @@ public class VoterIdServiceImpl implements VoterIdService{
 		logger.info("VoterIdEntity: " + VoterIdEntity);
 		return VoterIdUtils.convertVoterIdEntityIntoVoterId(VoterIdEntity);
 	}
+	public VoterId findByReqId(int request_id) throws ReqNotFoundException {
+		VoterIdEntity VoterIdEntity = voterIdDao.findByReqId(request_id);
+		logger.info("VoterIdEntity: " + VoterIdEntity);
+		return VoterIdUtils.convertVoterIdEntityIntoVoterId(VoterIdEntity);
+	}
 
 
 	}

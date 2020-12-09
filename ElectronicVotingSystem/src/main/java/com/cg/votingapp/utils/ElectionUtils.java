@@ -13,5 +13,7 @@ public class ElectionUtils {
 			return new Election(electionEntity.getElection_id(), electionEntity.getElection_name(), electionEntity.getState(), electionEntity.getConstituency(), electionEntity.getDate());
 		}
 		
+		
+		
 	
 }

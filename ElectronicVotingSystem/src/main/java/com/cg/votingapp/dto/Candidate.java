@@ -15,8 +15,9 @@ public class Candidate {
 	
 	public Candidate() {}
 	
-	public Candidate(String candidate_name, String address, int age, int contact_details, int count) {
+	public Candidate(int candidate_id, String candidate_name, String address, int age, int contact_details, int count) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;
@@ -24,8 +25,9 @@ public class Candidate {
 		this.count=count;
 	}
 	
-	public Candidate(String candidate_name, String address, int age, int contact_details, int count, Party party) {
+	public Candidate(int candidate_id, String candidate_name, String address, int age, int contact_details, int count, Party party) {
 		super();
+		this.candidate_id=candidate_id;
 		this.candidate_name = candidate_name;
 		this.address = address;
 		this.age = age;

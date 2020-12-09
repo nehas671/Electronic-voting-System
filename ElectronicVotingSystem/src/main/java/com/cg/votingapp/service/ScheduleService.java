@@ -1,9 +1,11 @@
 package com.cg.votingapp.service;
 
-import com.cg.VotingApp.entity.ScheduleEntity;
+import com.cg.votingapp.entity.ElectionEntity;
 
 public interface ScheduleService {
 
-	void addSchedule(ScheduleEntity entity);
+	void addSchedule(ElectionEntity entity);
+
+	 void viewSchedule();
 	
 }

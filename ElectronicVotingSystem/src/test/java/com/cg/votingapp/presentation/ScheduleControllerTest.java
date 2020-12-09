@@ -2,13 +2,16 @@ package com.cg.votingapp.presentation;
 
 import static org.junit.Assert.assertEquals;
 
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.cg.VotingApp.entity.ScheduleEntity;
-import com.cg.VotingApp.exception.ScheduleNotFound;
+
+import com.cg.votingapp.entity.ElectionEntity;
+import com.cg.votingapp.entity.ScheduleEntity;
+import com.cg.votingapp.exceptions.ScheduleNotFound;
 
 public class ScheduleControllerTest {
 	private static ScheduleController scheduleController;
@@ -23,10 +26,10 @@ public class ScheduleControllerTest {
 		public void addIdSuccess() {
 			logger.info("[START] addScheduleSuccess()");
 
-			ScheduleEntity entity=new ScheduleEntity("22-12-2020",101,"loksabha election","maharashtra","dhule");
+			ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
 
 				try {
-					scheduleController.addElection(entity);
+					scheduleController.addSchedule(entity);
 				} catch (ScheduleNotFound e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -34,7 +37,22 @@ public class ScheduleControllerTest {
 				
 
 			assertEquals(1,1);
-			logger.info("[END] testItemSearchSuccess()");
+			logger.info("[END] addScheduleSuccess()");
+		}
+		
+		@Test
+		public void viewSuccess() {
+			logger.info("[START] viewScheduleSuccess()");
+
+			//ElectionEntity entity=new ElectionEntity("loksabha election","maharashtra","dhule","22-12-2020");
+
+				
+					scheduleController.viewSchedule();
+				
+				
+
+			assertEquals(1,1);
+			logger.info("[END] viewScheduleSuccess()");
 		}
 
 
