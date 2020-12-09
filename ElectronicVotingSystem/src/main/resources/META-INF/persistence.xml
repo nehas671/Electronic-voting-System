@@ -15,8 +15,6 @@
 		<class>com.cg.votingapp.entity.ElectionPartyEntity</class>
 		<class>com.cg.votingapp.entity.ElectionsEntity</class>
 		<class>com.cg.votingapp.entity.PartyEntity</class>
-		<class>com.cg.votingapp.dto.Party</class>
-		<class>com.cg.votingapp.dto.Candidate</class>
 		<class>com.cg.votingapp.entity.ScheduleEntity</class>
 		<class>com.cg.votingapp.entity.PartysEntity</class>
 		<class>com.cg.votingapp.entity.RegisterUser</class>
@@ -28,7 +26,7 @@
 			<property name="hibernate.connection.url" value="jdbc:postgresql://localhost/postgres" />
 			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
 			<property name="hibernate.connection.username" value="postgres" />
-			<property name="hibernate.connection.password" value="root" />
+			<property name="hibernate.connection.password" value="1234" />
 			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />

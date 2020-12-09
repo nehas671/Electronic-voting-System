@@ -45,7 +45,7 @@ public VoterId(int userId,String constituency,String voter_id) {
 	public void setDistrict(String district) {
 		this.district = district;
 	}
-	public int getUser_id() {
+	public  int getUser_id() {
 		return user_id;
 	}
 	public void setUser_id(int user_id) {

@@ -41,6 +41,7 @@ public class VoterIdControllerTest {
 		voterIdController.findByUserId(-5);
 		logger.info("[END] testvoterIdSearchFailed()");
 	}
+	
 	@Test(expected = ReqNotFoundException.class)
 	public void testvoterIdbyreqidSearchFailed() throws ReqNotFoundException{
 		logger.info("[START] testvoterIdbyreqidSearchFailed()");
