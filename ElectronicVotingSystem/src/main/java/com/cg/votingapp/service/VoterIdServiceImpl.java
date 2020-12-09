@@ -15,15 +15,15 @@ public class VoterIdServiceImpl implements VoterIdService{
 	private  static Logger logger = LogManager.getLogger(VoterIdServiceImpl.class.getName());
 	VoterIdDAO voterIdDao = new VoterIdDAOImpl();
 	
-	public VoterId findByUserId(int user_id) throws UserNotFoundException {
-		VoterIdEntity VoterIdEntity = voterIdDao.findByUserId(user_id);
+	public String findByUserId(int user_id) throws UserNotFoundException {
+		String VoterIdEntity = voterIdDao.findByUserId(user_id);
 		logger.info("VoterIdEntity: " + VoterIdEntity);
-		return VoterIdUtils.convertVoterIdEntityIntoVoterId(VoterIdEntity);
+		return VoterIdEntity;
 	}
-	public VoterId findByReqId(int request_id) throws ReqNotFoundException {
-		VoterIdEntity VoterIdEntity = voterIdDao.findByReqId(request_id);
+	public String findByReqId(int request_id) throws ReqNotFoundException {
+		String VoterIdEntity = voterIdDao.findByReqId(request_id);
 		logger.info("VoterIdEntity: " + VoterIdEntity);
-		return VoterIdUtils.convertVoterIdEntityIntoVoterId(VoterIdEntity);
+		return VoterIdEntity;
 	}
 
 
