@@ -1,6 +1,8 @@
 package com.cg.votingapp.presentation;
 
 import static org.junit.Assert.assertEquals;
+
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
@@ -21,18 +23,18 @@ public class VotingAppControllerTest
 	}
 	
 	@Test
-	public void testCastVoteCandidateIdSearchSuccess() throws CandidateNotFoundException
+	public void testCastVoteSuccess() throws CandidateNotFoundException
 	{	
-		logger.info("[START] testCastVoteCandidateIdSearchSuccess()");
+		logger.info("[START] testCastVoteSuccess()");
 		assertEquals(true,votingAppController.castVote(12));
-		logger.info("[END] testCastVoteCandidateIdSearchSuccess()");
+		logger.info("[END] testCastVoteSuccess()");
 	}
 	
 	@Test(expected=CandidateNotFoundException.class)
-	public void testCastVoteCandidateIdSearchFailure() throws CandidateNotFoundException
+	public void testCastVoteFailure() throws CandidateNotFoundException
 	{
-		logger.info("[START] testCastVoteCandidateIdSearchFailure()");
+		logger.info("[START] testCastVoteFailure()");
 		votingAppController.castVote(11);
-		logger.info("[END] testCastVoteCandidateIdSearchFailure()");
+		logger.info("[END] testCastVoteFailure()");
 	}
 }
