@@ -1,16 +1,11 @@
 package com.cg.votingapp.dao;
 
-public class VoterRequestDAOImpl implements VoterRequestDAO {
+public class VoterRequestServiceImpl implements VoterRequestService {
 	
-	private static Logger logger = LogManager.getLogger(VoterRequestDAOImpl.class.getName());	
-	private static EntityManager entityManager;
+	private static Logger logger = LogManager.getLogger(VoterRequestImpl.class.getName());	
+	VoterRequestDAO voterRequestDAO = new VoterRequestDAOImpl();
 	
-	static {
-		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("VotingAppPU");
-		entityManager = entityManagerFactory.createEntityManager();
-	}
-	
-	public VoterRequestEntity addVoterRequest(VoterRequestEntity entity){
+	public VoterRequest addVoterRequest(VoterRequest voterRequest){
 	
 		entityManager.getTransaction().begin();
 		entityManager.merge(entity);
