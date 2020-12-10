@@ -32,13 +32,13 @@ public class CandidateControllerTest {
 	}
 	
 	@Test
-	public void testCandidateIdSuccess() throws NullValueFoundException {
+	public void testCandidateId() throws NullValueFoundException {
 		
-		logger.info("[START] testCandidateIdSuccess");
+		logger.info("[START] testCandidateId");
 		Candidate cand=new Candidate(222,"Komal","Mumbai", 25, 9188889700L, 0);
 		int id= candidateController.addCandidate(cand).getCandidate_id();
 		assertNotNull("Candidate_Id is not null", candidateController.checkId(id));
-		logger.info("[END] testCandidateIdSuccess");
+		logger.info("[END] testCandidateId");
 	}
 	
 	@Test
@@ -51,7 +51,7 @@ public class CandidateControllerTest {
 		logger.info("[END] testICandidateName");
 	}
 	@Test
-	public void testCandidateAge()
+	public void testCandidateAge() throws RecordNotFoundException
 	{
 		logger.info("[START] testCandidateAge()");
 		Candidate cand=new Candidate(444,"Ram","Banglore", 33, 9188886211L, 0);
