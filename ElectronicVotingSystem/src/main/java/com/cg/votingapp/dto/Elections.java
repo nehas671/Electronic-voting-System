@@ -88,7 +88,7 @@ public class Elections
 		this.date = date;
 	}
 
-	//ToString Method
+	//ToString method
 	@Override
 	public String toString()
 	{
