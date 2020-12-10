@@ -19,5 +19,6 @@ import org.apache.logging.log4j.Logger;
 public interface VoterRequestDAO {
 
 	VoterRequestEntity addVoterRequest(VoterRequestEntity entity);
-	VoterRequestEntity viewVoterRequest(String constituency)throws RecordNotFoundException;
+	VoterRequestEntity viewVoterRequest(int user_id)throws RecordNotFoundException;
+	VoterRequestEntity approveVoterRequest(int user_id)throws NullValueFoundException;
 }

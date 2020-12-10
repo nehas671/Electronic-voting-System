@@ -12,8 +12,8 @@ import org.apache.logging.log4j.Logger;
 public class VoterRequestEntity {
 
 	@Id
-	@Column(name="userId")
-	private int userId;
+	@Column(name="user_id")
+	private int user_id;
 	
 	@Column(name="name")
 	private String name;
@@ -28,10 +28,10 @@ public class VoterRequestEntity {
 	private String voterId;
 	
 	@Column(name="contact_no")
-	private int contactNumber;
+	private double contact_no;
 	
 	@Column(name="application_status")
-	private String applicationStatus;
+	private String application_status;
 
 	
 	
@@ -46,28 +46,28 @@ public class VoterRequestEntity {
 	}
 
 
-	public VoterRequestEntity(int userId, String name, String district, String constituency, String voterId,
-		int contactNumber, String applicationStatus) {
+	public VoterRequestEntity(int user_id, String name, String district, String constituency, String voterId,
+		double contact_no, String application_status) {
 		super();
-		this.userId = userId;
+		this.user_id = user_id;
 		this.name = name;
 		this.district = district;
 		this.constituency = constituency;
 		this.voterId = voterId;
-		this.contactNumber = contactNumber;
-		this.applicationStatus = applicationStatus;
+		this.contact_no = contact_no;
+		this.application_status = application_status;
 	}
 
 
-	public VoterRequestEntity(String name, String district, String constituency, String voterId, int contactNumber,
-			String applicationStatus) {
+	public VoterRequestEntity(String name, String district, String constituency, String voterId, double contact_no,
+			String application_status) {
 		super();
 		this.name = name;
 		this.district = district;
 		this.constituency = constituency;
 		this.voterId = voterId;
-		this.contactNumber = contactNumber;
-		this.applicationStatus = applicationStatus;
+		this.contact_no = contact_no;
+		this.application_status = application_status;
 	}
 
 	
@@ -76,13 +76,13 @@ public class VoterRequestEntity {
 	
 	
 
-	public int getUserId() {
-		return userId;
+	public int getUser_id() {
+		return user_id;
 	}
 
 
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
 	}
 
 
@@ -126,23 +126,23 @@ public class VoterRequestEntity {
 	}
 
 
-	public int getContactNumber() {
-		return contactNumber;
+	public double getContact_no() {
+		return contact_no;
 	}
 
 
-	public void setContactNumber(int contactNumber) {
-		this.contactNumber = contactNumber;
+	public void setContactNumber(double contact_no) {
+		this.contact_no = contact_no;
 	}
 
 
 	public String getApplicationStatus() {
-		return applicationStatus;
+		return application_status;
 	}
 
 
-	public void setApplicationStatus(String applicationStatus) {
-		this.applicationStatus = applicationStatus;
+	public void setApplicationStatus(String application_status) {
+		this.application_status = application_status;
 	}
 
 	
@@ -152,7 +152,7 @@ public class VoterRequestEntity {
 	@Override
 	public String toString() {
 		return "VoterRequest [name=" + name + ", district=" + district + ", constituency=" + constituency + ", voterId="
-				+ voterId + ", applicationStatus=" + applicationStatus + "]";
+				+ voterId + ", applicationStatus=" + application_status + "]";
 	}
 	
 	

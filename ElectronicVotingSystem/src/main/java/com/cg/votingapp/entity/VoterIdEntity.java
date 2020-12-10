@@ -48,6 +48,8 @@ public class VoterIdEntity {
 		this.voter_id=voter_id;
 		this.contact_no=contact_no;
 		this.application_status=application_status;
+		
+		
 	}
 	
 	public VoterIdEntity(int userId,String constituency,String voter_id) {

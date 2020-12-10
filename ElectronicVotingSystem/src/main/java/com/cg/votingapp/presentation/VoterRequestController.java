@@ -3,7 +3,9 @@ package com.cg.votingapp.presentation;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.cg.votingapp.dto.VoterId;
 import com.cg.votingapp.dto.VoterRequest;
+import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.entity.VoterRequestEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
@@ -14,18 +16,18 @@ public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
 	VoterRequestService voterRequestService = new VoterRequestServiceImpl();
 	
-	/*public VoterRequestEntity addVoterRequest(VoterRequest voterrequest)
+	public VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity)
 	{
 		logger.info("Adding user");
-		VoterRequestEntity v =voterRequestService.addVoterRequest(v);
+		VoterRequestEntity v =voterRequestService.addVoterRequest(voterRequestEntity);
 	    return v;
-	}*/
+	}
 	
-	public VoterRequestEntity viewVoterRequest(String constituency) throws RecordNotFoundException{
+	public VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException{
 		logger.info("Viewing VoterRequest List");
 		VoterRequestEntity voterRequest= null;
 		try {
-			voterRequest = voterRequestService.viewVoterRequest(constituency);
+			voterRequest = voterRequestService.viewVoterRequest(user_id);
 		}
 		catch(Exception e) {
 			logger.error("RecordNotFoundException: " + e);
@@ -33,5 +35,18 @@ public class VoterRequestController {
 		}
 		return voterRequest;
     }
+	public VoterRequestEntity approveVoterRequest(int user_id) throws NullValueFoundException {
+		logger.info("Approving VoterRequest");
+		VoterRequestEntity voterRequest = null;
+		try {
+			voterRequest = voterRequestService.approveVoterRequest(user_id);
+		}
+		catch(Exception e) {
+			logger.error("NullvalueFoundException:"+ e);
+			throw new NullValueFoundException(e.getMessage());
+
+		}
+		return voterRequest;
+	}
 
 }
