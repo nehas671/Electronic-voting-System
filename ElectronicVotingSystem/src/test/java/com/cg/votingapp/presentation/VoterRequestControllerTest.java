@@ -8,6 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.cg.votingapp.dto.Candidate;
 import com.cg.votingapp.dto.VoterRequest;
 import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.exceptions.NullValueFoundException;
@@ -43,8 +44,11 @@ public class VoterRequestControllerTest {
 	@Test
 	public void addVoterRequestSuccess(){
 		logger.info("[START] addVoterRequestSuccess()");
-		//VoterRequest voter=new VoterRequest(9871,"Ambikapur","AW43215");
-		//assertEquals(voter.getUser_id(), voterRequestController.addVoterRequest(voter).getUser_id());
+		
+		VoterRequest voter=new VoterRequest(101, "Tom","Surguja", "Ambikapur", "AW0O8633",
+			1234567890, "Approved",19);
+		assertEquals(voter.getUser_id(), voterRequestController.addVoterRequest(voter).getUser_id());
+		
 		logger.info("[END] addVoterRequestSuccess()");
 	}
 
