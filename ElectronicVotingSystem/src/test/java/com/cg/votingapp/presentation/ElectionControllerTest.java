@@ -49,7 +49,7 @@ public class ElectionControllerTest {
 		int id = entity.getElection_id();
 				
 		
-		assertEquals(electionController.findItemById(id).getElection_id(),id);
+		assertEquals(electionController.findElectionById(id).getElection_id(),id);
 		logger.info("[END] addElectionSuccess()");
 	}
 	
@@ -68,7 +68,7 @@ public class ElectionControllerTest {
 		int id = entity.getElection_id();
 				
 		
-		assertNotEquals(electionController.findItemById(id),id);
+		assertNotEquals(electionController.findElectionById(id),id);
 		logger.info("[END] addStateSuccess()");
 	}
 	
@@ -86,7 +86,7 @@ public class ElectionControllerTest {
 		electionController.addElection(entity);
 		int id = entity.getElection_id();
 				
-		assertNotEquals(electionController.findItemById(id),id);
+		assertNotEquals(electionController.findElectionById(id),id);
 		logger.info("[END] addStateFails()");
 	}
 	
@@ -106,7 +106,7 @@ public class ElectionControllerTest {
 	@Test
 	public void viewElectionByIdSuccess() throws  NullValueFoundException{
 		logger.info("[START] viewElectionByIdSuccess()");
-		assertEquals(true,electionController.viewElectionById(10));
+		assertEquals(true,electionController.viewElectionById(5));
 		logger.info("[END] viewElectionByIdSuccess()");
 	}
 	
