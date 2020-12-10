@@ -44,10 +44,10 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 	
 	/*
-	 * This method check Id   entity is not null in Candidate table
+	 * This method check Id of  entity is not null in Candidate table
 	 */
 	
-	public CandidateEntity checkId(int candidateId) throws NullValueFoundException {
+	public CandidateEntity checkId(Integer candidateId) throws NullValueFoundException {
 		CandidateEntity candidateEntity = entityManager.find(CandidateEntity.class, candidateId);
 		logger.info("Checking candidate with id: " + candidateEntity);
 		if(candidateEntity==null)
@@ -56,7 +56,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 	
 	/*
-	 * This method check name   entity is not null in candidate table
+	 * This method check name of  entity is not null in Candidate table
 	 */
 	
 	public CandidateEntity checkName(String candidateName) throws NullValueFoundException {
@@ -72,7 +72,7 @@ public class CandidateDAOImpl implements CandidateDAO {
 	}
 
 	/*
-	 * This method display all entity from Candidate table
+	 * This method display all entity from candidate table
 	 */
 	
 	public CandidateEntity viewCandidate(int candidate_id) throws RecordNotFoundException {
