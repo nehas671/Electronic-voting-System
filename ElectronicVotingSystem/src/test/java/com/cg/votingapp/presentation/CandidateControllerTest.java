@@ -23,6 +23,11 @@ public class CandidateControllerTest {
 		logger = LogManager.getLogger(CandidateControllerTest.class.getName());
 		candidateController = new CandidateController();
 	}
+	
+	/*
+	 *test candidate added successfully 
+	 */
+	
 	@Test
 	public void addCandidateSuccess(){
 		logger.info("[START] addCandidateSuccess()");
@@ -30,6 +35,10 @@ public class CandidateControllerTest {
 		assertEquals(cand.getCandidate_id(), candidateController.addCandidate(cand).getCandidate_id());
 		logger.info("[END] addCandidateSuccess()");
 	}
+	
+	/*
+	 * test candidateId is not blank
+	 */
 	
 	@Test
 	public void testCandidateId() throws NullValueFoundException {
@@ -41,6 +50,10 @@ public class CandidateControllerTest {
 		logger.info("[END] testCandidateId");
 	}
 	
+	/*
+	 * test candidate name is not null
+	 */
+	
 	@Test
 	public void testCandidateName() throws NullValueFoundException {
 		
@@ -50,6 +63,11 @@ public class CandidateControllerTest {
 		assertNotNull("Candidate_Name is not null", candidateController.checkName(name));
 		logger.info("[END] testICandidateName");
 	}
+	
+	/*
+	 * test candidate age is greater than 25
+	 */
+	
 	@Test
 	public void testCandidateAge() throws RecordNotFoundException
 	{
@@ -59,12 +77,20 @@ public class CandidateControllerTest {
 		assertTrue("Age should be greater than or equal to 25", age>25);
 	}
 	
+	/*
+	 * test candidate list viewed successfully
+	 */
+	
 	@Test
 	public void viewCandidateSuccess() throws RecordNotFoundException{
 		logger.info("[START] viewCandidateSuccess()");
 		assertNotNull("Candidate Entity", candidateController.viewCandidate(111));
 		logger.info("[END] viewCandidateSuccess()");
 	}
+	
+	/*
+	 *test candidate list view failed 
+	 */
 	
 	@Test(expected = RecordNotFoundException.class)
 	public void viewCandidateFail() throws RecordNotFoundException{
