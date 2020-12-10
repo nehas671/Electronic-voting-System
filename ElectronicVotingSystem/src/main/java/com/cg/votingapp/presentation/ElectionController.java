@@ -36,12 +36,12 @@ public class ElectionController {
 	}
 	
 	
-	public Election findItemById(int itemId) throws RecordNotFoundException
+	public Election findElectionById(int ElectionId) throws RecordNotFoundException
 	{
-		logger.info("Finding item for id: " + itemId);
+		logger.info("Finding item for id: " + ElectionId);
 		Election election = null;
 		try {
-			election = electionService.findById(itemId);
+			election = electionService.findById(ElectionId);
 		}
 		catch(Exception e) {
 			logger.error("ItemNotFoundException: " + e);

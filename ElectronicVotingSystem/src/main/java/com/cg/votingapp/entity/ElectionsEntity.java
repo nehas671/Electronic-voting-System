@@ -30,7 +30,7 @@ public class ElectionsEntity
 	private String constituency;
 	
 	@Column(name="date")
-	private Date date;
+	private String date;
 	
 	/*
 	 * Election to Party Many to Many
@@ -48,7 +48,7 @@ public class ElectionsEntity
 		super();
 	}
 
-	public ElectionsEntity(int electionId, String electionName, String state, String constituency, Date date,
+	public ElectionsEntity(int electionId, String electionName, String state, String constituency, String date,
 			Set<PartysEntity> party)
 	{
 		super();
@@ -60,7 +60,7 @@ public class ElectionsEntity
 		this.party = party;
 	}
 
-	public ElectionsEntity(String electionName, String state, String constituency, Date date, Set<PartysEntity> party)
+	public ElectionsEntity(String electionName, String state, String constituency, String date, Set<PartysEntity> party)
 	{
 		super();
 		this.electionName = electionName;
@@ -70,7 +70,7 @@ public class ElectionsEntity
 		this.party = party;
 	}
 
-	public ElectionsEntity(int electionId, String electionName, String state, String constituency, Date date)
+	public ElectionsEntity(int electionId, String electionName, String state, String constituency, String date)
 	{
 		super();
 		this.electionId = electionId;
@@ -125,12 +125,12 @@ public class ElectionsEntity
 		this.constituency = constituency;
 	}
 
-	public Date getDate()
+	public String getDate()
 	{
 		return date;
 	}
 
-	public void setDate(Date date)
+	public void setDate(String date)
 	{
 		this.date = date;
 	}
