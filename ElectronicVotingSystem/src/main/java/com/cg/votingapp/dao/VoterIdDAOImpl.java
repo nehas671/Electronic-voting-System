@@ -21,7 +21,7 @@ public class VoterIdDAOImpl implements VoterIdDAO{
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("VotingAppPU");
 		entityManager = entityManagerFactory.createEntityManager();
 	}
-	
+	//Method to search voter id using user id
 	public String findByUserId(int user_id) throws UserNotFoundException {
 	 String current_status="";
 	 VoterIdEntity voterIdObj=entityManager.find(VoterIdEntity.class, user_id);
@@ -48,7 +48,7 @@ public class VoterIdDAOImpl implements VoterIdDAO{
 	 return current_status;
 	
 	}
-
+//Method to view voter id using request id 
 	public String findByReqId(int request_id) throws ReqNotFoundException {
 		String current_status="";
 		 VoterIdEntity voterIdObj=entityManager.find(VoterIdEntity.class, request_id);

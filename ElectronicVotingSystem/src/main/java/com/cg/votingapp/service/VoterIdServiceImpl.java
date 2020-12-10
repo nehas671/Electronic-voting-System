@@ -5,11 +5,11 @@ import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.dao.VoterIdDAO;
 import com.cg.votingapp.dao.VoterIdDAOImpl;
-import com.cg.votingapp.dto.VoterId;
-import com.cg.votingapp.entity.VoterIdEntity;
+//import com.cg.votingapp.dto.VoterId;
+//import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.exceptions.*;
-import com.cg.votingapp.presentation.VoterIdController;
-import com.cg.votingapp.utils.VoterIdUtils;
+//import com.cg.votingapp.presentation.VoterIdController;
+//import com.cg.votingapp.utils.VoterIdUtils;
 
 public class VoterIdServiceImpl implements VoterIdService{
 	private  static Logger logger = LogManager.getLogger(VoterIdServiceImpl.class.getName());

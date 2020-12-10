@@ -9,7 +9,7 @@ public class VotingAppCastVoteUtils
 		{
 			return new ElectionsEntity(election.getElection_id(), election.getElection_name(), election.getState(), election.getConstituency(), election.getDate());
 		}
-		
+
 		public static Elections convertItemEntityIntoItem(ElectionsEntity electionEntity)
 		{
 			return new Elections(electionEntity.getElectionId(),electionEntity.getElectionName(),electionEntity.getState(),electionEntity.getConstituency(),electionEntity.getDate());

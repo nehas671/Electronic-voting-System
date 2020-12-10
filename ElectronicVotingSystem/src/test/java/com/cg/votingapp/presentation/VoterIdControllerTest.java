@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.cg.votingapp.exceptions.ReqNotFoundException;
 import com.cg.votingapp.exceptions.UserNotFoundException;
-import com.cg.votingapp.presentation.VoterIdController;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -20,13 +19,15 @@ public class VoterIdControllerTest {
 		logger = LogManager.getLogger(VoterIdControllerTest.class.getName());
 		voterIdController = new VoterIdController();
 	}
-	
+	//To Search voter id using user id
 	@Test
 	public void testvoterIdSearchSuccess() throws UserNotFoundException {
 		logger.info("[START] testvoterIdSearchSuccess()");
 		assertNotNull("Voter id Found", voterIdController.findByUserId(1));
 		logger.info("[END] testvoterIdSearchSuccess()");
 	}
+	
+	//To search voter id using request id
 	@Test
 	public void testvoterIdbyreqidSearchSuccess()throws ReqNotFoundException{
 		logger.info("[START] testvoterIdbyreqidSearchSuccess()");

@@ -1,7 +1,7 @@
 package com.cg.votingapp.dao;
 
 import com.cg.votingapp.exceptions.ReqNotFoundException;
-import com.cg.votingapp.entity.VoterIdEntity;
+//import com.cg.votingapp.entity.VoterIdEntity;
 
 import com.cg.votingapp.exceptions.UserNotFoundException;
 
