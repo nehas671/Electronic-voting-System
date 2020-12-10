@@ -10,6 +10,7 @@ import org.junit.Test;
 import com.cg.votingapp.dto.Candidate;
 import com.cg.votingapp.exceptions.NullValueFoundException;
 import com.cg.votingapp.exceptions.RecordNotFoundException;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -25,7 +26,7 @@ public class CandidateControllerTest {
 	}
 	
 	/*
-	 *test candidate added successfully 
+	 * test candidate added successfully
 	 */
 	
 	@Test
@@ -43,15 +44,15 @@ public class CandidateControllerTest {
 	@Test
 	public void testCandidateId() throws NullValueFoundException {
 		
-		logger.info("[START] testCandidateId");
+		logger.info("[START] testICandidateId");
 		Candidate cand=new Candidate(222,"Komal","Mumbai", 25, 9188889700L, 0);
-		int id= candidateController.addCandidate(cand).getCandidate_id();
+		Integer id= candidateController.addCandidate(cand).getCandidate_id();
 		assertNotNull("Candidate_Id is not null", candidateController.checkId(id));
 		logger.info("[END] testCandidateId");
 	}
 	
 	/*
-	 * test candidate name is not null
+	 * test candidateName is not null
 	 */
 	
 	@Test
@@ -65,7 +66,7 @@ public class CandidateControllerTest {
 	}
 	
 	/*
-	 * test candidate age is greater than 25
+	 *test age is greater than 25 
 	 */
 	
 	@Test
@@ -78,7 +79,7 @@ public class CandidateControllerTest {
 	}
 	
 	/*
-	 * test candidate list viewed successfully
+	 *test candidate list is viewed successfully 
 	 */
 	
 	@Test
@@ -89,7 +90,7 @@ public class CandidateControllerTest {
 	}
 	
 	/*
-	 *test candidate list view failed 
+	 * test candidate list view failed
 	 */
 	
 	@Test(expected = RecordNotFoundException.class)
@@ -98,7 +99,6 @@ public class CandidateControllerTest {
 	    candidateController.viewCandidate(110);
 		logger.info("[END] viewCandidateFail()");
 	}
-	
 }
 
 
