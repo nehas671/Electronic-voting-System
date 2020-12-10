@@ -32,7 +32,9 @@ public class VoterRequestEntity {
 	
 	@Column(name="application_status")
 	private String application_status;
-
+	
+	@Column(name="age")
+	private int age;
 	
 	
 	private static Logger logger;
@@ -47,7 +49,7 @@ public class VoterRequestEntity {
 
 
 	public VoterRequestEntity(int user_id, String name, String district, String constituency, String voterId,
-		double contact_no, String application_status) {
+		double contact_no, String application_status,int age) {
 		super();
 		this.user_id = user_id;
 		this.name = name;
@@ -56,11 +58,12 @@ public class VoterRequestEntity {
 		this.voterId = voterId;
 		this.contact_no = contact_no;
 		this.application_status = application_status;
+		this.age = age;
 	}
 
 
 	public VoterRequestEntity(String name, String district, String constituency, String voterId, double contact_no,
-			String application_status) {
+			String application_status,int age) {
 		super();
 		this.name = name;
 		this.district = district;
@@ -68,14 +71,13 @@ public class VoterRequestEntity {
 		this.voterId = voterId;
 		this.contact_no = contact_no;
 		this.application_status = application_status;
+		this.age = age;
 	}
 
 	
 	
 			// Getters and Setters
 	
-	
-
 	public int getUser_id() {
 		return user_id;
 	}
@@ -131,39 +133,47 @@ public class VoterRequestEntity {
 	}
 
 
-	public void setContactNumber(double contact_no) {
+	public void setContact_no(double contact_no) {
 		this.contact_no = contact_no;
 	}
 
 
-	public String getApplicationStatus() {
+	public String getApplication_status() {
 		return application_status;
 	}
 
 
-	public void setApplicationStatus(String application_status) {
+	public void setApplication_status(String application_status) {
 		this.application_status = application_status;
 	}
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+
+	
 
 	
 			//toString function
 	
 
+	
 	@Override
 	public String toString() {
-		return "VoterRequest [name=" + name + ", district=" + district + ", constituency=" + constituency + ", voterId="
-				+ voterId + ", applicationStatus=" + application_status + "]";
+		return "VoterRequestEntity [user_id=" + user_id + ", name=" + name + ", district=" + district
+				+ ", constituency=" + constituency + ", voterId=" + voterId + ", contact_no=" + contact_no
+				+ ", application_status=" + application_status + ", age=" + age + "]";
 	}
-	
-	
-	
-	
-	
-	
-	
-			
-	
-	
 
 
+	
+	
+		
 }

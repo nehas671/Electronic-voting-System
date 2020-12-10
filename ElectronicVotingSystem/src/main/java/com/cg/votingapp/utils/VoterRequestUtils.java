@@ -6,10 +6,12 @@ import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.entity.VoterRequestEntity;
 
 public class VoterRequestUtils {
-	/*public static VoterRequestEntity convertVoterRequestIntoVoterRequestEntity(VoterRequest VoterRequest) {
-		return new VoterRequestEntity(VoterRequest.getRequest_id(),VoterRequest.getName(),VoterRequest.getDistrict(),VoterRequest.getUser_id(),VoterRequest.getConstituency(),VoterRequest.getVoter_id(),VoterRequest.getContact_no(),VoterRequest.getApplication_status());
+	public static VoterRequestEntity convertVoterRequestIntoVoterRequestEntity(VoterRequest voterRequest) {
+		return new VoterRequestEntity(voterRequest.getUser_id(), voterRequest.getName(), voterRequest.getDistrict(), voterRequest.getConstituency(), voterRequest.getVoter_id(),
+				voterRequest.getContact_no(), voterRequest.getApplication_status(),voterRequest.getAge());
 	}
-	public static VoterRequest convertVoterRequestEntityIntoVoterId(VoterIdEntity VoterRequestEntity) {
-		return new VoterRequest(VoterRequestEntity.getRequest_id(),VoterRequestEntity.getName(),VoterRequestEntity.getDistrict(),VoterRequestEntity.getUser_id(),VoterRequestEntity.getConstituency(),VoterRequestEntity.getVoter_id(),VoterRequestEntity.getContact_no(),VoterRequestEntity.getApplication_status());
-	}*/
+	public static VoterRequest convertVoterRequestEntityIntoVoterRequest(VoterRequestEntity voterRequestEntity) {
+		return new VoterRequest(voterRequestEntity.getUser_id(), voterRequestEntity.getName(), voterRequestEntity.getDistrict(), voterRequestEntity.getConstituency(), voterRequestEntity.getVoterId(),
+				voterRequestEntity.getContact_no(), voterRequestEntity.getApplication_status(),voterRequestEntity.getAge());
+}
 }

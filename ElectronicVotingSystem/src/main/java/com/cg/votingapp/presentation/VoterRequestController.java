@@ -16,10 +16,10 @@ public class VoterRequestController {
 	private static Logger logger = LogManager.getLogger(CandidateController.class.getName());
 	VoterRequestService voterRequestService = new VoterRequestServiceImpl();
 	
-	public VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity)
+	public VoterRequest addVoterRequest(VoterRequest voterRequest)
 	{
 		logger.info("Adding user");
-		VoterRequestEntity v =voterRequestService.addVoterRequest(voterRequestEntity);
+		VoterRequest v =voterRequestService.addVoterRequest(voterRequest);
 	    return v;
 	}
 	

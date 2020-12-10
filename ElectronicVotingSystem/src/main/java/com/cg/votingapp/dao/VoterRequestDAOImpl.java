@@ -27,7 +27,7 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		entityManager = entityManagerFactory.createEntityManager();
 	}
 	public VoterRequestEntity addVoterRequest(VoterRequestEntity entity){
-		if(entity.getApplicationStatus()=="Approved") {
+		if(entity.getApplication_status()=="Approved") {
 		entityManager.getTransaction().begin();
 		entityManager.merge(entity);
 		entityManager.getTransaction().commit();
@@ -61,12 +61,12 @@ public class VoterRequestDAOImpl implements VoterRequestDAO {
 		result = query.getFirstResult();
 		if(result==0) {
 			System.out.println("Request Approved");
-			voterRequestEntity.setApplicationStatus("Approved");
+			voterRequestEntity.setApplication_status("Approved");
 			return voterRequestEntity;
 		}
 		else {
 			System.out.println("Request Rejected");
-			voterRequestEntity.setApplicationStatus("Rejected");
+			voterRequestEntity.setApplication_status("Rejected");
 			return voterRequestEntity;
 		}
 	}

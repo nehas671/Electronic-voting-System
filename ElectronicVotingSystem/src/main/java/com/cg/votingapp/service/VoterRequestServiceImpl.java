@@ -12,6 +12,7 @@ import com.cg.votingapp.utils.VoterRequestUtils;
 import com.cg.votingapp.dao.VoterRequestDAO;
 import com.cg.votingapp.dao.VoterRequestDAOImpl;
 import com.cg.votingapp.dto.VoterRequest;
+import com.cg.votingapp.entity.CandidateEntity;
 import com.cg.votingapp.entity.VoterIdEntity;
 import com.cg.votingapp.entity.VoterRequestEntity;
 import javax.persistence.Query;
@@ -27,18 +28,19 @@ public class VoterRequestServiceImpl implements VoterRequestService {
 	
 	
 	public VoterRequestEntity viewVoterRequest(int user_id) throws RecordNotFoundException {
-		VoterRequestEntity VoterRequestEntity = voterRequestDAO.viewVoterRequest(user_id);
-		logger.info("VoterRequestEntity: " + VoterRequestEntity);
-		return VoterRequestEntity;
+		VoterRequestEntity voterRequestEntity = voterRequestDAO.viewVoterRequest(user_id);
+		logger.info("VoterRequestEntity: " + voterRequestEntity);
+		return voterRequestEntity;
 	}
 	public VoterRequestEntity approveVoterRequest(int user_id) throws NullValueFoundException {
 		VoterRequestEntity voterRequestEntity = voterRequestDAO.approveVoterRequest(user_id);
 		logger.info("VoterRequestEntity: "+voterRequestEntity);
 		return voterRequestEntity;
 	}
-	public VoterRequestEntity addVoterRequest(VoterRequestEntity voterRequestEntity) {
-		// TODO Auto-generated method stub
-		return null;
+	public VoterRequest addVoterRequest(VoterRequest voterRequest) {
+		VoterRequestEntity voterRequestEntity = voterRequestDAO.addVoterRequest(VoterRequestUtils.convertVoterRequestIntoVoterRequestEntity(voterRequest));
+		logger.info("VoterRequestEntity: " + voterRequestEntity);
+		return VoterRequestUtils.convertVoterRequestEntityIntoVoterRequest(voterRequestEntity);
 	}
 
 
