@@ -8,7 +8,7 @@ public class Elections
 	private String election_name;
 	private String state;
 	private String constituency;
-	private Date date;
+	private String date;
 
 	//Default Constructors
 	public Elections() 
@@ -17,7 +17,7 @@ public class Elections
 	}
 	
 	//Parameterized Constructor with primary key
-	public Elections(int election_id, String election_name, String state, String constituency, Date date)
+	public Elections(int election_id, String election_name, String state, String constituency, String date)
 	{
 		super();
 		this.election_id = election_id;
@@ -28,7 +28,7 @@ public class Elections
 	}
 
 	//Parameterized Constructor without primary key
-	public Elections(String election_name, String state, String constituency, Date date)
+	public Elections(String election_name, String state, String constituency, String date)
 	{
 		super();
 		this.election_name = election_name;
@@ -78,12 +78,12 @@ public class Elections
 		this.constituency = constituency;
 	}
 
-	public Date getDate()
+	public String getDate()
 	{
 		return date;
 	}
 
-	public void setDate(Date date)
+	public void setDate(String date)
 	{
 		this.date = date;
 	}
