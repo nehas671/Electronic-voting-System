@@ -44,7 +44,7 @@ public class ElectionControllerTest {
 		parties.add(party2);
 		
 		
-		ElectionEntity entity=new ElectionEntity(5,"loksabha","Punjab","nashik","12-02-2021",parties);
+		ElectionEntity entity=new ElectionEntity(7,"State election","Maharashtra","Pune","16-03-2021",parties);
 		electionController.addElection(entity);
 		int id = entity.getElection_id();
 				
@@ -68,7 +68,7 @@ public class ElectionControllerTest {
 		int id = entity.getElection_id();
 				
 		
-		assertNotEquals(electionController.findElectionById(id),id);
+		assertEquals(electionController.findElectionById(id).getElection_id(),id);
 		logger.info("[END] addStateSuccess()");
 	}
 	
