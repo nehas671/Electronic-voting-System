@@ -3,7 +3,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.cg.votingapp.exceptions.ReqNotFoundException;
-import com.cg.votingapp.dto.VoterId;
+//import com.cg.votingapp.dto.VoterId;
 import com.cg.votingapp.exceptions.*;
 import com.cg.votingapp.service.VoterIdService;
 import com.cg.votingapp.service.VoterIdServiceImpl;
