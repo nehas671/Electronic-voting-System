@@ -15,7 +15,8 @@ public class CandidateNotFoundException extends Exception
 	}
 	
 	@Override
-	public String toString() {
+	public String toString()
+	{
 		return "Candidate not found " + this.message;
 	}
 }

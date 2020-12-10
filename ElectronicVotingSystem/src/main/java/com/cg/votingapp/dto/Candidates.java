@@ -1,55 +1,23 @@
-package com.cg.votingapp.entity;
+package com.cg.votingapp.dto;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-
-//Creating Candidate Entity
-@Entity
-@Table(name="candidate")
-public class CandidatesEntity
-{	
-	//Primary Key
-	@Id
-	@Column(name="candidate_id")
+public class Candidates
+{
 	private int candidate_id;
-
-	@Column(name="candidate_name")
 	private String candidate_name;
-	
-	@Column(name="address")
 	private String address;
-	
-	@Column(name="age")
 	private int age;
-	
-	@Column(name="contact_no")
 	private long contact_number;
-	
-	@Column(name="vote_count")
 	private int count;
-	
-	@Column(name="party_name")
-	private String party_name;
-	
-	//Creating many to one relation with party
-	@ManyToOne(cascade=CascadeType.MERGE, fetch=FetchType.EAGER)
-	@JoinColumn(name="party_name" ,insertable=false, updatable=false)
-	private PartysEntity party;
+	private Partys party;
 	
 	//Default Constructor
-	public CandidatesEntity()
+	public Candidates() 
 	{
 		super();
 	}
 	
 	//Parameterized Constructors
-	public CandidatesEntity(int candidate_id, String candidate_name, String address, int age, long contact_number, int count)
+	public Candidates(int candidate_id, String candidate_name, String address, int age, long contact_number, int count)
 	{
 		super();
 		this.candidate_id=candidate_id;
@@ -60,7 +28,7 @@ public class CandidatesEntity
 		this.count=count;
 	}
 	
-	public CandidatesEntity(int candidate_id, String candidate_name, String address, int age, long contact_number, int count, PartysEntity party)
+	public Candidates(int candidate_id, String candidate_name, String address, int age, long contact_number, int count, Partys party)
 	{
 		super();
 		this.candidate_id=candidate_id;
@@ -71,8 +39,8 @@ public class CandidatesEntity
 		this.count=count;
 		this.party = party;
 	}
-	
-	//Getters and Setters methods
+
+	//Getter and Setter methods
 	public int getCandidate_id()
 	{
 		return candidate_id;
@@ -88,7 +56,7 @@ public class CandidatesEntity
 		return candidate_name;
 	}
 
-	public void setCandidate_name(String candidate_name)
+	public void setCandidate_name(String candidate_name) 
 	{
 		this.candidate_name = candidate_name;
 	}
@@ -108,7 +76,7 @@ public class CandidatesEntity
 		return age;
 	}
 
-	public void setAge(int age)
+	public void setAge(int age) 
 	{
 		this.age = age;
 	}
@@ -122,7 +90,6 @@ public class CandidatesEntity
 	{
 		this.contact_number = contact_number;
 	}
-	
 	public int getCount()
 	{
 		return count;
@@ -133,21 +100,21 @@ public class CandidatesEntity
 		this.count = count;
 	}
 
-	public PartysEntity getParty()
+	public Partys getParty()
 	{
 		return party;
 	}
 
-	public void setParty(PartysEntity party)
+	public void setParty(Partys party)
 	{
 		this.party = party;
 	}
-	
-	//ToString method for the above variables
+
+	//toString Method
 	@Override
-	public String toString() 
+	public String toString()
 	{
 		return "CandidateEntity [candidate_id=" + candidate_id + ", candidate_name=" + candidate_name + ", address="
-				+ address + ", age=" + age + ", contact_details=" + contact_number + ", party=" + party + ", count=" + count + "]";
-	}
+				+ address + ", age=" + age + ", contact_details=" + contact_number + ", count=" + count + "]";
+	}	
 }

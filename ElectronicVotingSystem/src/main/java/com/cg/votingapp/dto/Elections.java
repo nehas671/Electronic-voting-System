@@ -1,7 +1,5 @@
 package com.cg.votingapp.dto;
 
-import java.util.Date;
-
 public class Elections 
 {
 	private int election_id;
@@ -88,7 +86,7 @@ public class Elections
 		this.date = date;
 	}
 
-	//ToString method
+	//ToString Method
 	@Override
 	public String toString()
 	{

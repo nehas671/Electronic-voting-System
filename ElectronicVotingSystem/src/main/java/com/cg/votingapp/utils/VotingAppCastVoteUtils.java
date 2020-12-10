@@ -12,6 +12,6 @@ public class VotingAppCastVoteUtils
 
 		public static Elections convertItemEntityIntoItem(ElectionsEntity electionEntity)
 		{
-			return new Elections(electionEntity.getElectionId(),electionEntity.getElectionName(),electionEntity.getState(),electionEntity.getConstituency(),electionEntity.getDate());
-		}
+			return new Elections(electionEntity.getElection_id(),electionEntity.getElection_name(),electionEntity.getState(),electionEntity.getConstituency(),electionEntity.getDate());
+		}		
 }
